@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: 396e8896fc0341b4aa4a7a4a495a5d6f
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4623794648063838567
+    second: Jesse_sprites_0
+  - first:
+      213: 7244438662915661732
+    second: Jesse_sprites_1
+  - first:
+      213: 4623794648063838567
+    second: Jesse_sprites_0
+  - first:
+      213: 7244438662915661732
+    second: Jesse_sprites_1
+  - first:
+      213: -9170774110602246569
+    second: Jesse_sprites_2
+  - first:
+      213: -4385169232198032659
+    second: Jesse_sprites_3
+  - first:
+      213: 4117591097784289938
+    second: Jesse_sprites_4
+  - first:
+      213: -1827221509911364919
+    second: Jesse_sprites_5
+  - first:
+      213: -7193470493617286234
+    second: Jesse_sprites_6
+  - first:
+      213: -3092134456589592595
+    second: Jesse_sprites_7
+  - first:
+      213: 4623794648063838567
+    second: Jesse_sprites_0
+  - first:
+      213: 7244438662915661732
+    second: Jesse_sprites_1
+  - first:
+      213: -9170774110602246569
+    second: Jesse_sprites_2
+  - first:
+      213: -4385169232198032659
+    second: Jesse_sprites_3
+  - first:
+      213: 4117591097784289938
+    second: Jesse_sprites_4
+  - first:
+      213: -1827221509911364919
+    second: Jesse_sprites_5
+  - first:
+      213: -7193470493617286234
+    second: Jesse_sprites_6
+  - first:
+      213: -3092134456589592595
+    second: Jesse_sprites_7
+  - first:
+      213: 7659616158637590750
+    second: Jesse_sprites_8
+  - first:
+      213: 2449833562795843915
+    second: Jesse_sprites_9
+  - first:
+      213: 4623794648063838567
+    second: Jesse_sprites_0
+  - first:
+      213: 7244438662915661732
+    second: Jesse_sprites_1
+  - first:
+      213: -9170774110602246569
+    second: Jesse_sprites_2
+  - first:
+      213: -4385169232198032659
+    second: Jesse_sprites_3
+  - first:
+      213: 4117591097784289938
+    second: Jesse_sprites_4
+  - first:
+      213: -1827221509911364919
+    second: Jesse_sprites_5
+  - first:
+      213: -7193470493617286234
+    second: Jesse_sprites_6
+  - first:
+      213: -3092134456589592595
+    second: Jesse_sprites_7
+  - first:
+      213: 7659616158637590750
+    second: Jesse_sprites_8
+  - first:
+      213: 2449833562795843915
+    second: Jesse_sprites_9
+  - first:
+      213: -3173553699640467275
+    second: Jesse_sprites_10
+  - first:
+      213: -7029142905662768936
+    second: Jesse_sprites_11
+  - first:
+      213: -8136312836909325393
+    second: Jesse_sprites_12
+  - first:
+      213: 8014845202149275014
+    second: Jesse_sprites_13
+  - first:
+      213: 5416282153638611051
+    second: Jesse_sprites_14
+  - first:
+      213: 6762981431740759407
+    second: Jesse_sprites_15
+  - first:
+      213: -2786222633053862350
+    second: Jesse_sprites_16
+  - first:
+      213: 5755457477340542738
+    second: Jesse_sprites_17
+  - first:
+      213: 4623794648063838567
+    second: Jesse_sprites_0
+  - first:
+      213: 7244438662915661732
+    second: Jesse_sprites_1
+  - first:
+      213: -9170774110602246569
+    second: Jesse_sprites_2
+  - first:
+      213: -4385169232198032659
+    second: Jesse_sprites_3
+  - first:
+      213: 4117591097784289938
+    second: Jesse_sprites_4
+  - first:
+      213: -1827221509911364919
+    second: Jesse_sprites_5
+  - first:
+      213: -7193470493617286234
+    second: Jesse_sprites_6
+  - first:
+      213: -3092134456589592595
+    second: Jesse_sprites_7
+  - first:
+      213: 7659616158637590750
+    second: Jesse_sprites_8
+  - first:
+      213: 2449833562795843915
+    second: Jesse_sprites_9
+  - first:
+      213: -3173553699640467275
+    second: Jesse_sprites_10
+  - first:
+      213: -7029142905662768936
+    second: Jesse_sprites_11
+  - first:
+      213: -8136312836909325393
+    second: Jesse_sprites_12
+  - first:
+      213: 8014845202149275014
+    second: Jesse_sprites_13
+  - first:
+      213: 5416282153638611051
+    second: Jesse_sprites_14
+  - first:
+      213: 6762981431740759407
+    second: Jesse_sprites_15
+  - first:
+      213: -2786222633053862350
+    second: Jesse_sprites_16
+  - first:
+      213: 5755457477340542738
+    second: Jesse_sprites_17
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: Jesse_sprites_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 200
+      height: 200
+    spriteID: 70752f59cd019f54fb1d2d03329252bd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_0
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 176
+      width: 24
+      height: 24
+    spriteID: 76982380cb40b2040800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_1
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 176
+      width: 24
+      height: 24
+    spriteID: 4af913cc49a698460800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_2
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 152
+      width: 24
+      height: 24
+    spriteID: 7564436098ddab080800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_3
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 152
+      width: 24
+      height: 24
+    spriteID: de22dd221dfb423c0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_4
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 152
+      width: 24
+      height: 24
+    spriteID: 29a4eb9994f942930800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_5
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 152
+      width: 24
+      height: 24
+    spriteID: 9cab7cfb7b764a6e0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_6
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 152
+      width: 24
+      height: 24
+    spriteID: 6a310bdd2b8ab2c90800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_7
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 152
+      width: 24
+      height: 24
+    spriteID: de75b3538188615d0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_8
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 24
+      height: 24
+    spriteID: ed88f6b505c6c4a60800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_9
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 128
+      width: 24
+      height: 24
+    spriteID: b41a64545ae8ff120800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_10
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 104
+      width: 24
+      height: 24
+    spriteID: 5b0ad4179b545f3d0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_11
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 104
+      width: 24
+      height: 24
+    spriteID: 8d87380f4c7737e90800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_12
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 104
+      width: 24
+      height: 24
+    spriteID: fa3a1963592061f80800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_13
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 104
+      width: 24
+      height: 24
+    spriteID: 685f9d33f337a3f60800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_14
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 104
+      width: 24
+      height: 24
+    spriteID: b68caea0cef7a2b40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_15
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 104
+      width: 24
+      height: 24
+    spriteID: f6d7875c7cfeadd50800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_16
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 80
+      width: 24
+      height: 24
+    spriteID: 236cbabf6495559d0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_17
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 80
+      width: 24
+      height: 24
+    spriteID: 217bfb8f41e7fdf40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Idle-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 36
+      width: 13
+      height: 23
+    spriteID: a710511064bc6bd44a959857eff4dc0d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -26, y: -140}
+  - name: Idle-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 13
+      height: 24
+    spriteID: 34547f54b629dd540add85c5e5baf46e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2, y: -172}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 0
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 32
+  importedTextureHeight: 64
+  documentSize: {x: 200, y: 200}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 200
+  textureActualHeight: 200
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Idle
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 7
+    mosaicPosition: {x: 0, y: 0}
+  - name: Idle-2
+    spriteName: Idle-2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a710511064bc6bd44a959857eff4dc0d
+    layerID: 6
+    mosaicPosition: {x: 4, y: 36}
+  - name: Idle-1
+    spriteName: Idle-1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 34547f54b629dd540add85c5e5baf46e
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Jesse_sprites Texture
+  prefabAssetName: Jesse_sprites Prefab
+  spriteLibAssetName: Jesse_sprites Sprite Lib
+  secondarySpriteTextures: []
