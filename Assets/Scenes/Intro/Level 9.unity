@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: SceneName
       value: Level 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
+      propertyPath: sceneName
+      value: Level 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
 --- !u!4 &329039577 stripped

@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705d8593b6906a04da259fcf95d27aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceAudioClip: {fileID: 8300000, guid: 847e89aee59d94b799f8c53e88cdb76d, type: 3}
+  bounceAudioClip: {fileID: 8300000, guid: 5d364fc3f6ee8b84f8b90326b92ce6b2, type: 3}
   bounceAudioClipVolume: 30
   bouncePower: 15
 --- !u!61 &4685016408712287599

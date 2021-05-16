@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1039721788972195496}
   - component: {fileID: 1039721788972195497}
   m_Layer: 0
-  m_Name: shard
+  m_Name: Shard
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b7320d00fe4e644bcce5cd979c7c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDestroyAudioClip: {fileID: 8300000, guid: 89b0d16dcd2964bf9bbf156d08013730, type: 3}
+  onDestroyAudioClip: {fileID: 8300000, guid: e5a6f077df8d82a4882013001fd6a4e9, type: 3}
   onDestroyAudioVolume: 30
   type: 0
   inventorySprite: {fileID: 0}
+  checkpoint: 0

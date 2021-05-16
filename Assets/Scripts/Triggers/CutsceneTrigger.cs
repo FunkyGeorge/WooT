@@ -11,7 +11,7 @@ public class CutsceneTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateCutscene();
     }
 
     // Update is called once per frame
@@ -29,8 +29,28 @@ public class CutsceneTrigger : MonoBehaviour
         }
     }
 
-    private void onCutsceneStopped()
+    private void UpdateCutscene()
     {
-        Debug.Log("read me");
+        // This method will apply the current Player animator component to the timeline since it
+        // will likely be different than the one it was created with.
+
+        PlayableAsset originalPlayable = cutscene.playableAsset;
+        // PlayableAsset newPlayable;
+
+        var oldBindings = originalPlayable.outputs.GetEnumerator();
+ 
+        while (oldBindings.MoveNext())
+        {
+            var oldBindings_sourceObject = oldBindings.Current.sourceObject;
+            if (oldBindings_sourceObject)
+            {
+                Object something = cutscene.GetGenericBinding(oldBindings_sourceObject);
+                cutscene.SetGenericBinding(
+                    oldBindings_sourceObject,
+                    Player.Instance.gameObject.GetComponent<Animator>()
+                );
+            } 
+        }
+
     }
 }

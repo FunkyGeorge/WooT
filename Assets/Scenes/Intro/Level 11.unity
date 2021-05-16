@@ -1556,6 +1556,8 @@ MonoBehaviour:
   director: {fileID: 882714202}
   dropDelay: 0.3
   returnDelay: 0.5
+  soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
+  soundVolume: 65
 --- !u!320 &882714202
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -1843,6 +1845,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
       propertyPath: SceneName
+      value: Level 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
+      propertyPath: sceneName
       value: Level 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []

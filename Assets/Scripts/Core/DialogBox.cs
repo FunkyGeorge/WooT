@@ -83,6 +83,11 @@ public class DialogBox : MonoBehaviour
         }
     }
 
+    public bool IsEmpty()
+    {
+        return dialogueQueue.Count == 0 && chainDialogue == null;
+    }
+
     public void DisableText()
     {
         dialogText.text = "";
@@ -94,6 +99,7 @@ public class DialogBox : MonoBehaviour
         Player.Instance.hasControl = true;
         gameObject.GetComponent<Image>().enabled = false;
         GameManager.Instance.isDialogUp = false;
+        chainDialogue = null;
     }
 
     // Player Input System

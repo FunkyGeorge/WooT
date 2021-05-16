@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
-using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 public class SceneController : MonoBehaviour
 {
@@ -14,18 +14,23 @@ public class SceneController : MonoBehaviour
 
     [Header("Dialog Sequence")]
     [SerializeField] private Dialogue[] dialoguePart;
+
+    [SerializeField] private TimelineAsset cutsceneClip;
     private PlayableDirector director;
 
     private DialogBox dialogBox;
+    private bool hasPlayedCutscene = false;
+    private bool hasGoneThroughDialogue = false;
     private bool cutsceneIsPlaying = false;
-    private int dialogueCursor = 0;
-    private int step = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         dialogBox = FindObjectOfType<DialogBox>();
         director = GetComponent<PlayableDirector>();
+        UpdateTimeline();
+
+        PrepDialogue();
         director.stopped += OnTimelineFinished;
         StartCoroutine(Cutscene());
     }
@@ -36,64 +41,76 @@ public class SceneController : MonoBehaviour
         
     }
 
+    private void UpdateTimeline()
+    {
+        // This method will apply the current Player animator component to the timeline since it
+        // will likely be different than the one it was created with.
+
+        PlayableAsset originalPlayable = director.playableAsset;
+        // PlayableAsset newPlayable;
+
+        var oldBindings = originalPlayable.outputs.GetEnumerator();
+ 
+        while (oldBindings.MoveNext())
+        {
+            var oldBindings_sourceObject = oldBindings.Current.sourceObject;
+            if (oldBindings_sourceObject)
+            {
+                Object something = director.GetGenericBinding(oldBindings_sourceObject);
+                director.SetGenericBinding(
+                    oldBindings_sourceObject,
+                    Player.Instance.gameObject.GetComponent<Animator>()
+                );
+            } 
+        }
+
+    }
+
+    private void PrepDialogue()
+    {
+        for (int i = dialoguePart.Length - 1; i > 0; i--)
+        {
+            dialoguePart[i - 1].chainDialogue = dialoguePart[i];
+        }
+    }
+
     private IEnumerator Cutscene()
     {
         Player.Instance.hasControl = false;
         yield return new WaitForSeconds(initialDelay);
-        step++;
-        dialogBox.InitializeDialogue(dialoguePart[dialogueCursor++]);
+        ProgressCutscene();
     }
 
     private void ProgressCutscene()
     {
-        switch (step)
+        if (!hasPlayedCutscene)
         {
-            case 1:
-                step++;
-                cutsceneIsPlaying = true;
-                director.Play();
-                break;
-            case 2:
-                step++;
-                cutsceneIsPlaying = false;
-                break;
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-            case 11:
-            case 12:
-            case 13:
-            case 14:
-            case 15:
-            case 16:
-                step++;
-                dialogBox.InitializeDialogue(dialoguePart[dialogueCursor++]);
-                break;
-            case 17: step++; break;
-            case 18:
-                SceneManager.LoadScene(nextScene);
-                break;
-            default: Debug.Log("Missing case"); break;
+            hasPlayedCutscene = true;
+            cutsceneIsPlaying = true;
+            director.Play();
+        }
+        else if (dialogBox.IsEmpty() && !hasGoneThroughDialogue)
+        {
+            hasGoneThroughDialogue = true;
+            dialogBox.InitializeDialogue(dialoguePart[0]);
+        }
+        else if (dialogBox.IsEmpty() && hasGoneThroughDialogue)
+        {
+            GameManager.Instance.FadeLoadLevel(nextScene);
         }
     }
 
     private void OnTimelineFinished(PlayableDirector obj)
     {
         ProgressCutscene();
+        cutsceneIsPlaying = false;
     }
 
     // Player Input System
     private void OnContinue(InputValue value)
     {
-        if (step > 0 && dialogBox.dialogueQueue.Count == 0 && !cutsceneIsPlaying)
+        if (!cutsceneIsPlaying && dialogBox.IsEmpty())
         {
-            // dialog should be finished
-            Debug.Log("Start next action: " + step.ToString());
             ProgressCutscene();
         }
     }

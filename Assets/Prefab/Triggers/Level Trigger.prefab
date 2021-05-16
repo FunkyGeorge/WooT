@@ -71,3 +71,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level 2
+  animator: {fileID: 0}

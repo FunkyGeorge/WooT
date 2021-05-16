@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5479030061643234589}
   - component: {fileID: 3635348213939794994}
   - component: {fileID: 8588976457696362113}
+  - component: {fileID: 2548421723431874056}
   m_Layer: 0
   m_Name: Energy
   m_TagString: Danger
@@ -121,3 +122,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 1
+--- !u!114 &2548421723431874056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600356011507430057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9bdae34df5690e43819780c1cc9d1f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zapAudioClip: {fileID: 8300000, guid: ab54180ac11cbc746a39925c92e808a7, type: 3}
+  zapAudioVolume: 100

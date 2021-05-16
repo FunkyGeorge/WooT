@@ -5,9 +5,14 @@ using UnityEngine.Playables;
 
 public class CollapsingPlatform : MonoBehaviour
 {
+    [Header("Animation Config")]
     [SerializeField] PlayableDirector director;
-    [SerializeField] float dropDelay = 0.75f;
-    [SerializeField] float returnDelay = 3f;
+    [SerializeField] private float dropDelay = 0.75f;
+    [SerializeField] private float returnDelay = 3f;
+
+    [Header("Sound Config")]
+    [SerializeField] private AudioClip soundClip;
+    [Range(1, 100)][SerializeField] private int soundVolume = 65;
     private Rigidbody2D rb;
     private bool isFalling = false;
 
@@ -38,6 +43,7 @@ public class CollapsingPlatform : MonoBehaviour
 
     IEnumerator DropSequence()
     {
+        AudioPlayer.Instance.PlaySFX(soundClip, soundVolume);
         yield return new WaitForSeconds(dropDelay);
         director.Play();
         yield return new WaitForSeconds(returnDelay);

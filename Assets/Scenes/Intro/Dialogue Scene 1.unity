@@ -395,6 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 1799748616}
   nextScene: Cutscene 1
+  fadeTransitionPrefab: {fileID: 0}
 --- !u!1 &1955664580
 GameObject:
   m_ObjectHideFlags: 0

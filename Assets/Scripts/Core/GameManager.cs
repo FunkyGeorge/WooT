@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Text coinsText;
     public Image inventorySprite;
     public Sprite inventoryEmptySprite;
+    [SerializeField] private GameObject transitionsPrefab;
+    [SerializeField] private GameObject fadeTransitionPrefab;
 
     [Header("State Flags")]
     public bool isDialogUp = false;
@@ -68,5 +70,47 @@ public class GameManager : MonoBehaviour
         {
             if (coinsText) coinsText.text = Player.Instance.shardsCollected.ToString();
         }
+    }
+
+
+    // Level Transitions
+    public void SlideLoadLevel(string nextScene)
+    {
+        StartCoroutine(SlideToNextLevel(nextScene));
+    }
+
+    public void FadeLoadLevel(string nextScene)
+    {
+        StartCoroutine(FadeToNextLevel(nextScene));
+    }
+
+    private IEnumerator SlideToNextLevel(string nextScene)
+    {
+        GameObject transitions = Instantiate(transitionsPrefab);
+        GameObject slider = GameObject.Find("Slide");
+        Animator animator = slider.GetComponent<Animator>();
+
+        animator.SetTrigger("start");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(nextScene);
+        animator.SetTrigger("end");
+        yield return new WaitForSeconds(1);
+        Destroy(transitions);
+    }
+
+    private IEnumerator FadeToNextLevel(string nextScene)
+    {
+        GameObject transitions = Instantiate(fadeTransitionPrefab);
+        GameObject slider = GameObject.Find("Fade");
+        Animator animator = slider.GetComponent<Animator>();
+
+        Player.Instance.hasControl = false;
+        animator.SetTrigger("start");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(nextScene);
+        animator.SetTrigger("end");
+        yield return new WaitForSeconds(2);
+        Player.Instance.hasControl = true;
+        Destroy(transitions);
     }
 }

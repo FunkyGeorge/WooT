@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7443905039439950459}
   - component: {fileID: 7443905039439950463}
   - component: {fileID: 7443905039439950460}
-  - component: {fileID: 7443905039439950462}
   - component: {fileID: 6147763765368494329}
   m_Layer: 8
   m_Name: Security
@@ -142,6 +141,7 @@ MonoBehaviour:
   debug: 1
   minGroundNormalY: 0.65
   gravityModifier: 1
+  patrolMode: 1
   speed: 0.6
   direction: 1
   rayCastLength: 1.25
@@ -150,23 +150,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 51
   animator: {fileID: 7443905039439950459}
-  collider: {fileID: 6147763765368494329}
---- !u!70 &7443905039439950462
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7443905039439950456}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.92, y: 1.54}
-  m_Direction: 0
+  enemyCollider: {fileID: 6147763765368494329}
 --- !u!61 &6147763765368494329
 BoxCollider2D:
   m_ObjectHideFlags: 0

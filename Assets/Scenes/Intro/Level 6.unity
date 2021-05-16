@@ -9777,6 +9777,10 @@ PrefabInstance:
       propertyPath: SceneName
       value: Level 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
+      propertyPath: sceneName
+      value: Level 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
 --- !u!1001 &606730246
@@ -10120,11 +10124,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3008833793026121616, guid: a6373f1c33719a34e971686f1dfb8578, type: 3}
   m_PrefabInstance: {fileID: 912715365}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &1267152041 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3008833793026121618, guid: a6373f1c33719a34e971686f1dfb8578, type: 3}
-  m_PrefabInstance: {fileID: 912715365}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1267152043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10138,7 +10137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackMode: 1
-  renderer: {fileID: 1267152041}
+  spriteRenderer: {fileID: 0}
 --- !u!1001 &1309593579
 PrefabInstance:
   m_ObjectHideFlags: 0

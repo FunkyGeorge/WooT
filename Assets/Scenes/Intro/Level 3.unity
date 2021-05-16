@@ -292,6 +292,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 9.354
       objectReference: {fileID: 0}
+    - target: {fileID: 4367306324953526338, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
+      propertyPath: canShoot
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4367306324953526339, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -489,6 +493,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
       propertyPath: SceneName
+      value: Level 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
+      propertyPath: sceneName
       value: Level 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []

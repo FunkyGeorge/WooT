@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa23d842c26f17449685f8a86f2c0fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeTransitionPrefab: {fileID: 3687068845999906608, guid: 7aa8e051028c16a42aaaee7be8075bee, type: 3}
   nextScene: Level 6
   initialDelay: 2.5
   dialoguePart:
@@ -305,6 +306,7 @@ MonoBehaviour:
       of yours that I like.
     - Ok! I think that's a great idea. I'll help you through radio. Just please don't
       get caught!
+  cutsceneClip: {fileID: 11400000, guid: efd3e2db83552f3468ca5c0e11ee7c39, type: 2}
 --- !u!4 &310960332
 Transform:
   m_ObjectHideFlags: 0

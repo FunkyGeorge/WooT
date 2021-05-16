@@ -78,8 +78,12 @@ public class Player : PhysicsObject
 
     void OnLoadCallback(Scene scene, LoadSceneMode sceneMode)
     {
-        transform.position = GameObject.Find(SPAWN_POINT).transform.position;
-        groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
+        GameObject spawn = GameObject.Find(SPAWN_POINT);
+        if (spawn)
+        {
+            transform.position = GameObject.Find(SPAWN_POINT).transform.position;
+            groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

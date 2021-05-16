@@ -18,7 +18,7 @@ public class Enemy : PhysicsObject
 
     [Header("References")]
     [SerializeField] private Animator animator;
-    [SerializeField] private BoxCollider2D collider;
+    [SerializeField] private BoxCollider2D enemyCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -87,8 +87,8 @@ public class Enemy : PhysicsObject
     {
         isSleeping = false;
         animator.SetBool("isSleeping", false);
-        collider.size = new Vector2(0.85f, 1.5f);
-        collider.offset = Vector2.zero;
+        enemyCollider.size = new Vector2(0.85f, 1.5f);
+        enemyCollider.offset = Vector2.zero;
     }
 
     private void GoToSleep()
@@ -96,8 +96,8 @@ public class Enemy : PhysicsObject
         isSleeping = true;
         animator.SetBool("isSleeping", true);
         targetVelocity.x = 0;
-        collider.size = new Vector2(1.5f, 0.3f);
-        collider.offset = new Vector2(0, -0.6f);
+        enemyCollider.size = new Vector2(1.5f, 0.3f);
+        enemyCollider.offset = new Vector2(0, -0.6f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

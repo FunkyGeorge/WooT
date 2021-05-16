@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class LevelTrigger : MonoBehaviour
+public class Energy : MonoBehaviour
 {
-    [SerializeField] private string SceneName;
-
+    [SerializeField] private AudioClip zapAudioClip;
+    [Range(1, 100)] [SerializeField] private int zapAudioVolume = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +20,9 @@ public class LevelTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject == Player.Instance.gameObject)
         {
-            SceneManager.LoadScene(SceneName);
+            AudioPlayer.Instance.PlaySFX(zapAudioClip, zapAudioVolume);
         }
     }
 }

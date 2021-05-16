@@ -24,6 +24,6 @@ public class DialogueScene1 : MonoBehaviour
 
     private void GoToNextScene()
     {
-        SceneManager.LoadScene(nextScene);
+        GameManager.Instance.FadeLoadLevel(nextScene);
     }
 }
