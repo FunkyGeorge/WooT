@@ -13,6 +13,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] private float initialDelay = 0;
 
     [Header("Dialog Sequence")]
+    [SerializeField] private Dialogue[] initialDialoguePart;
     [SerializeField] private Dialogue[] dialoguePart;
 
     [SerializeField] private TimelineAsset cutsceneClip;
@@ -20,6 +21,7 @@ public class SceneController : MonoBehaviour
 
     private DialogBox dialogBox;
     private bool hasPlayedCutscene = false;
+    private bool hasPlayedInitialDialogue = false;
     private bool hasGoneThroughDialogue = false;
     private bool cutsceneIsPlaying = false;
 
@@ -32,6 +34,7 @@ public class SceneController : MonoBehaviour
 
         PrepDialogue();
         director.stopped += OnTimelineFinished;
+        Player.Instance.canShoot = false;
         StartCoroutine(Cutscene());
     }
 
@@ -72,18 +75,27 @@ public class SceneController : MonoBehaviour
         {
             dialoguePart[i - 1].chainDialogue = dialoguePart[i];
         }
+
+        for (int i = initialDialoguePart.Length - 1; i > 0; i--)
+        {
+            initialDialoguePart[i - 1].chainDialogue = initialDialoguePart[i];
+        }
     }
 
     private IEnumerator Cutscene()
     {
-        Player.Instance.hasControl = false;
         yield return new WaitForSeconds(initialDelay);
         ProgressCutscene();
     }
 
     private void ProgressCutscene()
     {
-        if (!hasPlayedCutscene)
+        if (!hasPlayedInitialDialogue)
+        {
+            dialogBox.InitializeDialogue(initialDialoguePart[0]);
+            hasPlayedInitialDialogue = true;
+        }
+        else if (dialogBox.IsEmpty() && !hasPlayedCutscene)
         {
             hasPlayedCutscene = true;
             cutsceneIsPlaying = true;
@@ -97,6 +109,7 @@ public class SceneController : MonoBehaviour
         else if (dialogBox.IsEmpty() && hasGoneThroughDialogue)
         {
             GameManager.Instance.FadeLoadLevel(nextScene);
+            Player.Instance.canShoot = true;
         }
     }
 

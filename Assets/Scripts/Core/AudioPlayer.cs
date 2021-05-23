@@ -22,6 +22,8 @@ public class AudioPlayer : MonoBehaviour
     [Range(1, 100)]
     public int _ambientVolume = 100;
 
+    private AudioClip currentMusicClip;
+
     private static AudioPlayer _instance;
     public static AudioPlayer Instance
     {
@@ -39,7 +41,8 @@ public class AudioPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        GameObject parentObject = GameObject.Find("Audio");
+        DontDestroyOnLoad(parentObject);
     }
 
     // Update is called once per frame
@@ -52,5 +55,17 @@ public class AudioPlayer : MonoBehaviour
     {
         float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (sfxVolume / 100f);
         sfxAudioSource.PlayOneShot(sfxClip, playVolume);
+    }
+
+    public void PlayMusic(AudioClip musicClip, int musicVolume = 100)
+    {
+        if (currentMusicClip != musicClip)
+        {
+            currentMusicClip = musicClip;
+            float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (musicVolume / 100f);
+            musicAudioSource.clip = musicClip;
+            musicAudioSource.volume = playVolume;
+            musicAudioSource.Play();
+        }
     }
 }

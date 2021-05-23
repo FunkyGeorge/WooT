@@ -21,6 +21,7 @@ public class Player : PhysicsObject
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject shootPrefab;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private GameObject deathTransitionPrefab;
 
     [Header("Sounds")]
     [SerializeField] private AudioClip jumpAudioClip;
@@ -167,11 +168,30 @@ public class Player : PhysicsObject
 
     public void Die()
     {
+        StartCoroutine(DeathSequence());
+    }
+
+    public IEnumerator DeathSequence()
+    {
         // Reset all forces
         velocity.y = 0;
         targetVelocity = Vector2.zero;
 
+        spriteRenderer.enabled = false;
+        Player.Instance.hasControl = false;
+        rb2d.simulated = false;
+        GameObject deathTransition = Instantiate(deathTransitionPrefab);
+        GameObject slider = GameObject.Find("Ripple");
+        Animator animator = slider.GetComponent<Animator>();
+        animator.SetTrigger("start");
+        yield return new WaitForSeconds(0.6f);
+        spriteRenderer.enabled = true;
+        Player.Instance.hasControl = true;
         Respawn();
+        rb2d.simulated = true;
+        animator.SetTrigger("end");
+        yield return new WaitForSeconds(0.6f);
+        Destroy(deathTransition);
     }
 
     // Player Input System

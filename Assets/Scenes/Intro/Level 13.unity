@@ -25579,7 +25579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[0]
-      value: That's ... actually a concerning amount. I had not idea. I thought finding
+      value: That's ... actually a concerning amount. I had no idea. I thought finding
         out would excite me
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}

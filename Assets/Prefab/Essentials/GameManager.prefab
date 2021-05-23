@@ -49,3 +49,23 @@ MonoBehaviour:
   transitionsPrefab: {fileID: 4947388891294143473, guid: ac480efe1a6fdb74085fd0d77c694e09, type: 3}
   fadeTransitionPrefab: {fileID: 3687068845999906608, guid: 7aa8e051028c16a42aaaee7be8075bee, type: 3}
   isDialogUp: 0
+  musicClip1: {fileID: 0}
+  musicClip1Volume: 100
+  music1Levels:
+  - Level 1
+  - Level 2
+  - Level 3
+  - Dialogue Scene 1
+  - Cutscene 1
+  - Level 13
+  musicClip2: {fileID: 8300000, guid: 38e14f7b0950a414cbb69881382f9131, type: 3}
+  musicClip2Volume: 10
+  music2Levels:
+  - Level 4
+  - Level 5
+  - Level 7
+  - Level 8
+  - Level 9
+  - Level 10
+  - Level 11
+  - Level 12

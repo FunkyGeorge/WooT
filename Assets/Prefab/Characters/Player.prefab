@@ -152,6 +152,7 @@ MonoBehaviour:
   animator: {fileID: 4367306324953526337}
   shootPrefab: {fileID: 2087509881900418052, guid: f34fbee965b28d04792b26450e85cbb9, type: 3}
   spriteRenderer: {fileID: 4367306324953526336}
+  deathTransitionPrefab: {fileID: 53813300573753185, guid: f887886c09599314ea3947d2c05f8daa, type: 3}
   jumpAudioClip: {fileID: 8300000, guid: 4a0eb0144c63dfd44a57b761086b6f5c, type: 3}
   landAudioClip: {fileID: 8300000, guid: 46f7207341704445a94011708917b09d, type: 3}
   jumpAudioVolume: 8

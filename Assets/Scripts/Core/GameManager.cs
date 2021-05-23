@@ -16,6 +16,14 @@ public class GameManager : MonoBehaviour
     [Header("State Flags")]
     public bool isDialogUp = false;
 
+    [Header("Music Config")]
+    [SerializeField] private AudioClip musicClip1;
+    [Range(1, 100)][SerializeField] private int musicClip1Volume = 100;
+    [SerializeField] private string[] music1Levels;
+    [SerializeField] private AudioClip musicClip2;
+    [Range(1, 100)][SerializeField] private int musicClip2Volume = 100;
+    [SerializeField] private string[] music2Levels;
+
     private const string coinTextName = "UI_CoinText";
     private const string inventorySpriteName = "UI_InventoryImage";
 
@@ -41,6 +49,7 @@ public class GameManager : MonoBehaviour
 
         SceneManager.sceneLoaded += OnLoadCallback;
         UpdateUI();
+        PlayMusic();
     }
 
     // Update is called once per frame
@@ -62,6 +71,7 @@ public class GameManager : MonoBehaviour
     {
         SetUIReferences();
         UpdateUI();
+        PlayMusic();
     }
 
     public void UpdateUI()
@@ -69,6 +79,19 @@ public class GameManager : MonoBehaviour
         if (Player.Instance != null)
         {
             if (coinsText) coinsText.text = Player.Instance.shardsCollected.ToString();
+        }
+    }
+
+    private void PlayMusic()
+    {
+        string currentLevel = SceneManager.GetActiveScene().name;
+        for (int i = 0; i < music2Levels.Length; i++)
+        {
+            if (music2Levels[i] == currentLevel)
+            {
+                AudioPlayer.Instance.PlayMusic(musicClip2, musicClip2Volume);
+                break;
+            }
         }
     }
 
