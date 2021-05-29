@@ -113,76 +113,25 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-  - name: Circle
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1099
-      width: 471
-      height: 471
-    spriteID: 33d3eff8b846e6e4ca62b07313286918
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -228, y: 1065}
-  - name: Ripple
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 552
-      width: 539
-      height: 539
-    spriteID: 012c610e1fea4e24c8bfef8adaf1ce72
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -207, y: 552}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 1024
-  importedTextureHeight: 2048
+  importedTextureHeight: 1024
   documentSize: {x: 960, y: 540}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 1024
-  textureActualHeight: 2048
+  textureActualHeight: 1024
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Ripple
-    spriteName: Ripple
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 012c610e1fea4e24c8bfef8adaf1ce72
-    layerID: 6
-    mosaicPosition: {x: 4, y: 552}
   - name: Spotlight
     spriteName: Spotlight
     isGroup: 0
@@ -190,13 +139,6 @@ ScriptedImporter:
     spriteID: 81bd69f2adcfbe34480aa605e3f186ec
     layerID: 5
     mosaicPosition: {x: 4, y: 4}
-  - name: Circle
-    spriteName: Circle
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 33d3eff8b846e6e4ca62b07313286918
-    layerID: 4
-    mosaicPosition: {x: 4, y: 1099}
   characterData:
     bones: []
     parts: []

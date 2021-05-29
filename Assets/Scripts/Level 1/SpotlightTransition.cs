@@ -21,11 +21,11 @@ public class SpotlightTransition : MonoBehaviour
     private IEnumerator ExecuteTransition()
     {
         GameObject transitions = Instantiate(transitionsPrefab);
-        GameObject slider = GameObject.Find("Spotlight");
-        Animator animator = slider.GetComponent<Animator>();
+        // GameObject slider = GameObject.Find("Spotlight");
+        Animator animator = transitions.GetComponent<Animator>();
 
         animator.SetTrigger("start");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         Destroy(transitions);
     }
 }

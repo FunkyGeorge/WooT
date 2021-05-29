@@ -31533,7 +31533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb9fa1f73eb794cb3585eba04f3ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionsPrefab: {fileID: 3888009631195860794, guid: 45db680f0fb1a85439bf308c25874a1c, type: 3}
+  transitionsPrefab: {fileID: 1728479329689239707, guid: 956d065c5afb9d947a4d8e8fd82f9cdb, type: 3}
 --- !u!4 &1925924070
 Transform:
   m_ObjectHideFlags: 0
