@@ -23,7 +23,7 @@ public class MuralTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == Player.Instance.gameObject)
+        if (!cleared && collision.gameObject == Player.Instance.gameObject)
         {
             cleared = true;
             animator.SetBool("cleared", true);

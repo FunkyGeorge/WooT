@@ -23355,6 +23355,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 699199717411913253, guid: b9f2456a180583045b8913b53061b07b, type: 3}
+      propertyPath: isPlayerCutscene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 699199718153800326, guid: b9f2456a180583045b8913b53061b07b, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 

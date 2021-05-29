@@ -6,12 +6,16 @@ using UnityEngine.Playables;
 public class CutsceneTrigger : MonoBehaviour
 {
     [SerializeField] private PlayableDirector cutscene;
+    [SerializeField] private bool isPlayerCutscene = true;
     private bool used = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        UpdateCutscene();
+        if (isPlayerCutscene)
+        {
+            UpdateCutscene();
+        }
     }
 
     // Update is called once per frame

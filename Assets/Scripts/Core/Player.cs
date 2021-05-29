@@ -25,9 +25,7 @@ public class Player : PhysicsObject
 
     [Header("Sounds")]
     [SerializeField] private AudioClip jumpAudioClip;
-    [SerializeField] private AudioClip landAudioClip;
     [Range(1, 100)] [SerializeField] private int jumpAudioVolume = 100;
-    [Range(1, 100)] [SerializeField] private int landAudioVolume = 100;
 
 
     public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();

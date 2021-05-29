@@ -13231,6 +13231,10 @@ PrefabInstance:
       propertyPath: stateRequirement
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3036057296797640981, guid: 3ce1afd9fc1a9c844925e441129683eb, type: 3}
+      propertyPath: hasStateRequirement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3036057296797640984, guid: 3ce1afd9fc1a9c844925e441129683eb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -32003,6 +32007,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 311960211, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -17.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 311960211, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 1.78
+      objectReference: {fileID: 0}
     - target: {fileID: 4367306324953526338, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
       propertyPath: canShoot
       value: 0
