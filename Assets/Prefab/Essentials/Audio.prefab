@@ -50,6 +50,7 @@ MonoBehaviour:
   _sfxVolume: 100
   _musicVolume: 100
   _ambientVolume: 100
+  musicFadeSpeed: 0.005
 --- !u!1 &6871713112885165608
 GameObject:
   m_ObjectHideFlags: 0

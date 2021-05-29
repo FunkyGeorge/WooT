@@ -11830,8 +11830,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.sentences.Array.data[0]
-      value: Josephine, they are nearly have a monopoly in dream tech as it is. What
-        happens when Twilight Inc finally gets that last 4 percent?
+      value: Josephine, we nearly have a monopoly in dream tech as it is. What happens
+        when Twilight Inc finally gets that last 4 percent?
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.sentences.Array.data[1]

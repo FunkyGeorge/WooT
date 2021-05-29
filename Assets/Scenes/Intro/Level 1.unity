@@ -289,7 +289,7 @@ MonoBehaviour:
   jesseDialogue:
     name: Jesse
     sentences:
-    - Hi, I'm new here and the door said that you need to fix my keycard for me.
+    - Hi, I'm new here. The door said that you could fix my keycard for me?
   adminDialogue:
     name: Admin
     sentences:
@@ -32397,11 +32397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.852743
+      value: -12.563013
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4922342
+      value: -2.4556313
       objectReference: {fileID: 0}
     - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size

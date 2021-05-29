@@ -22,7 +22,9 @@ public class AudioPlayer : MonoBehaviour
     [Range(1, 100)]
     public int _ambientVolume = 100;
 
-    private AudioClip currentMusicClip;
+    private AudioClip queuedMusicClip;
+    private float queuedMusicClipVolume = 0;
+    [SerializeField] private float musicFadeSpeed = 0.1f;
 
     private static AudioPlayer _instance;
     public static AudioPlayer Instance
@@ -48,7 +50,21 @@ public class AudioPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (queuedMusicClip != null)
+        {
+            musicAudioSource.volume = Mathf.Max(musicAudioSource.volume - musicFadeSpeed, 0);
+        }
+
+        if (musicAudioSource.volume == 0)
+        {
+            musicAudioSource.clip = queuedMusicClip;
+            float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (queuedMusicClipVolume / 100f);
+            musicAudioSource.clip = queuedMusicClip;
+            musicAudioSource.volume = playVolume;
+            musicAudioSource.Play();
+            queuedMusicClip = null;
+            queuedMusicClipVolume = 0;
+        }
     }
 
     public void PlaySFX(AudioClip sfxClip, int sfxVolume = 100)
@@ -58,14 +74,18 @@ public class AudioPlayer : MonoBehaviour
     }
 
     public void PlayMusic(AudioClip musicClip, int musicVolume = 100)
-    {
-        if (currentMusicClip != musicClip)
+    {   
+        if (musicAudioSource.clip == null)
         {
-            currentMusicClip = musicClip;
             float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (musicVolume / 100f);
             musicAudioSource.clip = musicClip;
             musicAudioSource.volume = playVolume;
             musicAudioSource.Play();
+        }
+        else if (musicAudioSource.clip != musicClip)
+        {
+            queuedMusicClip = musicClip;
+            queuedMusicClipVolume = musicVolume;
         }
     }
 }

@@ -85,6 +85,15 @@ public class GameManager : MonoBehaviour
     private void PlayMusic()
     {
         string currentLevel = SceneManager.GetActiveScene().name;
+        for (int i = 0; i < music1Levels.Length; i++)
+        {
+            if (music1Levels[i] == currentLevel)
+            {
+                AudioPlayer.Instance.PlayMusic(musicClip1, musicClip1Volume);
+                break;
+            }
+        }
+
         for (int i = 0; i < music2Levels.Length; i++)
         {
             if (music2Levels[i] == currentLevel)

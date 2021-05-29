@@ -437,7 +437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -515,7 +515,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1341360142064103114, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1341360142064103114, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10060,6 +10060,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6871713112868834916, guid: 0857cb5473cc5b649ae60a23185e87d9, type: 3}
+      propertyPath: musicFadeSpeed
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 6871713113097166161, guid: 0857cb5473cc5b649ae60a23185e87d9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10241,7 +10245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2931303742923732838, guid: 38ec5fe3c314a1a4a83ece3b034439c1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2931303742923732838, guid: 38ec5fe3c314a1a4a83ece3b034439c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23106,7 +23110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3627874665570795380, guid: 31f7a6796e7896a4b8756adc555afa99, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3627874665570795380, guid: 31f7a6796e7896a4b8756adc555afa99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23250,12 +23254,12 @@ PrefabInstance:
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[3]
       value: Our clients consider life very boring now ever since almost every job
-        got automated away by machines.
+        got automated away with smart tech.
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[4]
-      value: Our priority is to create the best dream world for them possible so
-        they can experience real purpose again.
+      value: Our priority is to create a fantastic dream world so that our clients
+        can experience a life full of meaning again.
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[5]
@@ -23277,8 +23281,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.sentences.Array.data[2]
-      value: I personally am glad, there are people all over the place with some
-        good ideas.
+      value: I am glad, personally. We should tap into the creative power of as many
+        people as we can.
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.sentences.Array.data[3]
@@ -23287,12 +23291,12 @@ PrefabInstance:
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[0]
       value: Thank you very much. I am very excited to be here. I never would have
-        imagined that I could work here because of you know....
+        imagined that I could work here because you know...
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[1]
-      value: it isn't very common for people to become employed here if they don't
-        already have family or friends on the inside.
+      value: it isn't very common for people land a job here if they don't already
+        have family or friends on the inside.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}

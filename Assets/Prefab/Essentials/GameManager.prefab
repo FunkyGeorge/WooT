@@ -49,7 +49,7 @@ MonoBehaviour:
   transitionsPrefab: {fileID: 4947388891294143473, guid: ac480efe1a6fdb74085fd0d77c694e09, type: 3}
   fadeTransitionPrefab: {fileID: 3687068845999906608, guid: 7aa8e051028c16a42aaaee7be8075bee, type: 3}
   isDialogUp: 0
-  musicClip1: {fileID: 0}
+  musicClip1: {fileID: 8300000, guid: f323e00a6e1c3a7499a4c9547201aa61, type: 3}
   musicClip1Volume: 100
   music1Levels:
   - Level 1

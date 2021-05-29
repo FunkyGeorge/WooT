@@ -235,50 +235,48 @@ MonoBehaviour:
   dialoguePart:
   - name: Jesse
     sentences:
-    - Josephine, I get why people choose to go into the illusion, but why do they
-      decide to spend their whole lives on the inside?
+    - "Josephine, I get why people go into the Twilight, but don\u2019t they spend
+      at least a little time outside?"
     - Life may suck for them, but staying inside the illusion all the time does nothing
       to improve their real lives.
   - name: Josephine
     sentences:
     - Unfortunately, many folk have determined that it is no use living in the real
       world anymore.
-    - Since you used to live in the lower class, you know it all too well.
-    - When you are in the lower class, all the opportunities to pull yourself out
-      are really just an illusion anyway.
+    - You know first hand how dull the world is now.
+    - And when you are in the lower class, all the opportunities to pull yourself
+      out are really just an illusion anyway.
   - name: Jesse
     sentences:
     - True, I remember that. But I wanted to be a dreamweaver so bad.
     - I thought if I worked hard enough then I would be able to actually do something
       with my life that mattered.
-    - And it worked. I was able to work hard enough so that I was able to become
-      a dreamweaver.
-    - So it isn't impossible, then why do people continue to spend their lives in
-      the Twilight?
+    - And I succeeded. Through hard work, I was able to become a dreamweaver.
+    - So it isn't impossible. I believe people should work harder to be in control
+      of their real lives.
   - name: Josephine
     sentences:
-    - Well there are other reasons why someone might want to go into the Twilight....
-    - There could be some people that try to escape pain inside the Twilight
+    - There are other reasons why our clients go into the Twilight as well...
+    - The Twilight turns out to be a convenient way to escape from mental or emotional
+      pain.
   - name: Jesse
     sentences:
     - ...
-    - It sounds like you know that from experience.
+    - Um, it sounds like that really means a lot to you.
   - name: Josephine
     sentences:
     - Well since we have been partners for a while now I think I can tell you now.
-    - I had a daughter that lost her life  2 years ago. She was very young when she
-      fell ill.
-    - I still think about her every day and the pain can sometimes be too much to
-      handle.
-    - So even I, a dreamweaver, will spend some time in the Twilight. So that I may
-      experience some peace.
+    - A year ago, I had a very young daughter lose her life to an unexpected illness.
+    - She was the only family I had, and I still miss her so much.
+    - So even I, a dreamweaver, will enter the Twilight. It really helps me to imagine
+      that she is still around.
   - name: Jesse
     sentences:
     - 'I.... I''m very sorry.                                                                   '
   - name: Josephine
     sentences:
-    - Don't worry about it Jesse. Now I just try to focus on making the Twilight
-      as good as possible.
+    - Don't worry about it. Now I just try to focus on making the Twilight as good
+      as possible.
     - If I can save other people from pain, then it is all worth it for me.
   - name: Jesse
     sentences:
@@ -290,16 +288,17 @@ MonoBehaviour:
     - I would say that 50 percent of the city uses the Twilight
   - name: Jesse
     sentences:
-    - 50 percent? That seems small. I would say that at least 65% of the city uses
-      the Twilight.
-    - (Especially with the amount of people who give up on their own lives)
+    - 50 percent? That seems small. I bet the number is closer to 65 percent.
+    - (Especially since everyone is all too content with giving up control of their
+      lives)
   - name: Josephine
     sentences:
     - Wow, that sounds like a lot. That is a bold guess. It would be interesting
       if we could ever know.
   - name: Jesse
     sentences:
-    - What if we could? The executive offices should have the answer to the question.
+    - "What if we could? The executive offices are probably closely monitoring its
+      users, right?\r"
   - name: Josephine
     sentences:
     - Are you considering sneaking into executive? There goes that rebel attitude

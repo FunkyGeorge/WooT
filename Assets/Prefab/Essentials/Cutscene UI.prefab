@@ -99,7 +99,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 52
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -243,8 +243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100.5, y: -96}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -130.06824, y: -125.56818}
+  m_SizeDelta: {x: 159.1364, y: 159.1364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7160763843340633223
 CanvasRenderer:
@@ -418,8 +418,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.70001, y: -95.1}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 131.26813, y: -124.66811}
+  m_SizeDelta: {x: 159.1363, y: 159.1363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6994171096497871078
 CanvasRenderer:
@@ -558,6 +558,7 @@ MonoBehaviour:
   continueIcon: {fileID: 2521749606174062132}
   anonymousImage: {fileID: 682853019664960667, guid: 8bf3eb113483f1a4cb788fd9a632c66e, type: 3}
   jessePortrait: {fileID: 16581873304021582, guid: 03ddde3fe5f3c084ca2f26e0e0fa33af, type: 3}
+  josephinePortrait: {fileID: -8992301027107397486, guid: 5061e1381c8b76d4ea47d61288541f45, type: 3}
   adminPortrait: {fileID: -5080155349958746000, guid: 0c0f60aff22d238498f8bc912a0cac35, type: 3}
   typeInterval: 2
   typeDelay: 0.1

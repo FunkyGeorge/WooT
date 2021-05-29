@@ -258,7 +258,7 @@ MonoBehaviour:
     m_ActionId: 51df9810-604a-4cd9-a1a3-a93e3199c354
     m_ActionName: Cutscene/Continue[/Mouse/leftButton,/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
