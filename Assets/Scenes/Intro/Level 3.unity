@@ -23295,7 +23295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[1]
-      value: it isn't very common for people land a job here if they don't already
+      value: It isn't very common for people to land a job here if they don't already
         have family or friends on the inside.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
