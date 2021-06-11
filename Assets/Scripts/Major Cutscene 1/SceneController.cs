@@ -85,7 +85,17 @@ public class SceneController : MonoBehaviour
     private IEnumerator Cutscene()
     {
         yield return new WaitForSeconds(initialDelay);
-        ProgressCutscene();
+        // ProgressCutscene();
+
+        // Poll to for cutscene progress
+        for (;;)
+        {
+            if (!cutsceneIsPlaying && dialogBox.IsEmpty())
+            {
+                ProgressCutscene();
+            }
+            yield return new WaitForSeconds(1f);
+        }
     }
 
     private void ProgressCutscene()
@@ -117,14 +127,5 @@ public class SceneController : MonoBehaviour
     {
         ProgressCutscene();
         cutsceneIsPlaying = false;
-    }
-
-    // Player Input System
-    private void OnContinue(InputValue value)
-    {
-        if (!cutsceneIsPlaying && dialogBox.IsEmpty())
-        {
-            ProgressCutscene();
-        }
     }
 }
