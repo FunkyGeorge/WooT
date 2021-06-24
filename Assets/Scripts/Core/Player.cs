@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class Player : PhysicsObject
+public class Player : MonoBehaviour
 {
     private const string SPAWN_POINT = "Spawn Point";
 
@@ -22,16 +22,26 @@ public class Player : PhysicsObject
     [SerializeField] private GameObject shootPrefab;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject deathTransitionPrefab;
+    private Rigidbody2D rb2d;
+    private Rigidbody2D groundRigidbody;
 
     [Header("Sounds")]
     [SerializeField] private AudioClip jumpAudioClip;
     [Range(1, 100)] [SerializeField] private int jumpAudioVolume = 100;
 
+    [SerializeField] private ContactFilter2D contactFilter;
+
 
     public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
+    private Vector2 velocity = Vector2.zero;
+    private Vector2 targetVelocity = Vector2.zero;
     private Vector2 intentDirection;
+    public bool grounded = true;
+    [SerializeField] private float groundCheckDistance = 0.1f;
     private bool isJumping = false;
     [SerializeField] private float jumpHoldTime = 0.3f;
+    [SerializeField] private float initialGravity = 9.8f;
+    [SerializeField] private float gravityIncreaseRate = 1;
     private float jumpTimeCounter = 0;
     
 
@@ -47,6 +57,11 @@ public class Player : PhysicsObject
     {
         if (_instance == null) _instance = this;
         else Destroy(gameObject);
+    }
+
+    void OnEnable()
+    {
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
@@ -67,12 +82,17 @@ public class Player : PhysicsObject
         {
             intentDirection = Vector2.zero;
         }
-        Move();
-
-        CalculateJumpHeight();
+        
 
         animator.SetBool("isGrounded", grounded);
         animator.SetFloat("verticalVelocity", velocity.y);
+    }
+
+    void FixedUpdate()
+    {
+        velocity += Physics2D.gravity * Time.deltaTime;
+        Move();
+        CalculateJumpHeight();
     }
 
     void OnLoadCallback(Scene scene, LoadSceneMode sceneMode)
@@ -128,19 +148,80 @@ public class Player : PhysicsObject
         {
             spriteRenderer.flipX = false;
         }
+
+        RaycastHit2D[] hits = new RaycastHit2D[16];
+        int hitCount = rb2d.Cast(targetVelocity, contactFilter, hits, groundCheckDistance);
+        bool againstWall = false;
+        for (int i = 0; i < hitCount; i++)
+        {
+            if (hits[i].collider.gameObject.layer != 8) // Layer 8 is enemy
+            {
+                againstWall = true;
+            }
+        }
+
+        velocity.x = againstWall ? 0 : targetVelocity.x;
+    }
+
+    private void InitialJump()
+    {
+        isJumping = true;
+        jumpTimeCounter = jumpHoldTime;
+        AudioPlayer.Instance.PlaySFX(jumpAudioClip, jumpAudioVolume);
+        grounded = false;
+        animator.SetBool("isGrounded", false);
     }
 
     private void CalculateJumpHeight()
     {
+        bool groundCheck = false;
+        RaycastHit2D[] hits = new RaycastHit2D[16];
+        
+
+        hits = new RaycastHit2D[16];
+        int hitCount;
+        if (velocity.y > 0)
+        {
+            hitCount = rb2d.Cast(Vector2.up, contactFilter, hits, groundCheckDistance);
+            for (int i = 0; i < hitCount; i++)
+            {
+                isJumping = false;
+                velocity.y = 0;
+            }
+        }
+        else if (velocity.y <= 0 && !isJumping)
+        {
+            hitCount = rb2d.Cast(Vector2.down, contactFilter, hits, groundCheckDistance);
+            for (int i = 0; i < hitCount; i++)
+            {
+                groundCheck = true;
+            }
+            grounded = groundCheck;
+        }
+        
+
+
         if (isJumping && jumpTimeCounter > 0)
         {
-            velocity.y = jumpPower;
+            velocity.y = jumpPower;            
             jumpTimeCounter -= Time.deltaTime;
         }
         else
         {
             isJumping = false;
+
+            if (grounded)
+            {
+                // If grounded, don't push down so hard. This should be enough to keep feet on ground
+                velocity.y = -0.5f;
+            }
+            else
+            {
+                velocity += gravityIncreaseRate * Physics2D.gravity * Time.deltaTime;
+            }
         }
+
+        rb2d.velocity = velocity;
     }
 
     public void AddInventoryItem(string inventoryName, Sprite image)
@@ -160,8 +241,46 @@ public class Player : PhysicsObject
 
     public void Bounce(float bouncePower)
     {
+        grounded = false;
         animator.SetBool("isGrounded", false);
         velocity.y = bouncePower;
+    }
+
+    // Currently used for moving platforms to override position
+    public void VelocityTweak(Vector3 additionalVelocity)
+    {
+        float transX = 0;
+        float transY = 0;
+        if (velocity.x == 0)
+        {
+            transX = additionalVelocity.x;
+        }
+
+        if (grounded)
+        {
+            Vector2 move = new Vector2(transX, transY);
+            RaycastHit2D[] hits = new RaycastHit2D[16];
+            int hitCount = rb2d.Cast(move, hits, groundCheckDistance);
+            bool againstWall = false;
+            for (int i = 0; i < hitCount; i++)
+            {
+                if (hits[i].collider.gameObject.tag == "Surface")
+                {
+                    againstWall = true;
+                }
+            }
+            
+            if (!againstWall)
+            {
+                transform.Translate(move);
+            }
+        }
+        // else
+        // {
+        //     transX = additionalVelocity.x + velocity.x;
+        //     transY = additionalVelocity.z + velocity.y;
+        //     rb2d.velocity = new Vector2(transX, transY);
+        // }
     }
 
     public void Die()
@@ -215,10 +334,7 @@ public class Player : PhysicsObject
         {
             if (grounded && hasControl)
             {
-                isJumping = true;
-                jumpTimeCounter = jumpHoldTime;
-                AudioPlayer.Instance.PlaySFX(jumpAudioClip, jumpAudioVolume);
-                animator.SetBool("isGrounded", false);
+                InitialJump();
             }
         }
 

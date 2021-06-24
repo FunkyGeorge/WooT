@@ -23223,6 +23223,10 @@ PrefabInstance:
       value: Energy
       objectReference: {fileID: 0}
     - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Size.y
       value: 1.33
       objectReference: {fileID: 0}
@@ -23999,6 +24003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbee65b4e8f05b4b8fb5b67d678be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   actionType: 2
   triggerState: 0
   destinationVector: {x: 14, y: 0}
@@ -24527,7 +24533,7 @@ GameObject:
   - component: {fileID: 2073652219}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Surface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

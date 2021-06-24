@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class InteractiveTilemap : MonoBehaviour
+public class InteractiveTilemap : CarryingPlatform
 {
     public enum ActionType
     {
@@ -13,7 +13,6 @@ public class InteractiveTilemap : MonoBehaviour
     }
     
     [SerializeField] ActionType actionType;
-    private Rigidbody2D rb;
     private TilemapRenderer tilemapRenderer;
 
     [Header("Show Config")]
@@ -28,7 +27,6 @@ public class InteractiveTilemap : MonoBehaviour
 
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>();
         tilemapRenderer = gameObject.GetComponent<TilemapRenderer>();
 
         if (actionType == ActionType.Show)

@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4685016408712287596}
   - component: {fileID: 4685016408712287598}
   - component: {fileID: 4685016408712287599}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceAudioClip: {fileID: 8300000, guid: 5d364fc3f6ee8b84f8b90326b92ce6b2, type: 3}
   bounceAudioClipVolume: 30
-  bouncePower: 15
+  bouncePower: 20
 --- !u!61 &4685016408712287599
 BoxCollider2D:
   m_ObjectHideFlags: 0

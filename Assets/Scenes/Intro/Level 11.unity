@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.88
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
@@ -276,6 +276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbee65b4e8f05b4b8fb5b67d678be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   actionType: 2
   triggerState: 0
   destinationVector: {x: 5, y: 0}
@@ -348,6 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbee65b4e8f05b4b8fb5b67d678be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   actionType: 2
   triggerState: 0
   destinationVector: {x: 0, y: 3}
@@ -460,7 +464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Size.x
-      value: 4.98
+      value: 4.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
@@ -697,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574110869608908755, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.53768
+      value: -2.526
       objectReference: {fileID: 0}
     - target: {fileID: 4574110869608908755, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -737,7 +745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5479030061643234589, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Size.x
-      value: 1.9151835
+      value: 1.5610027
       objectReference: {fileID: 0}
     - target: {fileID: 7600356011507430057, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Name
@@ -745,7 +753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Size.x
-      value: 1.88
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.88
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
@@ -1199,6 +1211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbee65b4e8f05b4b8fb5b67d678be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   actionType: 2
   triggerState: 0
   destinationVector: {x: 13, y: 0}
@@ -1315,7 +1329,7 @@ GameObject:
   - component: {fileID: 882714203}
   m_Layer: 0
   m_Name: Collapsing Platform
-  m_TagString: Untagged
+  m_TagString: Surface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1614,6 +1628,10 @@ PrefabInstance:
     - target: {fileID: 4367306324953526336, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367306324953526338, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
+      propertyPath: contactFilter.layerMask.m_Bits
+      value: 305
       objectReference: {fileID: 0}
     - target: {fileID: 4367306324953526339, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
       propertyPath: m_RootOrder
@@ -2523,6 +2541,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1531079485}
     m_Modifications:
+    - target: {fileID: 4685016407162216902, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4685016407174093464, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2570,6 +2592,10 @@ PrefabInstance:
     - target: {fileID: 4685016407174093465, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
       propertyPath: m_Name
       value: Spring (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287592, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
@@ -2627,6 +2653,14 @@ PrefabInstance:
     - target: {fileID: 4685016407174093465, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
       propertyPath: m_Name
       value: Spring (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287596, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287596, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
@@ -25643,7 +25677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
       propertyPath: m_Size.x
-      value: 4.98
+      value: 4.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588976457696362113, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
@@ -25663,7 +25701,7 @@ GameObject:
   - component: {fileID: 1966198686}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Surface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
