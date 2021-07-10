@@ -12828,6 +12828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbee65b4e8f05b4b8fb5b67d678be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   actionType: 1
   triggerState: 1
   destinationVector: {x: 0, y: 0}
@@ -13406,6 +13408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbee65b4e8f05b4b8fb5b67d678be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   actionType: 2
   triggerState: 0
   destinationVector: {x: 10, y: 0}
@@ -13603,6 +13607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6854eeb96605e8e49828876efe7d5fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carryDistanceCheck: 0.1
+  momentumTime: 0.5
   destinationVector: {x: 0, y: 6}
   timeOffset: 0
   moveSpeed: 1
