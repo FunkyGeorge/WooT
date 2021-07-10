@@ -40,7 +40,6 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundCheckDistance = 0.1f;
     private bool isJumping = false;
     [SerializeField] private float jumpHoldTime = 0.3f;
-    [SerializeField] private float initialGravity = 9.8f;
     [SerializeField] private float gravityIncreaseRate = 1;
     private float jumpTimeCounter = 0;
     
@@ -85,7 +84,6 @@ public class Player : MonoBehaviour
         
 
         animator.SetBool("isGrounded", grounded);
-        animator.SetFloat("verticalVelocity", velocity.y);
     }
 
     void FixedUpdate()
@@ -221,6 +219,7 @@ public class Player : MonoBehaviour
             }
         }
 
+        animator.SetFloat("verticalVelocity", velocity.y);
         rb2d.velocity = velocity;
     }
 
