@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7611606072768239058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.361184, y: -1.0969934, z: -7.84838}
+  m_LocalPosition: {x: -7.1516895, y: -1.8743429, z: -7.84838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1341360142064103114}
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_XDamping: 1
-  m_YDamping: 1
+  m_YDamping: 0.7
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5

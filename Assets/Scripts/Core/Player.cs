@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class Player : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] public bool canShoot = false;
     [SerializeField] private float jumpPower = 7f;
     [SerializeField] private float shotPower = 1f;
-    [SerializeField] private float speed = 8f;
+    
 
     [Header("References")]
     [SerializeField] private Animator animator;
@@ -25,14 +26,15 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2d;
     private Rigidbody2D groundRigidbody;
 
+
     [Header("Sounds")]
     [SerializeField] private AudioClip jumpAudioClip;
     [Range(1, 100)] [SerializeField] private int jumpAudioVolume = 100;
 
+
+    [Header("Movement")]
     [SerializeField] private ContactFilter2D contactFilter;
-
-
-    public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
+    [SerializeField] private float speed = 8f;
     private Vector2 velocity = Vector2.zero;
     private Vector2 targetVelocity = Vector2.zero;
     private Vector2 intentDirection;
@@ -42,8 +44,16 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpHoldTime = 0.3f;
     [SerializeField] private float gravityIncreaseRate = 1;
     private float jumpTimeCounter = 0;
-    
 
+    [Header("Camera")]
+    [SerializeField] private CinemachineVirtualCamera virtualCamera;
+    [SerializeField] private float cameraYTweakDelta = 0.2f;
+    [SerializeField] private float cameraTweakDelay = 0.5f;
+    private float cameraTweakHoldTime = 0;
+    private float defaultCameraY = 0;
+
+    public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
+    
     private static Player _instance;
     public static Player Instance
     {
@@ -68,6 +78,8 @@ public class Player : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         GameManager.Instance.UpdateUI();
+        virtualCamera = GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>();
+        defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
 
         Respawn();
         
@@ -101,6 +113,9 @@ public class Player : MonoBehaviour
             transform.position = GameObject.Find(SPAWN_POINT).transform.position;
             groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
         }
+
+        virtualCamera = GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>();
+        defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -159,6 +174,38 @@ public class Player : MonoBehaviour
         }
 
         velocity.x = againstWall ? 0 : targetVelocity.x;
+
+        // Check if camera has to move
+        if (intentDirection.y == 1)
+        {
+            if (cameraTweakHoldTime >= cameraTweakDelay)
+            {
+                virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultCameraY + cameraYTweakDelta;
+            }
+            else
+            {
+                cameraTweakHoldTime += Time.deltaTime;
+            }
+        }
+        else if (intentDirection.y == -1)
+        {
+            if (cameraTweakHoldTime >= cameraTweakDelay)
+            {
+                virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultCameraY - cameraYTweakDelta;
+            }
+            else
+            {
+                cameraTweakHoldTime += Time.deltaTime;
+            }
+        }
+        else
+        {
+            if (cameraTweakHoldTime >= cameraTweakDelay)
+            {
+                virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultCameraY;
+            }
+            cameraTweakHoldTime = 0;
+        }
     }
 
     private void InitialJump()
