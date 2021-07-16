@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: 396e8896fc0341b4aa4a7a4a495a5d6f
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4623794648063838567
+    second: Jesse_sprites_0
+  - first:
+      213: 7244438662915661732
+    second: Jesse_sprites_1
+  - first:
+      213: -9170774110602246569
+    second: Jesse_sprites_2
+  - first:
+      213: -4385169232198032659
+    second: Jesse_sprites_3
+  - first:
+      213: 4117591097784289938
+    second: Jesse_sprites_4
+  - first:
+      213: -1827221509911364919
+    second: Jesse_sprites_5
+  - first:
+      213: -7193470493617286234
+    second: Jesse_sprites_6
+  - first:
+      213: -3092134456589592595
+    second: Jesse_sprites_7
+  - first:
+      213: 7659616158637590750
+    second: Jesse_sprites_8
+  - first:
+      213: 2449833562795843915
+    second: Jesse_sprites_9
+  - first:
+      213: -3173553699640467275
+    second: Jesse_sprites_10
+  - first:
+      213: -7029142905662768936
+    second: Jesse_sprites_11
+  - first:
+      213: -8136312836909325393
+    second: Jesse_sprites_12
+  - first:
+      213: 8014845202149275014
+    second: Jesse_sprites_13
+  - first:
+      213: 5416282153638611051
+    second: Jesse_sprites_14
+  - first:
+      213: 6762981431740759407
+    second: Jesse_sprites_15
+  - first:
+      213: -2786222633053862350
+    second: Jesse_sprites_16
+  - first:
+      213: 5755457477340542738
+    second: Jesse_sprites_17
+  - first:
+      213: 8647023732287647645
+    second: Jesse_sprites_18
+  - first:
+      213: -4632428912276102736
+    second: Jesse_sprites_19
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -475,6 +535,50 @@ ScriptedImporter:
       width: 24
       height: 24
     spriteID: 217bfb8f41e7fdf40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 56
+      width: 24
+      height: 24
+    spriteID: d9fa0674546600870800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: Jesse_sprites_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 24
+      height: 24
+    spriteID: 0b1a88ca27e46bfb0800000000000000
     internalID: 0
     spriteBone: []
     spriteOutline: []

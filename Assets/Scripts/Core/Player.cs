@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpHoldTime = 0.3f;
     [SerializeField] private float gravityIncreaseRate = 1;
     private float jumpTimeCounter = 0;
+    [SerializeField] private float fastFallInitialSpeed = 2.5f;
+    [SerializeField] private float fastFallDownControlThreshold = 0.5f;
 
     [Header("Camera")]
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
@@ -178,6 +180,7 @@ public class Player : MonoBehaviour
         // Check if camera has to move
         if (intentDirection.y == 1)
         {
+            animator.SetBool("isLookingUp", true);
             if (cameraTweakHoldTime >= cameraTweakDelay)
             {
                 virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultCameraY + cameraYTweakDelta;
@@ -189,6 +192,7 @@ public class Player : MonoBehaviour
         }
         else if (intentDirection.y == -1)
         {
+            animator.SetBool("isCrouching", true);
             if (cameraTweakHoldTime >= cameraTweakDelay)
             {
                 virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultCameraY - cameraYTweakDelta;
@@ -204,6 +208,8 @@ public class Player : MonoBehaviour
             {
                 virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultCameraY;
             }
+            animator.SetBool("isLookingUp", false);
+            animator.SetBool("isCrouching", false);
             cameraTweakHoldTime = 0;
         }
     }
@@ -215,6 +221,7 @@ public class Player : MonoBehaviour
         AudioPlayer.Instance.PlaySFX(jumpAudioClip, jumpAudioVolume);
         grounded = false;
         animator.SetBool("isGrounded", false);
+        animator.SetBool("isLookingUp", false);
     }
 
     private void CalculateJumpHeight()
@@ -262,7 +269,14 @@ public class Player : MonoBehaviour
             }
             else
             {
-                velocity += gravityIncreaseRate * Physics2D.gravity * Time.deltaTime;
+                if (intentDirection.y < -fastFallDownControlThreshold)
+                {
+                    velocity += new Vector2(0, -fastFallInitialSpeed);
+                }
+                else
+                {
+                    velocity += gravityIncreaseRate * Physics2D.gravity * Time.deltaTime;
+                }
             }
         }
 
