@@ -144,7 +144,6 @@ MonoBehaviour:
   canShoot: 1
   jumpPower: 7
   shotPower: 1
-  speed: 10
   animator: {fileID: 4367306324953526337}
   shootPrefab: {fileID: 2087509881900418052, guid: f34fbee965b28d04792b26450e85cbb9, type: 3}
   spriteRenderer: {fileID: 4367306324953526336}
@@ -165,11 +164,20 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  speed: 10
   grounded: 1
   groundCheckDistance: 0.1
   jumpHoldTime: 0.3
-  initialGravity: 9.8
   gravityIncreaseRate: 3.5
+  fastFallInitialSpeed: 2.5
+  fastFallDownControlThreshold: 0.5
+  lastJumpTime: 0
+  lastBounceTime: 0
+  extraBounceTimeThreshold: 0.06
+  extraBounceBonus: 4
+  virtualCamera: {fileID: 0}
+  cameraYTweakDelta: 0.2
+  cameraTweakDelay: 0.5
 --- !u!114 &352794116
 MonoBehaviour:
   m_ObjectHideFlags: 0

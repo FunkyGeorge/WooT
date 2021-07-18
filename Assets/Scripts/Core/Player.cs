@@ -40,12 +40,18 @@ public class Player : MonoBehaviour
     private Vector2 intentDirection;
     public bool grounded = true;
     [SerializeField] private float groundCheckDistance = 0.1f;
-    private bool isJumping = false;
+
+    [Header("Jumping")]
     [SerializeField] private float jumpHoldTime = 0.3f;
+    private bool isJumping = false;
     [SerializeField] private float gravityIncreaseRate = 1;
     private float jumpTimeCounter = 0;
     [SerializeField] private float fastFallInitialSpeed = 2.5f;
     [SerializeField] private float fastFallDownControlThreshold = 0.5f;
+    [SerializeField] private float lastJumpTime = 0;
+    [SerializeField] private float lastBounceTime = 0;
+    [SerializeField] private float extraBounceTimeThreshold = 0.5f;
+    [SerializeField] private float extraBounceBonus = 10f;
 
     [Header("Camera")]
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
@@ -304,6 +310,13 @@ public class Player : MonoBehaviour
         grounded = false;
         animator.SetBool("isGrounded", false);
         velocity.y = bouncePower;
+
+        if (Time.time - lastJumpTime <= extraBounceTimeThreshold)
+        {
+            velocity.y += extraBounceBonus;
+        }
+
+        lastBounceTime = Time.time;
     }
 
     // Currently used for moving platforms to override position
@@ -395,6 +408,12 @@ public class Player : MonoBehaviour
             if (grounded && hasControl)
             {
                 InitialJump();
+            }
+            
+            lastJumpTime = Time.time;
+            if (Time.time - lastBounceTime <= extraBounceTimeThreshold)
+            {
+                velocity.y += extraBounceBonus;
             }
         }
 
