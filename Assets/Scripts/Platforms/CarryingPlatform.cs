@@ -33,7 +33,8 @@ public class CarryingPlatform : MonoBehaviour
             }
         }
 
-        if (!playerDetected && isCarryingPlayer)
+        Vector3 velocity = _transform.position - lastPosition;
+        if (!playerDetected && isCarryingPlayer && velocity.y >= 0)
         {
             isCarryingPlayer = false;
             // StartCoroutine(Detach());
@@ -43,7 +44,6 @@ public class CarryingPlatform : MonoBehaviour
         if (isCarryingPlayer)
         {
             // Only going to carry the player right now
-            Vector3 velocity = (_transform.position - lastPosition);
             Player.Instance.VelocityTweak(velocity);
         }
 
@@ -57,7 +57,6 @@ public class CarryingPlatform : MonoBehaviour
     private IEnumerator Detach()
     {
         yield return new WaitForSeconds(momentumTime);
-        Debug.Log("Detached");
         isCarryingPlayer = false;
     }
 }

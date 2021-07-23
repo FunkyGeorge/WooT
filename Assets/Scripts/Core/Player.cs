@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     private Vector2 targetVelocity = Vector2.zero;
     private Vector2 intentDirection;
     public bool grounded = true;
+    private bool hardGrounded = false; // Used if the player should stick to it's current surface
     [SerializeField] private float groundCheckDistance = 0.1f;
 
     [Header("Jumping")]
@@ -48,8 +49,8 @@ public class Player : MonoBehaviour
     private float jumpTimeCounter = 0;
     [SerializeField] private float fastFallInitialSpeed = 2.5f;
     [SerializeField] private float fastFallDownControlThreshold = 0.5f;
-    [SerializeField] private float lastJumpTime = 0;
-    [SerializeField] private float lastBounceTime = 0;
+    private float lastJumpTime = 0;
+    private float lastBounceTime = 0;
     [SerializeField] private float extraBounceTimeThreshold = 0.5f;
     [SerializeField] private float extraBounceBonus = 10f;
 
@@ -271,7 +272,8 @@ public class Player : MonoBehaviour
             if (grounded)
             {
                 // If grounded, don't push down so hard. This should be enough to keep feet on ground
-                velocity.y = -0.5f;
+                velocity.y = hardGrounded ? -4f : -0.5f;
+                hardGrounded = false;
             }
             else
             {
@@ -324,6 +326,8 @@ public class Player : MonoBehaviour
     {
         float transX = 0;
         float transY = 0;
+        
+
         if (velocity.x == 0)
         {
             transX = additionalVelocity.x;
@@ -342,18 +346,18 @@ public class Player : MonoBehaviour
                     againstWall = true;
                 }
             }
+
+            if (additionalVelocity.y < 0)
+            {
+                // Smash player to the ground
+                hardGrounded = true;
+            }
             
             if (!againstWall)
             {
                 transform.Translate(move);
             }
         }
-        // else
-        // {
-        //     transX = additionalVelocity.x + velocity.x;
-        //     transY = additionalVelocity.z + velocity.y;
-        //     rb2d.velocity = new Vector2(transX, transY);
-        // }
     }
 
     public void Die()
