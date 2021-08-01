@@ -169,10 +169,8 @@ MonoBehaviour:
   groundCheckDistance: 0.1
   jumpHoldTime: 0.3
   gravityIncreaseRate: 3.5
-  fastFallInitialSpeed: 2.5
-  fastFallDownControlThreshold: 0.5
-  lastJumpTime: 0
-  lastBounceTime: 0
+  fastFallInitialSpeed: 2.25
+  fastFallDownControlThreshold: 0.3
   extraBounceTimeThreshold: 0.06
   extraBounceBonus: 4
   virtualCamera: {fileID: 0}

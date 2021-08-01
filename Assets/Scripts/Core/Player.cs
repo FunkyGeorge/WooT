@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed = 8f;
     private Vector2 velocity = Vector2.zero;
     private Vector2 targetVelocity = Vector2.zero;
+    [SerializeField] private float minMoveDeadzone = 0.2f;
     private Vector2 momentum = Vector2.zero;
     private Vector2 intentDirection;
     public bool grounded = true;
@@ -160,7 +161,7 @@ public class Player : MonoBehaviour
     private void Move()
     {
         targetVelocity.y = Mathf.Min(targetVelocity.y, 0);
-        targetVelocity.x = intentDirection.x * speed;
+        targetVelocity.x = Mathf.Abs(intentDirection.x) > minMoveDeadzone ? intentDirection.x * speed : 0;
         animator.SetFloat("speed", Mathf.Abs(targetVelocity.x));
 
         if (intentDirection.x < -0.01)
@@ -186,7 +187,7 @@ public class Player : MonoBehaviour
         velocity.x = againstWall ? 0 : targetVelocity.x;
 
         // Check if camera has to move
-        if (intentDirection.y == 1)
+        if (intentDirection.y > 0.95f)
         {
             animator.SetBool("isLookingUp", true);
             if (cameraTweakHoldTime >= cameraTweakDelay)
@@ -198,7 +199,7 @@ public class Player : MonoBehaviour
                 cameraTweakHoldTime += Time.deltaTime;
             }
         }
-        else if (intentDirection.y == -1)
+        else if (intentDirection.y < -0.95f)
         {
             animator.SetBool("isCrouching", true);
             if (cameraTweakHoldTime >= cameraTweakDelay)
