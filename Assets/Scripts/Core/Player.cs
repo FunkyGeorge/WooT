@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed = 8f;
     private Vector2 velocity = Vector2.zero;
     private Vector2 targetVelocity = Vector2.zero;
+    private Vector2 momentum = Vector2.zero;
     private Vector2 intentDirection;
     public bool grounded = true;
     private bool hardGrounded = false; // Used if the player should stick to it's current surface
@@ -254,6 +255,10 @@ public class Player : MonoBehaviour
             for (int i = 0; i < hitCount; i++)
             {
                 groundCheck = true;
+                if (hits[i].collider.gameObject.name == "Ground")
+                {
+                    momentum = Vector2.zero;
+                }
             }
             grounded = groundCheck;
         }
@@ -264,6 +269,10 @@ public class Player : MonoBehaviour
         {
             velocity.y = jumpPower;            
             jumpTimeCounter -= Time.deltaTime;
+            if (momentum != Vector2.zero)
+            {
+                velocity += momentum;
+            }
         }
         else
         {
@@ -277,6 +286,11 @@ public class Player : MonoBehaviour
             }
             else
             {
+                if (momentum != Vector2.zero)
+                {
+                    velocity += momentum;
+                }
+                
                 if (intentDirection.y < -fastFallDownControlThreshold)
                 {
                     velocity += new Vector2(0, -fastFallInitialSpeed);
@@ -332,6 +346,8 @@ public class Player : MonoBehaviour
         {
             transX = additionalVelocity.x;
         }
+
+        momentum = new Vector2(additionalVelocity.x/Time.deltaTime, additionalVelocity.z/Time.deltaTime);
 
         if (grounded)
         {

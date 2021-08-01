@@ -9,6 +9,7 @@ public class CarryingPlatform : MonoBehaviour
     private Transform _transform;
     [SerializeField] private float carryDistanceCheck = 0.1f;
     [SerializeField] private float momentumTime = 0.5f;
+    private bool isDetatching = false;
     private bool isCarryingPlayer = false;
 
     void OnEnable()
@@ -37,7 +38,6 @@ public class CarryingPlatform : MonoBehaviour
         if (!playerDetected && isCarryingPlayer && velocity.y >= 0)
         {
             isCarryingPlayer = false;
-            // StartCoroutine(Detach());
         }
 
 
@@ -50,13 +50,5 @@ public class CarryingPlatform : MonoBehaviour
         
 
         lastPosition = _transform.position;
-
-        
-    }
-
-    private IEnumerator Detach()
-    {
-        yield return new WaitForSeconds(momentumTime);
-        isCarryingPlayer = false;
     }
 }
