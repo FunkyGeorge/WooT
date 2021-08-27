@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] public bool canShoot = false;
     [SerializeField] private float jumpPower = 7f;
     [SerializeField] private float shotPower = 1f;
+    private bool isDying = false;
     
 
     [Header("References")]
@@ -41,6 +42,8 @@ public class Player : MonoBehaviour
     private Vector2 momentum = Vector2.zero;
     private Vector2 intentDirection;
     public bool grounded = true;
+    private float lastGrounded = 0;
+    [SerializeField] float momentumClingTime = 0.75f;
     private bool hardGrounded = false; // Used if the player should stick to it's current surface
     [SerializeField] private float groundCheckDistance = 0.1f;
 
@@ -112,6 +115,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         velocity += Physics2D.gravity * Time.deltaTime;
+        CheckSurroundings();
         Move();
         CalculateJumpHeight();
     }
@@ -156,6 +160,73 @@ public class Player : MonoBehaviour
         // Place at set spawn
         transform.position = GameObject.Find(SPAWN_POINT).transform.position;
         groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
+    }
+
+    private void CheckSurroundings()
+    {
+        // TODO: move againstWall calculation to here
+        float contactCheckDistance = 0.005f;
+
+        RaycastHit2D[] hits = new RaycastHit2D[16];
+        RaycastHit2D[] hits2 = new RaycastHit2D[16];
+        int leftHits = rb2d.Cast(Vector2.left, contactFilter, hits, contactCheckDistance);
+        int rightHits = rb2d.Cast(Vector2.right, contactFilter, hits2, contactCheckDistance);
+        
+        if (leftHits > 0 && rightHits > 0)
+        {
+            List<string> uniqueHorizontalColliders = new List<string>(10);
+            for (int i = 0; i < leftHits; i++)
+            {
+                if (!uniqueHorizontalColliders.Contains(hits[i].collider.gameObject.name))
+                {
+                    uniqueHorizontalColliders.Add(hits[i].collider.gameObject.name);
+                }
+            }
+
+            for (int i = 0; i < rightHits; i++)
+            {
+                if (!uniqueHorizontalColliders.Contains(hits2[i].collider.gameObject.name))
+                {
+                    uniqueHorizontalColliders.Add(hits2[i].collider.gameObject.name);
+                }
+            }
+
+            if (uniqueHorizontalColliders.Count > 1)
+            {
+                Die();
+            }
+        }
+
+        hits = new RaycastHit2D[16];
+        hits2 = new RaycastHit2D[16];
+        int topHits = rb2d.Cast(Vector2.up, contactFilter, hits, contactCheckDistance);
+        int bottomHits = rb2d.Cast(Vector2.down, contactFilter, hits2, contactCheckDistance);
+
+        if (topHits > 0 && bottomHits > 0)
+        {
+            List<string> uniqueVerticalColliders = new List<string>(10);
+            for (int i = 0; i < topHits; i++)
+            {
+                if (!uniqueVerticalColliders.Contains(hits[i].collider.gameObject.name))
+                {
+                    uniqueVerticalColliders.Add(hits[i].collider.gameObject.name);
+                }
+            }
+
+            for (int i = 0; i < bottomHits; i++)
+            {
+                if (!uniqueVerticalColliders.Contains(hits2[i].collider.gameObject.name))
+                {
+                    uniqueVerticalColliders.Add(hits2[i].collider.gameObject.name);
+                }
+            }
+
+            if (uniqueVerticalColliders.Count > 1)
+            {
+                // Only kill player if different colliders, shouldn't be squashed by a single collider
+                Die();
+            }
+        }
     }
 
     private void Move()
@@ -282,6 +353,7 @@ public class Player : MonoBehaviour
             if (grounded)
             {
                 // If grounded, don't push down so hard. This should be enough to keep feet on ground
+                lastGrounded = Time.time;
                 velocity.y = hardGrounded ? -4f : -0.5f;
                 hardGrounded = false;
             }
@@ -301,6 +373,12 @@ public class Player : MonoBehaviour
                     velocity += gravityIncreaseRate * Physics2D.gravity * Time.deltaTime;
                 }
             }
+        }
+
+        if (lastGrounded + momentumClingTime < Time.time)
+        {
+            // Dump momemntum
+            momentum = Vector2.zero;
         }
 
         animator.SetFloat("verticalVelocity", velocity.y);
@@ -379,7 +457,11 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        StartCoroutine(DeathSequence());
+        if (!isDying)
+        {
+            isDying = true;
+            StartCoroutine(DeathSequence());
+        }
     }
 
     public IEnumerator DeathSequence()
@@ -393,16 +475,17 @@ public class Player : MonoBehaviour
         rb2d.simulated = false;
         GameObject deathTransition = Instantiate(deathTransitionPrefab);
         GameObject slider = GameObject.Find("Ripple");
-        Animator animator = slider.GetComponent<Animator>();
-        animator.SetTrigger("start");
+        Animator slideAnimator = slider.GetComponent<Animator>();
+        slideAnimator.SetTrigger("start");
         yield return new WaitForSeconds(0.6f);
         spriteRenderer.enabled = true;
         Player.Instance.hasControl = true;
         Respawn();
         rb2d.simulated = true;
-        animator.SetTrigger("end");
+        slideAnimator.SetTrigger("end");
         yield return new WaitForSeconds(0.6f);
         Destroy(deathTransition);
+        isDying = false;
     }
 
     // Player Input System

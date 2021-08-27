@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class InteractiveTilemap : CarryingPlatform
 {
+    // DEPRECATED
     public enum ActionType
     {
         None, // For debugging purposes

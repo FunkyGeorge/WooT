@@ -31,9 +31,10 @@ public class Enemy : PhysicsObject
     {
         if (!isSleeping)
         {
-            CheckAround();
+            
             if (patrolMode)
             {
+                CheckAround();
                 targetVelocity.x = speed * direction;
             }
             animator.SetFloat("movement", Mathf.Abs(targetVelocity.x));
