@@ -12276,7 +12276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d684b7c0f22f8a941bca2ccf067a47e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: End Scene
+  nextLevel: Cutscene 2
   levelState: {fileID: 1991798517}
 --- !u!1001 &1366495779
 PrefabInstance:

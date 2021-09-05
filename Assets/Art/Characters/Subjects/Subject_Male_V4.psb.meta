@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 214c4a1a84625f24eb33f3f0f7c1deff
+guid: 8fbe03b9c4cea5a42be921cde67548de
 ScriptedImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3372740733488350125
-    second: Hector-sprites_0
-  - first:
-      213: -1010247037825985015
-    second: Hector-sprites_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -73,18 +67,18 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   spriteImportData:
-  - name: Hector-sprites_1
+  - name: 
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 200
-      height: 200
-    spriteID: d9f34ff4e389f904da518e82d5a587c2
+      width: 0
+      height: 0
+    spriteID: 
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -95,64 +89,19 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-  - name: Hector-sprites_0
+  mosaicSpriteImportData:
+  - name: Player Idle 2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 168
-      width: 32
-      height: 32
-    spriteID: da3401bd3d16ece20800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 0, y: 0}
-  - name: Hector-sprites_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 168
-      width: 32
-      height: 32
-    spriteID: 906ddfeeba1eaf1f0800000000000000
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 0, y: 0}
-  mosaicSpriteImportData: []
-  rigSpriteImportData:
-  - name: Hector Idle 2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 35
-      width: 14
-      height: 22
-    spriteID: 9340db94493121b42bec454d3c39dee4
+      y: 36
+      width: 13
+      height: 23
+    spriteID: b3e00fb8b71ade441992382c3990127d
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -162,8 +111,31 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -5, y: -133}
-  - name: Hector Idle 1
+    uvTransform: {x: 1, y: 36}
+  - name: Player Idle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 13
+      height: 24
+    spriteID: 87a5953a6c95a6345a4860890cd063c2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1, y: 4}
+  rigSpriteImportData:
+  - name: Player Idle 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -172,9 +144,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
-      height: 23
-    spriteID: 63e341a282081cc4eae346a2e539eea3
+      width: 13
+      height: 24
+    spriteID: 46ad927ada34b194595a8510fdc343da
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -184,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -37, y: -164}
+    uvTransform: {x: 1, y: 4}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -230,37 +202,44 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  mosaicLayers: 0
+  mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
-  importHiddenLayers: 0
+  importHiddenLayers: 1
   importedTextureWidth: 32
   importedTextureHeight: 64
-  documentSize: {x: 200, y: 200}
+  documentSize: {x: 20, y: 24}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 200
-  textureActualHeight: 200
+  textureActualWidth: 32
+  textureActualHeight: 64
   spritePackingTag: 
   resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
+  characterMode: 0
+  mosaicPSDLayers:
+  - name: Player Idle 2
+    spriteName: Player Idle 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b3e00fb8b71ade441992382c3990127d
+    layerID: 3
+    mosaicPosition: {x: 4, y: 36}
+  - name: Player Idle 1
+    spriteName: Player Idle 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 87a5953a6c95a6345a4860890cd063c2
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
   rigPSDLayers:
-  - name: Hector Idle 2
-    spriteName: Hector Idle 2
+  - name: Player Idle 1
+    spriteName: Player Idle 1
     isGroup: 0
     parentIndex: -1
-    spriteID: 9340db94493121b42bec454d3c39dee4
-    layerID: 7
-    mosaicPosition: {x: 4, y: 35}
-  - name: Hector Idle 1
-    spriteName: Hector Idle 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 63e341a282081cc4eae346a2e539eea3
-    layerID: 6
+    spriteID: 46ad927ada34b194595a8510fdc343da
+    layerID: 2
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
@@ -268,7 +247,7 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
   generateGOHierarchy: 0
-  textureAssetName: Hector-sprites Texture
-  prefabAssetName: Hector-sprites Prefab
-  spriteLibAssetName: Hector-sprites Sprite Lib
+  textureAssetName: Subject_Male_V4 Texture
+  prefabAssetName: Subject_Male_V4 Prefab
+  spriteLibAssetName: Subject_Male_V4 Sprite Lib
   secondarySpriteTextures: []

@@ -54,8 +54,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro/Level 13.unity
     guid: 74e85bac6ed2298429b4574eaad1c549
   - enabled: 1
+    path: Assets/Scenes/NewCity/Cutscene 2.unity
+    guid: 7a001433d4003fc4f9649dac9988ea53
+  - enabled: 1
     path: Assets/Scenes/NewCity/NewCity 1.unity
     guid: 4fcee68298a0ce6498a859e4045bb27e
+  - enabled: 1
+    path: Assets/Scenes/NewCity/NewCity 2.unity
+    guid: 853d339a57c706849a3e113b03ca89e9
   - enabled: 1
     path: Assets/Scenes/End Scene.unity
     guid: bb6669763fbc89e409a179baa7bc929f

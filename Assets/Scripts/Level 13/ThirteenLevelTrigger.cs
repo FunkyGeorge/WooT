@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ThirteenLevelTrigger : MonoBehaviour
 {
@@ -24,7 +23,8 @@ public class ThirteenLevelTrigger : MonoBehaviour
     {
         if (collision.gameObject == Player.Instance.gameObject && levelState.GetComponent<LevelState>().state == LevelState.State.Checkpoint1)
         {
-            SceneManager.LoadScene(nextLevel);
+            Player.Instance.hasControl = false;
+            GameManager.Instance.FadeLoadLevel(nextLevel);
         }
     }
 }

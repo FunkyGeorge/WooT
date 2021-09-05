@@ -58,6 +58,8 @@ MonoBehaviour:
   - Dialogue Scene 1
   - Cutscene 1
   - Level 13
+  - Cutscene 2
+  - Cutscene 3
   musicClip2: {fileID: 8300000, guid: 38e14f7b0950a414cbb69881382f9131, type: 3}
   musicClip2Volume: 10
   music2Levels:

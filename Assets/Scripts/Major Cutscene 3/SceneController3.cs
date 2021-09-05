@@ -1,26 +1,27 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 
-public class SceneController : MonoBehaviour
+public class SceneController3 : MonoBehaviour
 {
     [SerializeField] private string nextScene;
+    [SerializeField] private Animator hectorAnimator;
 
     [Header("Timing Config")]
     [SerializeField] private float initialDelay = 0;
 
+    [Header("Playables")]
+    [SerializeField] private PlayableAsset playerIntro;
+    [SerializeField] private PlayableAsset hectorTurn;
+
     [Header("Dialog Sequence")]
-    [SerializeField] private Dialogue[] initialDialoguePart;
     [SerializeField] private Dialogue[] dialoguePart;
 
     private PlayableDirector director;
 
     private DialogBox dialogBox;
-    private bool hasPlayedCutscene = false;
-    private bool hasPlayedInitialDialogue = false;
+    private bool hasPlayedWalkinCutscene = false;
+    private bool hasPlayedHectorTurnCutscene = false;
     private bool hasGoneThroughDialogue = false;
     private bool cutsceneIsPlaying = false;
 
@@ -29,7 +30,6 @@ public class SceneController : MonoBehaviour
     {
         dialogBox = FindObjectOfType<DialogBox>();
         director = GetComponent<PlayableDirector>();
-        UpdateTimeline();
 
         PrepDialogue();
         director.stopped += OnTimelineFinished;
@@ -43,7 +43,7 @@ public class SceneController : MonoBehaviour
         
     }
 
-    private void UpdateTimeline()
+    private void UpdateTimeline(Animator animator)
     {
         // This method will apply the current Player animator component to the timeline since it
         // will likely be different than the one it was created with.
@@ -61,11 +61,10 @@ public class SceneController : MonoBehaviour
                 Object something = director.GetGenericBinding(oldBindings_sourceObject);
                 director.SetGenericBinding(
                     oldBindings_sourceObject,
-                    Player.Instance.gameObject.GetComponent<Animator>()
+                    animator
                 );
             } 
         }
-
     }
 
     private void PrepDialogue()
@@ -74,17 +73,11 @@ public class SceneController : MonoBehaviour
         {
             dialoguePart[i - 1].chainDialogue = dialoguePart[i];
         }
-
-        for (int i = initialDialoguePart.Length - 1; i > 0; i--)
-        {
-            initialDialoguePart[i - 1].chainDialogue = initialDialoguePart[i];
-        }
     }
 
     private IEnumerator Cutscene()
     {
         yield return new WaitForSeconds(initialDelay);
-        // ProgressCutscene();
 
         // Poll to for cutscene progress
         for (;;)
@@ -99,15 +92,19 @@ public class SceneController : MonoBehaviour
 
     private void ProgressCutscene()
     {
-        if (!hasPlayedInitialDialogue)
+        if (dialogBox.IsEmpty() && !hasPlayedWalkinCutscene)
         {
-            dialogBox.InitializeDialogue(initialDialoguePart[0]);
-            hasPlayedInitialDialogue = true;
-        }
-        else if (dialogBox.IsEmpty() && !hasPlayedCutscene)
-        {
-            hasPlayedCutscene = true;
+            hasPlayedWalkinCutscene = true;
             cutsceneIsPlaying = true;
+            SetPlayableAsset(playerIntro);
+            director.Play();
+        }
+        else if (dialogBox.IsEmpty() && !hasPlayedHectorTurnCutscene)
+        {
+            hasPlayedHectorTurnCutscene = true;
+            cutsceneIsPlaying = true;
+            director.playableAsset = hectorTurn;
+            UpdateTimeline(hectorAnimator);
             director.Play();
         }
         else if (dialogBox.IsEmpty() && !hasGoneThroughDialogue)
@@ -122,9 +119,14 @@ public class SceneController : MonoBehaviour
         }
     }
 
+    private void SetPlayableAsset(PlayableAsset playable)
+    {
+        director.playableAsset = playable;
+        UpdateTimeline(Player.Instance.gameObject.GetComponent<Animator>());
+    }
+
     private void OnTimelineFinished(PlayableDirector obj)
     {
-        ProgressCutscene();
         cutsceneIsPlaying = false;
     }
 }
