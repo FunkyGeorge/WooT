@@ -63,6 +63,12 @@ EditorBuildSettings:
     path: Assets/Scenes/NewCity/NewCity 2.unity
     guid: 853d339a57c706849a3e113b03ca89e9
   - enabled: 1
+    path: Assets/Scenes/OfficeClimb/Cutscene 3.unity
+    guid: 9037afce2079e3340a768ac3de1c26c9
+  - enabled: 1
+    path: Assets/Scenes/Final/Cutscene 4.unity
+    guid: 4881fb8e283d81845b29b550b8d03ee8
+  - enabled: 1
     path: Assets/Scenes/End Scene.unity
     guid: bb6669763fbc89e409a179baa7bc929f
   m_configObjects:

@@ -9,11 +9,11 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private Dialogue thirdDialogue;
     [SerializeField] private Dialogue fourthDialogue;
 
-    [SerializeField] private bool isChainDialogueTrigger = false;
+    [SerializeField] protected bool isChainDialogueTrigger = false;
     [SerializeField] private bool hasChainDialogueTrigger = false;
     [SerializeField] private DialogueTrigger chainDialogueTrigger;
 
-    private bool used = false;
+    protected bool used = false;
 
     // Start is called before the first frame update
     void Start()

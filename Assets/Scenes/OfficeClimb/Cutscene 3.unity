@@ -356,11 +356,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.361184
+      value: -3.0397959
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0969934
+      value: 0.6510258
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -5.674677
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 8.468679
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -5.9186497
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -5.6335754
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 11.494615
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -5.7451453
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 21.431898
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: -5.70798
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
@@ -552,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0080d486f3ce72144b71c92c9ccb74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: End Scene
+  nextScene: Cutscene 4
   hectorAnimator: {fileID: 122697238}
   initialDelay: 0
   playerIntro: {fileID: 11400000, guid: 840959c9d2ba1bb4ab7b12e9eba7dc02, type: 2}
