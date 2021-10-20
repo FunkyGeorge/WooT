@@ -63,11 +63,23 @@ EditorBuildSettings:
     path: Assets/Scenes/NewCity/NewCity 2.unity
     guid: 853d339a57c706849a3e113b03ca89e9
   - enabled: 1
+    path: Assets/Scenes/NewCity/NewCity 3.unity
+    guid: 115d3c4955194c44296f1472af3ba345
+  - enabled: 1
+    path: Assets/Scenes/NewCity/NewCity 4.unity
+    guid: 6695633f4a9f9174d889ce1f77d218ee
+  - enabled: 1
+    path: Assets/Scenes/NewCity/NewCity 5.unity
+    guid: 595d0967e4e52c84499c53d48c9f959d
+  - enabled: 1
     path: Assets/Scenes/OfficeClimb/Cutscene 3.unity
     guid: 9037afce2079e3340a768ac3de1c26c9
   - enabled: 1
     path: Assets/Scenes/Final/Cutscene 4.unity
     guid: 4881fb8e283d81845b29b550b8d03ee8
+  - enabled: 1
+    path: Assets/Scenes/Final/Choice.unity
+    guid: 35b0568ed2f0e2145b5c0bad10074549
   - enabled: 1
     path: Assets/Scenes/End Scene.unity
     guid: bb6669763fbc89e409a179baa7bc929f

@@ -1153,6 +1153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d392d3123d5d94995241e652070fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entryLevel: NewCity 1
+  entryLevel: Level 1
   selectSFX: {fileID: 8300000, guid: 0669a04c6e48bc64eb312b667dc0593d, type: 3}
   selectAudioVolume: 100

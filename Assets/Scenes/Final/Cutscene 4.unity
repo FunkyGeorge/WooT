@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf5cdaf23f23ec47b9b1f359587caee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: End Scene
+  nextScene: Choice
   initialDelay: 0
   playerIntro: {fileID: 11400000, guid: eafb8c3ff32e42e4ba4bbf6aff388b2d, type: 2}
   doorClose: {fileID: 11400000, guid: 06670ca3fc44eed4f853208cd71b488a, type: 2}
