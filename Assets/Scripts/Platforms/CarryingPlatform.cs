@@ -7,9 +7,7 @@ public class CarryingPlatform : MonoBehaviour
     protected Rigidbody2D rb;
     private Vector3 lastPosition;
     private Transform _transform;
-    [SerializeField] private float carryDistanceCheck = 0.1f;
-    [SerializeField] private float momentumTime = 0.5f;
-    private bool isDetatching = false;
+    [SerializeField] protected float carryDistanceCheck = 0.1f;
     private bool isCarryingPlayer = false;
 
     void OnEnable()

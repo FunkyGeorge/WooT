@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5011230456884463870}
   - component: {fileID: 3709795914174954082}
   m_Layer: 0
-  m_Name: Spotlight
+  m_Name: Spotlight Transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728479329689239707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.71, y: 1.78, z: 0}
+  m_LocalPosition: {x: -17.71, y: 1.98, z: 0}
   m_LocalScale: {x: 18.207989, y: 18.20799, z: 18.20799}
   m_Children: []
   m_Father: {fileID: 0}

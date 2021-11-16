@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 75d1a7bad4102014f9da899e858af496
   - enabled: 1
-    path: Assets/Scenes/Intro/Level 1.unity
+    path: Assets/Scenes/Intro/Level 2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Intro/Level 2.unity
+    path: Assets/Scenes/Intro/Level 1.unity
     guid: 09b50dde8e5c9f44488b3ef3f2245a6b
   - enabled: 1
     path: Assets/Scenes/Intro/Level 3.unity
@@ -71,6 +71,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewCity/NewCity 5.unity
     guid: 595d0967e4e52c84499c53d48c9f959d
+  - enabled: 1
+    path: Assets/Scenes/NewCity/NewCity 6.unity
+    guid: aafea53494330ae489817dfd8c07681d
+  - enabled: 1
+    path: Assets/Scenes/NewCity/NewCity 7.unity
+    guid: f23cb0f1396e6ee40a27055311fa5a69
   - enabled: 1
     path: Assets/Scenes/OfficeClimb/Cutscene 3.unity
     guid: 9037afce2079e3340a768ac3de1c26c9

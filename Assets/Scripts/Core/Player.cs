@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] public bool canShoot = false;
     [SerializeField] private float jumpPower = 7f;
     [SerializeField] private float shotPower = 1f;
-    private bool isDying = false;
+    public bool isDying = false;
     
 
     [Header("References")]

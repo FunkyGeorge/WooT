@@ -28,6 +28,12 @@ public class MenuHandler : MonoBehaviour
         SceneManager.LoadScene(entryLevel);
     }
 
+    public void ContinueButtonHandler()
+    {
+        PlaySound();
+        string currentLevel = Prefs.GetCurrentLevel();
+    }
+
     public void QuitToDesktop()
     {
         PlaySound();

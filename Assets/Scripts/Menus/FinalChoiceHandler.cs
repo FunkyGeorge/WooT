@@ -121,6 +121,7 @@ public class FinalChoiceHandler : MonoBehaviour
 
     public void SubmitButtonHandler()
     {
+        Debug.Log("Stopped Gentle Goodnight:" + didStopProjectGentleGoodnight.ToString());
         GameManager.Instance.FadeLoadLevel(nextScene);
     }
 

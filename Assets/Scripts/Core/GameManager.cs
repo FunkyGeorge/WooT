@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviour
         animator.SetTrigger("end");
         yield return new WaitForSeconds(1);
         Destroy(transitions);
+        Prefs.SetCurrentLevel(nextScene);
     }
 
     private IEnumerator FadeToNextLevel(string nextScene)
@@ -144,5 +145,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         Player.Instance.hasControl = true;
         Destroy(transitions);
+        Prefs.SetCurrentLevel(nextScene);
     }
 }

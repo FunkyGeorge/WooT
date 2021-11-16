@@ -6,7 +6,6 @@ public class SquaringPlatform : CarryingPlatform
 {
     [SerializeField] private Vector2 destinationVector = new Vector2(0, 0);
     [SerializeField] private Vector2 startingVector = new Vector2(0, 0); // Should make sure this is on the correct path
-    [SerializeField] private float timeOffset = 0;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private bool reverseDirection = false;
     [SerializeField] private bool invertPosition = false;
@@ -47,6 +46,7 @@ public class SquaringPlatform : CarryingPlatform
         Vector2 newPosition = new Vector2(position.x, position.y);
         float movementStep = moveSpeed/20;
 
+        // Make this a function of time
         if (!reverseDirection)
         {
             if (position.x == 0 && position.y < destinationVector.y)
