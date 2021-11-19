@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuHandler : MonoBehaviour
 {
@@ -10,16 +12,28 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] private AudioClip selectSFX;
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
 
+    [SerializeField] private GameObject continueButton;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!Prefs.HasCurrentLevel())
+        {
+            Image continueButtonImage = continueButton.GetComponent<Image>();
+            Color continueButtonColor = continueButtonImage.color;
+            Button continueButtonInput = continueButton.GetComponent<Button>();
+            continueButtonInput.interactable = false;
+            Debug.Log(continueButtonImage.color);
+            continueButtonColor.a = 0.5f;
+            continueButtonImage.color = continueButtonColor;
+            Debug.Log(continueButtonImage.color);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Cursor.visible = true;
     }
 
     public void PlayButtonHandler()
@@ -30,8 +44,12 @@ public class MenuHandler : MonoBehaviour
 
     public void ContinueButtonHandler()
     {
-        PlaySound();
-        string currentLevel = Prefs.GetCurrentLevel();
+        if (Prefs.HasCurrentLevel())
+        {
+            PlaySound();
+            string currentLevel = Prefs.GetCurrentLevel();
+            SceneManager.LoadScene(currentLevel);
+        }
     }
 
     public void QuitToDesktop()

@@ -74,7 +74,7 @@ public class AudioPlayer : MonoBehaviour
     }
 
     public void PlayMusic(AudioClip musicClip, int musicVolume = 100)
-    {   
+    {
         if (musicAudioSource.clip == null)
         {
             float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (musicVolume / 100f);
@@ -87,5 +87,15 @@ public class AudioPlayer : MonoBehaviour
             queuedMusicClip = musicClip;
             queuedMusicClipVolume = musicVolume;
         }
+
+        if (!musicAudioSource.isPlaying)
+        {
+            musicAudioSource.Play();
+        }
+    }
+
+    public void StopMusic()
+    {
+        musicAudioSource.Stop();
     }
 }

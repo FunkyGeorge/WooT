@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     [Header("State Flags")]
     public bool isDialogUp = false;
+    public bool isPaused = false;
 
     [Header("Music Config")]
     [SerializeField] private AudioClip musicClip1;
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     private const string coinTextName = "UI_CoinText";
     private const string inventorySpriteName = "UI_InventoryImage";
+    private const string pauseMenuName = "Pause Menu";
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -55,7 +57,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isPaused)
+        {
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false;
+        }
     }
 
     private void SetUIReferences()
@@ -80,6 +89,26 @@ public class GameManager : MonoBehaviour
         {
             if (coinsText) coinsText.text = Player.Instance.shardsCollected.ToString();
         }
+    }
+
+    public void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+        GameObject pauseMenu = GameObject.Find(pauseMenuName);
+        CanvasGroup canvas = pauseMenu.GetComponent<CanvasGroup>();
+        canvas.alpha = 1f;
+        canvas.blocksRaycasts = true;
+    }
+
+    public void UnpauseGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        GameObject pauseMenu = GameObject.Find(pauseMenuName);
+        CanvasGroup canvas = pauseMenu.GetComponent<CanvasGroup>();
+        canvas.alpha = 0;
+        canvas.blocksRaycasts = false;
     }
 
     private void PlayMusic()

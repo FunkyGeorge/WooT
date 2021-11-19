@@ -133,6 +133,11 @@ public class Player : MonoBehaviour
         defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
     }
 
+    public void PrepareForDestroy()
+    {
+        SceneManager.sceneLoaded -= OnLoadCallback;
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Danger"))
@@ -556,6 +561,21 @@ public class Player : MonoBehaviour
             {
                 animator.SetTrigger("shoot");
                 shotRb.AddForce(shotDirection / 10 * shotPower, ForceMode2D.Force);
+            }
+        }
+    }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (GameManager.Instance.isPaused)
+            {
+                GameManager.Instance.UnpauseGame();
+            }
+            else
+            {
+                GameManager.Instance.PauseGame();
             }
         }
     }
