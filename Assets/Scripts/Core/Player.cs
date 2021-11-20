@@ -405,6 +405,39 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void Shoot()
+    {
+        Vector2 shotDirection = intentDirection;
+        shotDirection.x = Mathf.Round(shotDirection.x);
+        shotDirection.y = Mathf.Round(shotDirection.y);
+        shotDirection = shotDirection.normalized;
+
+        if (intentDirection.x == 0 && intentDirection.y == 0)
+        {
+            if (!spriteRenderer.flipX)
+            {
+                shotDirection = Vector2.right.normalized;
+            }
+            else
+            {
+                shotDirection = Vector2.left.normalized;
+            }
+        }
+
+        Vector2 spawnLocation = transform.position;
+        spawnLocation = spawnLocation + shotDirection.normalized;
+
+        GameObject shootObject = Instantiate(shootPrefab, spawnLocation, Quaternion.identity);
+        Rigidbody2D shotRb = shootObject.GetComponent<Rigidbody2D>();
+        Physics2D.IgnoreCollision(shootObject.GetComponent<CapsuleCollider2D>(), GetComponent<BoxCollider2D>());
+
+        if (shotRb)
+        {
+            animator.SetTrigger("shoot");
+            shotRb.AddForce(shotDirection / 10 * shotPower, ForceMode2D.Force);
+        }
+    }
+
     public void Bounce(float bouncePower)
     {
         grounded = false;
@@ -536,32 +569,7 @@ public class Player : MonoBehaviour
     {
         if (context.performed && hasControl && canShoot)
         {
-            Vector2 shotDirection = intentDirection.normalized;
-
-            if (intentDirection.x == 0 && intentDirection.y == 0)
-            {
-                if (!spriteRenderer.flipX)
-                {
-                    shotDirection = Vector2.right.normalized;
-                }
-                else
-                {
-                    shotDirection = Vector2.left.normalized;
-                }
-            }
-
-            Vector2 spawnLocation = transform.position;
-            spawnLocation = spawnLocation + shotDirection.normalized;
-
-            GameObject shootObject = Instantiate(shootPrefab, spawnLocation, Quaternion.identity);
-            Rigidbody2D shotRb = shootObject.GetComponent<Rigidbody2D>();
-            Physics2D.IgnoreCollision(shootObject.GetComponent<CapsuleCollider2D>(), GetComponent<BoxCollider2D>());
-
-            if (shotRb)
-            {
-                animator.SetTrigger("shoot");
-                shotRb.AddForce(shotDirection / 10 * shotPower, ForceMode2D.Force);
-            }
+            Shoot();
         }
     }
 

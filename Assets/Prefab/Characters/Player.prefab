@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasControl: 1
   shardsCollected: 0
-  canShoot: 0
+  canShoot: 1
   jumpPower: 7
   shotPower: 1
   isDying: 0
