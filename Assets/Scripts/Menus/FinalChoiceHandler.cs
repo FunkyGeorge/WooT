@@ -47,6 +47,7 @@ public class FinalChoiceHandler : MonoBehaviour
     public void InitiateChoicePromptPanel()
     {
         Player.Instance.hasControl = false;
+        GameManager.Instance.shouldForceCursorVisibility = true;
         choicePromptPanel.SetActive(true);
     }
 
@@ -55,6 +56,7 @@ public class FinalChoiceHandler : MonoBehaviour
     {
         didStopProjectGentleGoodnight = true;
         PlaySound();
+        GameManager.Instance.shouldForceCursorVisibility = false;
         choicePromptPanel.SetActive(false);
         DialogBox dialogBox = FindObjectOfType<DialogBox>();
         dialogBox.InitializeDialogue(confirmationDialogue);
@@ -72,6 +74,7 @@ public class FinalChoiceHandler : MonoBehaviour
     {
         didStopProjectGentleGoodnight = false;
         PlaySound();
+        GameManager.Instance.shouldForceCursorVisibility = false;
         choicePromptPanel.SetActive(false);
         DialogBox dialogBox = FindObjectOfType<DialogBox>();
         dialogBox.InitializeDialogue(confirmationDialogue);
@@ -96,6 +99,7 @@ public class FinalChoiceHandler : MonoBehaviour
         counterTemplate = Player.Instance.shardsCollected == 0 ? "/89" : "/" + Player.Instance.shardsCollected.ToString();
         explanationInput.characterLimit = Player.Instance.shardsCollected == 0 ? 89 : Player.Instance.shardsCollected;
         explanationCounter.text = "0" + counterTemplate;
+        GameManager.Instance.shouldForceCursorVisibility = true;
         explanationPromptPanel.SetActive(true);
     }
 

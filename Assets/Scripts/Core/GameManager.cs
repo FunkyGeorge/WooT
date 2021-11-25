@@ -16,14 +16,20 @@ public class GameManager : MonoBehaviour
     [Header("State Flags")]
     public bool isDialogUp = false;
     public bool isPaused = false;
+    public bool shouldForceCursorVisibility = false;
 
     [Header("Music Config")]
     [SerializeField] private AudioClip musicClip1;
     [Range(1, 100)][SerializeField] private int musicClip1Volume = 100;
     [SerializeField] private string[] music1Levels;
+
     [SerializeField] private AudioClip musicClip2;
     [Range(1, 100)][SerializeField] private int musicClip2Volume = 100;
     [SerializeField] private string[] music2Levels;
+
+    [SerializeField] private AudioClip finalMusicClip;
+    [Range(1, 100)][SerializeField] private int finalMusicClipVolume = 100;
+    [SerializeField] private string[] finalMusicLevels;
 
     private const string coinTextName = "UI_CoinText";
     private const string inventorySpriteName = "UI_InventoryImage";
@@ -57,14 +63,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPaused)
-        {
-            Cursor.visible = true;
-        }
-        else
-        {
-            Cursor.visible = false;
-        }
+        // if (isPaused || shouldForceCursorVisibility)
+        // {
+        //     Cursor.visible = true;
+        // }
+        // else
+        // {
+        //     Cursor.visible = false;
+        // }
     }
 
     private void SetUIReferences()
@@ -128,6 +134,15 @@ public class GameManager : MonoBehaviour
             if (music2Levels[i] == currentLevel)
             {
                 AudioPlayer.Instance.PlayMusic(musicClip2, musicClip2Volume);
+                break;
+            }
+        }
+
+        for (int i = 0; i < finalMusicLevels.Length; i++)
+        {
+            if (finalMusicLevels[i] == currentLevel)
+            {
+                AudioPlayer.Instance.PlayMusic(finalMusicClip, finalMusicClipVolume);
                 break;
             }
         }

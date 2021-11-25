@@ -321,7 +321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 5}
   moveSpeed: 4
   timeOffset: 0
@@ -12857,7 +12856,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 2}
   moveSpeed: 2
   timeOffset: 0
@@ -13662,7 +13660,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 5}
   moveSpeed: 2
   timeOffset: 0
@@ -15127,6 +15124,7 @@ GameObject:
   - component: {fileID: 1521662714}
   - component: {fileID: 1521662713}
   - component: {fileID: 1521662712}
+  - component: {fileID: 1521662717}
   - component: {fileID: 1521662716}
   m_Layer: 0
   m_Name: Squaring Platform
@@ -15329,12 +15327,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 3, y: 2}
-  timeOffset: 0
-  moveSpeed: 1.5
-  reverseDirection: 1
+  startingVector: {x: 0, y: 0}
+  moveSpeed: 3
+  reverseDirection: 0
   invertPosition: 0
+  xCursor: 0
+  xReversed: 0
+  yCursor: 0
+  yReversed: 0
+  isMovingYAxis: 1
+--- !u!114 &1521662717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521662710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcedd1ce157a6448a22a8d41668dcbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  lastPosition: {x: 0, y: 0, z: 0}
+  _transform: {fileID: 0}
+  carryDistanceCheck: 0.1
+  isCarryingPlayer: 0
+  destinationVector: {x: 3, y: 2}
+  startingVector: {x: 0, y: 0}
+  moveSpeed: 1.5
+  reverseDirection: 0
+  invertPosition: 0
+  isMovementVectorValidated: 0
+  xCursor: 0
+  xReversed: 0
+  yCursor: 0
+  yReversed: 0
+  isMovingYAxis: 1
 --- !u!4 &1538846599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574110869608908755, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}
@@ -19730,7 +19760,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 2}
   moveSpeed: 2
   timeOffset: 1
@@ -20396,7 +20425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 5}
   moveSpeed: 2
   timeOffset: 2.5
@@ -22051,7 +22079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 5}
   moveSpeed: 4
   timeOffset: 0

@@ -146,6 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 7205067292783074197}
   brokenSprite: {fileID: 6631223165480013727, guid: a1bed3af5f442a349bcef95a2d393662, type: 3}
+  sfxClip: {fileID: 8300000, guid: aee80d65f35ad6a499d31192b375865e, type: 3}
+  sfxVolume: 20
 --- !u!1 &7205067292665722779
 GameObject:
   m_ObjectHideFlags: 0

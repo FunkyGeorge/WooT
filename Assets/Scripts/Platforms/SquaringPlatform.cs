@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Deprecated
 public class SquaringPlatform : CarryingPlatform
 {
     [SerializeField] private Vector2 destinationVector = new Vector2(0, 0);
@@ -10,18 +11,40 @@ public class SquaringPlatform : CarryingPlatform
     [SerializeField] private bool reverseDirection = false;
     [SerializeField] private bool invertPosition = false;
     private bool isMovementVectorValidated = false;
+    private float xCursor = 0f;
+    private bool xReversed = false;
+    private float yCursor = 0f;
+    private bool yReversed = false;
+    private bool isMovingYAxis = true;
 
     // Start is called before the first frame update
     void Start()
     {
         ValidateMovementVector();
-        if (startingVector != Vector2.zero)
+        if (startingVector != Vector2.zero || invertPosition)
         {
-            rb.transform.position = startingVector;
+            if (startingVector != Vector2.zero)
+            {
+                xCursor = startingVector.x;
+                yCursor = startingVector.y;
+                transform.position = startingVector;
+            }
+            else if (invertPosition)
+            {
+                xCursor = destinationVector.x;
+                yCursor = destinationVector.y;
+                transform.position = destinationVector;
+            }
+            
+            if (yCursor == destinationVector.y) { yReversed = true; isMovingYAxis = !isMovingYAxis; }
+            if (xCursor == destinationVector.x) { xReversed = true; isMovingYAxis = !isMovingYAxis; }
         }
-        if (invertPosition)
+
+        if (reverseDirection)
         {
-            rb.transform.position = destinationVector;
+            isMovingYAxis = !isMovingYAxis;
+            xReversed = !xReversed;
+            yReversed = !yReversed;
         }
     }
 
@@ -42,47 +65,74 @@ public class SquaringPlatform : CarryingPlatform
 
     private void SquaringMovement()
     {
-        Vector3 position = rb.transform.position;
-        Vector2 newPosition = new Vector2(position.x, position.y);
-        float movementStep = moveSpeed/20;
+        Vector2 newPosition = new Vector2(transform.position.x, transform.position.y);
 
-        // Make this a function of time
-        if (!reverseDirection)
+        if (isMovingYAxis)
         {
-            if (position.x == 0 && position.y < destinationVector.y)
+            float newY = transform.position.y;
+            if (!yReversed)
             {
-                newPosition.y = Mathf.Min(destinationVector.y, position.y + movementStep);
+                yCursor += Time.deltaTime * moveSpeed;
+                newY = yCursor;
+                if (newY >= destinationVector.y)
+                {
+                    newPosition.y = destinationVector.y;
+                    yReversed = !yReversed;
+                    isMovingYAxis = !isMovingYAxis;
+                }
+                else
+                {
+                    newPosition.y = newY;
+                }
             }
-            else if (position.x < destinationVector.x && position.y == destinationVector.y)
+            else
             {
-                newPosition.x = Mathf.Min(destinationVector.x, position.x + movementStep);
-            }
-            else if (position.x == destinationVector.x && position.y > 0)
-            {
-                newPosition.y = Mathf.Max(0, position.y - movementStep);
-            }
-            else if (position.y == 0 && position.x > 0)
-            {
-                newPosition.x = Mathf.Max(0, position.x - movementStep);
+                yCursor -= Time.deltaTime * moveSpeed;
+                newY = yCursor;
+                if (newY <= 0)
+                {
+                    newPosition.y = 0;
+                    yReversed = !yReversed;
+                    isMovingYAxis = !isMovingYAxis;
+                }
+                else
+                {
+                    newPosition.y = newY;
+                }
             }
         }
         else
         {
-            if (position.y == 0 && position.x < destinationVector.x)
+            float newX = transform.position.x;
+            if (!xReversed)
             {
-                newPosition.x = Mathf.Min(destinationVector.x, position.x + movementStep);
+                xCursor += Time.deltaTime * moveSpeed;
+                newX = xCursor;
+                if (newX >= destinationVector.x)
+                {
+                    newPosition.x = destinationVector.x;
+                    xReversed = !xReversed;
+                    isMovingYAxis = !isMovingYAxis;
+                }
+                else
+                {
+                    newPosition.x = newX;
+                }
             }
-            else if (position.x == destinationVector.x && position.y < destinationVector.y)
+            else
             {
-                newPosition.y = Mathf.Min(destinationVector.y, position.y + movementStep);
-            }
-            else if (position.y == destinationVector.y && position.x > 0)
-            {
-                newPosition.x = Mathf.Max(0, position.x - movementStep);
-            }
-            else if (position.x == 0 && position.y > 0)
-            {
-                newPosition.y = Mathf.Max(0, position.y - movementStep);
+                xCursor -= Time.deltaTime * moveSpeed;
+                newX = xCursor;
+                if (newX <= 0)
+                {
+                    newPosition.x = 0;
+                    xReversed = !xReversed;
+                    isMovingYAxis = !isMovingYAxis;
+                }
+                else
+                {
+                    newPosition.x = newX;
+                }
             }
         }
         

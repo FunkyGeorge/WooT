@@ -7,6 +7,8 @@ public class DoorSwitch : MonoBehaviour
 
     [SerializeField] private GameObject door;
     [SerializeField] private Sprite brokenSprite;
+    [SerializeField] private AudioClip sfxClip;
+    [Range(1, 100)][SerializeField] private int sfxVolume = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class DoorSwitch : MonoBehaviour
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
         spriteRenderer.sprite = brokenSprite;
         collider.enabled = false;
+        AudioPlayer.Instance.PlaySFX(sfxClip, sfxVolume);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

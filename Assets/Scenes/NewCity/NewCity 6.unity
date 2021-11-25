@@ -20951,7 +20951,7 @@ MonoBehaviour:
   carryDistanceCheck: 0.1
   destinationVector: {x: 13, y: 2}
   startingVector: {x: 0, y: 0}
-  moveSpeed: 6.5
+  moveSpeed: 7
   reverseDirection: 1
   invertPosition: 1
 --- !u!50 &400346180
@@ -21354,7 +21354,7 @@ MonoBehaviour:
   carryDistanceCheck: 0.1
   destinationVector: {x: 13, y: 2}
   startingVector: {x: 0, y: 0}
-  moveSpeed: 6.5
+  moveSpeed: 7
   reverseDirection: 1
   invertPosition: 0
 --- !u!50 &408552188
@@ -23078,7 +23078,7 @@ MonoBehaviour:
   carryDistanceCheck: 0.1
   destinationVector: {x: 3, y: 4}
   startingVector: {x: 0, y: 0}
-  moveSpeed: 2
+  moveSpeed: 3.5
   reverseDirection: 0
   invertPosition: 0
 --- !u!50 &858658589
@@ -26519,8 +26519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
   destinationVector: {x: 3, y: 4}
-  startingVector: {x: 0, y: 4}
-  moveSpeed: 2
+  startingVector: {x: 4, y: 0}
+  moveSpeed: 3.5
   reverseDirection: 1
   invertPosition: 0
 --- !u!50 &1588371513
