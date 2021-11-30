@@ -159,7 +159,7 @@ public class DialogBox : MonoBehaviour
     // Player Input System
     private void OnContinue(InputValue value)
     {
-        if (GameManager.Instance.isDialogUp)
+        if (GameManager.Instance.isDialogUp && !GameManager.Instance.isPaused)
         {
             if (!isTyping)
             {

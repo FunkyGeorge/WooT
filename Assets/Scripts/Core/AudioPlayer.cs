@@ -44,6 +44,7 @@ public class AudioPlayer : MonoBehaviour
     void Start()
     {
         GameObject parentObject = GameObject.Find("Audio");
+        _masterVolume = Prefs.GetMasterVolume();
         DontDestroyOnLoad(parentObject);
     }
 
@@ -97,5 +98,20 @@ public class AudioPlayer : MonoBehaviour
     public void StopMusic()
     {
         musicAudioSource.Stop();
+    }
+
+    public void SetMasterVolume(int newVolume)
+    {
+        if (newVolume >= 0 && newVolume <= 100)
+        {
+            Prefs.SetMasterVolume(newVolume);
+            _masterVolume = newVolume;
+
+            if (musicAudioSource.isPlaying)
+            {
+                float adjustedVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (newVolume / 100f);
+                musicAudioSource.volume = adjustedVolume;
+            }
+        }
     }
 }

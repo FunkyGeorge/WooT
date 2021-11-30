@@ -103,6 +103,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         GameObject pauseMenu = GameObject.Find(pauseMenuName);
         CanvasGroup canvas = pauseMenu.GetComponent<CanvasGroup>();
+        PauseHandler pauseHandler = pauseMenu.GetComponent<PauseHandler>();
+        pauseHandler.Init();
         canvas.alpha = 1f;
         canvas.blocksRaycasts = true;
     }

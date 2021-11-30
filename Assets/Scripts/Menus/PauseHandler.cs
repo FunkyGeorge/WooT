@@ -10,6 +10,8 @@ public class PauseHandler : MonoBehaviour
 {
     [SerializeField] private AudioClip selectSFX;
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
+    [SerializeField] private GameObject defaultMenuItem;
+    [SerializeField] private Slider volumeSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +25,16 @@ public class PauseHandler : MonoBehaviour
         
     }
 
+    public void Init()
+    {
+        volumeSlider.value = Prefs.GetMasterVolume();
+        EventSystem.current.SetSelectedGameObject(defaultMenuItem);
+    }
+
     public void ResumeButtonHandler()
     {
         GameManager.Instance.UnpauseGame();
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void ToMainMenuHandler()
@@ -36,6 +45,11 @@ public class PauseHandler : MonoBehaviour
         SceneManager.MoveGameObjectToScene(Player.Instance.gameObject, SceneManager.GetActiveScene());
         AudioPlayer.Instance.StopMusic();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void OnVolumeSliderChanged(Slider slider)
+    {
+        AudioPlayer.Instance.SetMasterVolume((int)slider.value);
     }
 
     public void QuitToDesktop()
