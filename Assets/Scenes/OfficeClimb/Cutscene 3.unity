@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0080d486f3ce72144b71c92c9ccb74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Cutscene 4
+  nextScene: End Scene
   hectorAnimator: {fileID: 122697238}
   initialDelay: 0
   playerIntro: {fileID: 11400000, guid: 840959c9d2ba1bb4ab7b12e9eba7dc02, type: 2}

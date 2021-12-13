@@ -9511,7 +9511,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -20
+  m_SortingOrder: -30
   m_Sprite: {fileID: 21300000, guid: 3e765c621e924334e983a44a6512c380, type: 3}
   m_Color: {r: 0.9399351, g: 0.9433962, b: 0.84994656, a: 0.46666667}
   m_FlipX: 0
@@ -9694,7 +9694,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 0, y: 10}
   moveSpeed: 2
   timeOffset: 0
@@ -9964,7 +9963,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
-  momentumTime: 0.5
   destinationVector: {x: 22, y: 0}
   moveSpeed: 10
   timeOffset: 0

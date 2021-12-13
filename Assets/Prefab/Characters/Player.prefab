@@ -176,7 +176,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 4367306324953526336}
   deathTransitionPrefab: {fileID: 53813300573753185, guid: f887886c09599314ea3947d2c05f8daa, type: 3}
   jumpAudioClip: {fileID: 8300000, guid: 4a0eb0144c63dfd44a57b761086b6f5c, type: 3}
-  jumpAudioVolume: 8
+  jumpAudioVolume: 30
+  crunchAudioClip: {fileID: 8300000, guid: b0fa0ee61f438e54ba174628d59623d4, type: 3}
+  crunchAudioVolume: 30
   contactFilter:
     useTriggers: 0
     useLayerMask: 1

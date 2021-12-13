@@ -76,11 +76,13 @@ public class AudioPlayer : MonoBehaviour
 
     public void PlayMusic(AudioClip musicClip, int musicVolume = 100)
     {
+        _masterVolume = Prefs.GetMasterVolume();
+
         if (musicAudioSource.clip == null)
         {
             float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (musicVolume / 100f);
-            musicAudioSource.clip = musicClip;
             musicAudioSource.volume = playVolume;
+            musicAudioSource.clip = musicClip;
             musicAudioSource.Play();
         }
         else if (musicAudioSource.clip != musicClip)

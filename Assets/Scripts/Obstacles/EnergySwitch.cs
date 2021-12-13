@@ -7,6 +7,8 @@ public class EnergySwitch : MonoBehaviour
 
     [SerializeField] private GameObject energy;
     [SerializeField] private Sprite brokenSprite;
+    [SerializeField] private AudioClip sfxClip;
+    [Range(1, 100)][SerializeField] private int sfxVolume = 100;
     private Sprite defaultSprite;
     private bool isGoingToReset = false;
     // Start is called before the first frame update
@@ -33,6 +35,7 @@ public class EnergySwitch : MonoBehaviour
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
         spriteRenderer.sprite = brokenSprite;
         collider.enabled = false;
+        AudioPlayer.Instance.PlaySFX(sfxClip, sfxVolume);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

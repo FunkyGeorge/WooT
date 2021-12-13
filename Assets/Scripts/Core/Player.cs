@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     [Header("Sounds")]
     [SerializeField] private AudioClip jumpAudioClip;
     [Range(1, 100)] [SerializeField] private int jumpAudioVolume = 100;
+    [SerializeField] private AudioClip crunchAudioClip;
+    [Range(1, 100)] [SerializeField] private int crunchAudioVolume = 100;
 
 
     [Header("Movement")]
@@ -198,7 +200,11 @@ public class Player : MonoBehaviour
 
             if (uniqueHorizontalColliders.Count > 1)
             {
-                Die();
+                if (!isDying)
+                {
+                    AudioPlayer.Instance.PlaySFX(crunchAudioClip, crunchAudioVolume);
+                    Die();
+                }
             }
         }
 
@@ -229,7 +235,11 @@ public class Player : MonoBehaviour
             if (uniqueVerticalColliders.Count > 1)
             {
                 // Only kill player if different colliders, shouldn't be squashed by a single collider
-                Die();
+                if (!isDying)
+                {
+                    AudioPlayer.Instance.PlaySFX(crunchAudioClip, crunchAudioVolume);
+                    Die();
+                }
             }
         }
     }

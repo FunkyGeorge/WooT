@@ -63,14 +63,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (isPaused || shouldForceCursorVisibility)
-        // {
-        //     Cursor.visible = true;
-        // }
-        // else
-        // {
-        //     Cursor.visible = false;
-        // }
+        if (isPaused || shouldForceCursorVisibility)
+        {
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false;
+        }
     }
 
     private void SetUIReferences()
