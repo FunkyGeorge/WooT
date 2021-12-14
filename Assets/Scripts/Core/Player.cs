@@ -131,8 +131,13 @@ public class Player : MonoBehaviour
             groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
         }
 
-        virtualCamera = GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>();
-        defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
+        GameObject vcGameObject = GameObject.Find("Virtual Camera");
+
+        if (vcGameObject)
+        {
+            virtualCamera = vcGameObject.GetComponent<CinemachineVirtualCamera>();
+            defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
+        }
     }
 
     public void PrepareForDestroy()

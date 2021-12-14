@@ -34,7 +34,6 @@ public class PauseHandler : MonoBehaviour
     public void ResumeButtonHandler()
     {
         GameManager.Instance.UnpauseGame();
-        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void ToMainMenuHandler()
