@@ -41,7 +41,8 @@ public class Player : MonoBehaviour
     private Vector2 velocity = Vector2.zero;
     private Vector2 targetVelocity = Vector2.zero;
     [SerializeField] private float minMoveDeadzone = 0.2f;
-    private Vector2 momentum = Vector2.zero;
+    private Vector2 momentum = Vector2.zero; // Used for carryingplatform tweaks
+    private Vector2 momentum2 = Vector2.zero;
     private Vector2 intentDirection;
     public bool grounded = true;
     private float lastGrounded = 0;
@@ -322,6 +323,12 @@ public class Player : MonoBehaviour
         grounded = false;
         animator.SetBool("isGrounded", false);
         animator.SetBool("isLookingUp", false);
+
+        // convert momentum2 to momentum for air momentum that works
+        if (momentum2 != Vector2.zero)
+        {
+            momentum = momentum2;
+        }
     }
 
     private void CalculateJumpHeight()
@@ -359,7 +366,7 @@ public class Player : MonoBehaviour
 
         if (isJumping && jumpTimeCounter > 0)
         {
-            velocity.y = jumpPower;            
+            velocity.y = jumpPower;
             jumpTimeCounter -= Time.deltaTime;
             if (momentum != Vector2.zero)
             {
@@ -381,7 +388,7 @@ public class Player : MonoBehaviour
             {
                 if (momentum != Vector2.zero)
                 {
-                    velocity += momentum;
+                    velocity.x += momentum.x;
                 }
                 
                 if (intentDirection.y < -fastFallDownControlThreshold)
@@ -395,10 +402,16 @@ public class Player : MonoBehaviour
             }
         }
 
+
         if (lastGrounded + momentumClingTime < Time.time)
         {
             // Dump momemntum
             momentum = Vector2.zero;
+        }
+        else if (momentum2 != Vector2.zero)
+        {
+            velocity += momentum2;
+            momentum2 = Vector2.zero;
         }
 
         animator.SetFloat("verticalVelocity", velocity.y);
@@ -506,6 +519,11 @@ public class Player : MonoBehaviour
                 transform.Translate(move);
             }
         }
+    }
+
+    public void PositionTweak(Vector2 positionDiff)
+    {
+        momentum2 = new Vector2(positionDiff.x/Time.deltaTime, positionDiff.y/Time.deltaTime);
     }
 
     public void Die()

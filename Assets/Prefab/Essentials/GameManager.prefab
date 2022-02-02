@@ -80,6 +80,7 @@ MonoBehaviour:
   - NewCity 5
   - NewCity 6
   - NewCity 7
+  - NewCity 8
   - Cutscene 4
   finalMusicClip: {fileID: 8300000, guid: 60446621dc4bca54682d8bba76da8cc5, type: 3}
   finalMusicClipVolume: 10
