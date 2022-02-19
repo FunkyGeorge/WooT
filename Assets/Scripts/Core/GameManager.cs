@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject fadeTransitionPrefab;
 
     [Header("State Flags")]
+    [SerializeField] bool isDebugging = false;
     public bool isDialogUp = false;
     public bool isPaused = false;
     public bool shouldForceCursorVisibility = false;
@@ -64,14 +65,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (isPaused || shouldForceCursorVisibility)
-        // {
-        //     Cursor.visible = true;
-        // }
-        // else
-        // {
-        //     Cursor.visible = false;
-        // }
+        if (isPaused || shouldForceCursorVisibility || isDebugging)
+        {
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false;
+        }
     }
 
     private void SetUIReferences()

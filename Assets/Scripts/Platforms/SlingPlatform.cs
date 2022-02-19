@@ -13,10 +13,11 @@ public class SlingPlatform : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 initialPosition;
     private Vector2 destinationPosition;
-    private bool isActivated = false;
-    private bool isReturning = false;
+    [SerializeField] private bool isActivated = false;
+    [SerializeField] private bool isReturning = false;
     private float currentDelay = 0;
     private float speedModifier = 3f;
+    private float checkThreshold = 0.02f;
 
 
     // Start is called before the first frame update
@@ -65,7 +66,7 @@ public class SlingPlatform : MonoBehaviour
         moveVector = destinationPosition - currentPosition;
         moveVector = moveVector.normalized * Time.deltaTime * shotSpeed * speedModifier;
         
-        if (Mathf.Abs(rb.position.x) >= Mathf.Abs(destinationPosition.x) || rb.position.y >= destinationPosition.y)
+        if (Mathf.Abs(rb.position.x - destinationPosition.x) < checkThreshold || rb.position.y >= destinationPosition.y)
         {
             isReturning = true;
             currentDelay = returnDelay;
@@ -85,7 +86,9 @@ public class SlingPlatform : MonoBehaviour
         moveVector = initialPosition - currentPosition;
         moveVector = moveVector.normalized * Time.deltaTime * returnSpeed * speedModifier;
 
-        if (Mathf.Abs(rb.position.x) <= Mathf.Abs(initialPosition.x) || rb.position.y <= initialPosition.y)
+
+
+        if (Mathf.Abs(rb.position.x - initialPosition.x) < checkThreshold || rb.position.y <= initialPosition.y)
         {
             isReturning = false;
             isActivated = false;

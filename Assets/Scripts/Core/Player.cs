@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject deathTransitionPrefab;
     private Rigidbody2D rb2d;
     private Rigidbody2D groundRigidbody;
+    private bool hasSuspendedItem = false;
+    private GameObject suspendedItem;
 
 
     [Header("Sounds")]
@@ -139,6 +141,10 @@ public class Player : MonoBehaviour
             virtualCamera = vcGameObject.GetComponent<CinemachineVirtualCamera>();
             defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
         }
+
+        // Empty suspended Items
+        suspendedItem = null;
+        hasSuspendedItem = false;
     }
 
     public void PrepareForDestroy()
@@ -424,6 +430,12 @@ public class Player : MonoBehaviour
         GameManager.Instance.inventorySprite.sprite = image;
     }
 
+    public void SuspendKeycard(GameObject inventoryItem)
+    {
+        hasSuspendedItem = true;
+        suspendedItem = inventoryItem;
+    }
+
     public void RemoveInventoryItem(string inventoryName)
     {
         if (inventory.ContainsKey(inventoryName))
@@ -531,6 +543,12 @@ public class Player : MonoBehaviour
         if (!isDying)
         {
             isDying = true;
+            if (hasSuspendedItem)
+            {
+                RemoveInventoryItem(suspendedItem.name);
+                suspendedItem.SetActive(true);
+                hasSuspendedItem = false;
+            }
             StartCoroutine(DeathSequence());
         }
     }

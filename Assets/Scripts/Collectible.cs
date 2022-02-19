@@ -17,6 +17,7 @@ public class Collectible : MonoBehaviour
     public ItemType type;
     public Sprite inventorySprite;
     [SerializeField] private bool checkpoint = false;
+    [SerializeField] private bool isResetting = false;
     private const string SPAWN_POINT = "Spawn Point";
 
     // Start is called before the first frame update
@@ -28,7 +29,7 @@ public class Collectible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,12 +41,21 @@ public class Collectible : MonoBehaviour
                 AudioPlayer.Instance.PlaySFX(onDestroyAudioClip, onDestroyAudioVolume);
             }
 
-            if (checkpoint)
+            if (isResetting)
+            {
+                Player.Instance.SuspendKeycard(gameObject);
+                gameObject.SetActive(false);
+            }
+            else if (checkpoint)
             {
                 GameObject.Find(SPAWN_POINT).transform.position = transform.position;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
             }
 
-            Destroy(gameObject);
         }
     }
 }

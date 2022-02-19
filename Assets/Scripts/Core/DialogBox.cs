@@ -18,6 +18,7 @@ public class DialogBox : MonoBehaviour
     [SerializeField] private Sprite anonymousImage;
     [SerializeField] private Sprite jessePortrait;
     [SerializeField] private Sprite josephinePortrait;
+    [SerializeField] private Sprite hectorPortrait;
     [SerializeField] private Sprite adminPortrait;
 
     public Queue<string> dialogueQueue;
@@ -132,6 +133,8 @@ public class DialogBox : MonoBehaviour
                 return adminPortrait;
             case "Josephine":
                 return josephinePortrait;
+            case "Hector":
+                return hectorPortrait;
             default:
                 return anonymousImage;
         }

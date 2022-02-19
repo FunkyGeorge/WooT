@@ -42,13 +42,43 @@ public class PressurePlatform : CarryingPlatform
         
         if (isReversed)
         {
-            newX = Mathf.Max(rb.position.x - moveSpeed * Time.deltaTime, 0);
-            newY = Mathf.Max(rb.position.y - moveSpeed * Time.deltaTime, 0);
+            if (destinationVector.x >= 0)
+            {
+                newX = Mathf.Max(rb.position.x - moveSpeed * Time.deltaTime, 0);
+            }
+            else
+            {
+                newX = Mathf.Min(rb.position.x + moveSpeed * Time.deltaTime, 0);
+            }
+
+            if (destinationVector.y >= 0)
+            {
+                newY = Mathf.Max(rb.position.y - moveSpeed * Time.deltaTime, 0);
+            }
+            else
+            {
+                newY = Mathf.Min(rb.position.y + moveSpeed * Time.deltaTime, 0);
+            }
         }
         else
         {
-            newX = Mathf.Min(rb.position.x + moveSpeed * Time.deltaTime, destinationVector.x);
-            newY = Mathf.Min(rb.position.y + moveSpeed * Time.deltaTime, destinationVector.y);
+            if (destinationVector.x >= 0)
+            {
+                newX = Mathf.Min(rb.position.x + moveSpeed * Time.deltaTime, destinationVector.x);
+            }
+            else
+            {
+                newX = Mathf.Max(rb.position.x - moveSpeed * Time.deltaTime, destinationVector.x);
+            }
+
+            if (destinationVector.y >= 0)
+            {
+                newY = Mathf.Min(rb.position.y + moveSpeed * Time.deltaTime, destinationVector.y);
+            }
+            else
+            {
+                newY = Mathf.Max(rb.position.y - moveSpeed * Time.deltaTime, destinationVector.y);
+            }
         }
 
         
