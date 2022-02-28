@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!50 &68811201 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 5864531044940753527, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+  m_PrefabInstance: {fileID: 567655155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &565301384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4530502593550930842, guid: 38ec5fe3c314a1a4a83ece3b034439c1, type: 3}
@@ -135,6 +140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4685016407162216902, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4685016407174093464, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -149,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4685016407174093464, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -170.8012
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4685016407174093464, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -183,6 +192,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spring
       objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287592, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287599, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287599, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287599, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287599, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685016408712287599, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419528395228612390, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 68811201}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2207610c18a6e3e4dad9a1dcf5eafec2, type: 3}
 --- !u!1001 &1010500841
