@@ -13,9 +13,9 @@ public class GameManager : MonoBehaviour
     public Sprite inventoryEmptySprite;
     [SerializeField] private GameObject transitionsPrefab;
     [SerializeField] private GameObject fadeTransitionPrefab;
+    [SerializeField] private ConfigScriptableObject config;
 
     [Header("State Flags")]
-    [SerializeField] bool isDebugging = false;
     public bool isDialogUp = false;
     public bool isPaused = false;
     public bool shouldForceCursorVisibility = false;
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPaused || shouldForceCursorVisibility || isDebugging)
+        if (isPaused || shouldForceCursorVisibility || config.isDebug)
         {
             Cursor.visible = true;
         }

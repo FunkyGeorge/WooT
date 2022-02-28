@@ -48,6 +48,7 @@ MonoBehaviour:
   inventoryEmptySprite: {fileID: -8821012411062895258, guid: 728d46ebdf4620e4eaf18346f77eee43, type: 3}
   transitionsPrefab: {fileID: 4947388891294143473, guid: ac480efe1a6fdb74085fd0d77c694e09, type: 3}
   fadeTransitionPrefab: {fileID: 3687068845999906608, guid: 7aa8e051028c16a42aaaee7be8075bee, type: 3}
+  config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
   isDialogUp: 0
   isPaused: 0
   shouldForceCursorVisibility: 0
