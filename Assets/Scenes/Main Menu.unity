@@ -1471,3 +1471,5 @@ MonoBehaviour:
   selectSFX: {fileID: 8300000, guid: 0669a04c6e48bc64eb312b667dc0593d, type: 3}
   selectAudioVolume: 100
   continueButton: {fileID: 1773176005}
+  config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
+  debugEntryLevel: Climb 5

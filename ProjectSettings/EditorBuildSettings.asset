@@ -87,6 +87,18 @@ EditorBuildSettings:
     path: Assets/Scenes/OfficeClimb/Climb 1.unity
     guid: 76e11ba57e09a7a4aad2daeeb9244be7
   - enabled: 1
+    path: Assets/Scenes/OfficeClimb/Climb 2.unity
+    guid: 4a31343330894444192bc545d21a66a0
+  - enabled: 1
+    path: Assets/Scenes/OfficeClimb/Climb 3.unity
+    guid: 6e8736cbadd50264db5fdc51fcfceb7c
+  - enabled: 1
+    path: Assets/Scenes/OfficeClimb/Climb 4.unity
+    guid: 96c68c3a71badd048a3930fcdca3d6bf
+  - enabled: 1
+    path: Assets/Scenes/OfficeClimb/Climb 5.unity
+    guid: 293001504facc9c45b1777db95746314
+  - enabled: 1
     path: Assets/Scenes/Final/Cutscene 4.unity
     guid: 4881fb8e283d81845b29b550b8d03ee8
   - enabled: 1

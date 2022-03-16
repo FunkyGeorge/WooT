@@ -14,10 +14,14 @@ public class MenuHandler : MonoBehaviour
 
     [SerializeField] private GameObject continueButton;
 
+    [Header("Debugging")]
+    [SerializeField] private ConfigScriptableObject config;
+    [SerializeField] private string debugEntryLevel;
+
     // Start is called before the first frame update
     void Start()
     {
-        if (!Prefs.HasCurrentLevel())
+        if (!Prefs.HasCurrentLevel() && !config.isDebug)
         {
             Image continueButtonImage = continueButton.GetComponent<Image>();
             Color continueButtonColor = continueButtonImage.color;
@@ -44,12 +48,10 @@ public class MenuHandler : MonoBehaviour
 
     public void ContinueButtonHandler()
     {
-        if (Prefs.HasCurrentLevel())
-        {
-            PlaySound();
-            string currentLevel = Prefs.GetCurrentLevel();
-            SceneManager.LoadScene(currentLevel);
-        }
+        PlaySound();
+
+        string nextLevel = config.isDebug ? debugEntryLevel : Prefs.GetCurrentLevel();
+        SceneManager.LoadScene(nextLevel);
     }
 
     public void QuitToDesktop()

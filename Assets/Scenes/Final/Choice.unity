@@ -21246,6 +21246,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -21454,6 +21474,7 @@ MonoBehaviour:
   didStopProjectGentleGoodnight: 0
   selectSFX: {fileID: 8300000, guid: 0669a04c6e48bc64eb312b667dc0593d, type: 3}
   selectAudioVolume: 100
+  config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
   choicePromptPanel: {fileID: 951048002}
   descriptionText: {fileID: 698153245}
   yesDecisionText: You decide to stop Project Gentle Goodnight. Hector's plan of

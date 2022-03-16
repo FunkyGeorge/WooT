@@ -12,6 +12,7 @@ public class FinalChoiceHandler : MonoBehaviour
     [SerializeField] private bool didStopProjectGentleGoodnight = false;
     [SerializeField] private AudioClip selectSFX;
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
+    [SerializeField] private ConfigScriptableObject config;
 
     [Header("Choice Prompt Form")]
     [SerializeField] private GameObject choicePromptPanel;
@@ -96,8 +97,8 @@ public class FinalChoiceHandler : MonoBehaviour
     {
         Player.Instance.hasControl = false;
         // Default to 89 characters for debugging
-        counterTemplate = Player.Instance.shardsCollected == 0 ? "/89" : "/" + Player.Instance.shardsCollected.ToString();
-        explanationInput.characterLimit = Player.Instance.shardsCollected == 0 ? 89 : Player.Instance.shardsCollected;
+        counterTemplate = config.isDebug ? "/89" : "/" + Player.Instance.shardsCollected.ToString();
+        explanationInput.characterLimit = config.isDebug ? 89 : Player.Instance.shardsCollected;
         explanationCounter.text = "0" + counterTemplate;
         GameManager.Instance.shouldForceCursorVisibility = true;
         explanationPromptPanel.SetActive(true);
