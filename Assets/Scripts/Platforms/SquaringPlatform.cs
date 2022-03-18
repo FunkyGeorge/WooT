@@ -28,16 +28,30 @@ public class SquaringPlatform : CarryingPlatform
                 xCursor = startingVector.x;
                 yCursor = startingVector.y;
                 transform.position = startingVector;
+
+                if (invertPosition)
+                {
+                    yReversed = true;
+                    xReversed = true;
+                    // isMovingYAxis = true;
+
+                    if (xCursor == 0) { xReversed = false; isMovingYAxis = true; }
+                    if (yCursor == 0) { yReversed = false; isMovingYAxis = false; }
+                }
             }
             else if (invertPosition)
             {
-                xCursor = destinationVector.x;
-                yCursor = destinationVector.y;
-                transform.position = destinationVector;
+                if (startingVector != Vector2.zero)
+                {
+                    xCursor = destinationVector.x;
+                    yCursor = destinationVector.y;
+                    transform.position = destinationVector;
+
+                    yReversed = true;
+                    xReversed = true;
+                    isMovingYAxis = !isMovingYAxis;
+                }
             }
-            
-            if (yCursor == destinationVector.y) { yReversed = true; isMovingYAxis = !isMovingYAxis; }
-            if (xCursor == destinationVector.x) { xReversed = true; isMovingYAxis = !isMovingYAxis; }
         }
 
         if (reverseDirection)
