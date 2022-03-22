@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraTrigger : MonoBehaviour
 {
     [SerializeField] private CameraManagerScriptableObject cameraManager;
-    [SerializeField] private int lensSize = 8;
+    [SerializeField] private CameraManagerScriptableObject.CameraState cameraState;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class CameraTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            cameraManager.SetSize(lensSize);
+            cameraManager.SetCamera(cameraState);
         }
     }
 }

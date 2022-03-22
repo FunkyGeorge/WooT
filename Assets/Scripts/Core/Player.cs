@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         GameManager.Instance.UpdateUI();
-        virtualCamera = GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>();
+        virtualCamera = GameObject.Find("Basic Camera").GetComponent<CinemachineVirtualCamera>();
         defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
 
         Respawn();

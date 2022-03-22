@@ -4,9 +4,9 @@ using Cinemachine;
 public class CameraConfig : MonoBehaviour
 {
     [SerializeField] private CameraManagerScriptableObject cameraManager;
-    [SerializeField] private CinemachineVirtualCamera vCam;
     [SerializeField] private DeathManagerScriptableObject deathManager;
-    [SerializeField] private CinemachineVirtualCamera virtualCam;
+    [SerializeField] private CinemachineStateDrivenCamera vCam;
+    [SerializeField] private Animator animator;
     // Look at player on startup
     void Start()
     {
@@ -15,8 +15,8 @@ public class CameraConfig : MonoBehaviour
 
         if (deathManager && cameraManager)
         {
-            deathManager.deathEvent.AddListener(ResetLens);
-            cameraManager.LensChangeEvent.AddListener(SetLens);
+            deathManager.deathEvent.AddListener(ResetCamera);
+            cameraManager.CameraChangeEvent.AddListener(SetCamera);
         }
         else
         {
@@ -26,17 +26,28 @@ public class CameraConfig : MonoBehaviour
 
     void OnDisable()
     {
-        deathManager.deathEvent.RemoveListener(ResetLens);
-        cameraManager.LensChangeEvent.RemoveListener(SetLens);
+        deathManager.deathEvent.RemoveListener(ResetCamera);
+        cameraManager.CameraChangeEvent.RemoveListener(SetCamera);
     }
 
-    private void SetLens(int lensSize)
+    private void SetCamera(CameraManagerScriptableObject.CameraState cameraState)
     {
-        virtualCam.m_Lens.OrthographicSize = lensSize;
+        switch (cameraState) 
+        {
+            case CameraManagerScriptableObject.CameraState.Basic:
+                animator.Play("Basic");
+                break;
+            case CameraManagerScriptableObject.CameraState.Wide:
+                animator.Play("Wide");
+                break;
+            default:
+                animator.Play("Basic");
+                break;
+        }
     }
 
-    private void ResetLens(int deathCount)
+    private void ResetCamera(int deathCount)
     {
-        virtualCam.m_Lens.OrthographicSize = 8;
+        cameraManager.SetCamera(CameraManagerScriptableObject.CameraState.Basic);
     }
 }

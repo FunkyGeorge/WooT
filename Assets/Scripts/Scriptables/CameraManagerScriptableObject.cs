@@ -4,20 +4,21 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "CameraManager", menuName = "ScriptableObject/CameraManager", order = 3)]
 public class CameraManagerScriptableObject : ScriptableObject
 {
-     public int lensSize = 8;
+     public enum CameraState {
+         Basic,
+         Wide
+     }
 
     [System.NonSerialized]
-    public UnityEvent<int> LensChangeEvent;
+    public UnityEvent<CameraState> CameraChangeEvent;
 
     private void OnEnable()
     {
-        if (LensChangeEvent == null) { LensChangeEvent = new UnityEvent<int>(); }
-        lensSize = 8;
+        if (CameraChangeEvent == null) { CameraChangeEvent = new UnityEvent<CameraState>(); }
     }
 
-    public void SetSize(int newSize)
+    public void SetCamera(CameraState cameraState)
     {
-        lensSize = newSize;
-        LensChangeEvent.Invoke(lensSize);
+        CameraChangeEvent.Invoke(cameraState);
     }
 }

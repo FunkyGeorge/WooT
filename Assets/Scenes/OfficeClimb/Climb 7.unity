@@ -376,6 +376,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2752732393653545236, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
+      propertyPath: m_ChildCameras.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7309213741401763980, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_Name
       value: Camera Rig
@@ -31604,7 +31608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraManager: {fileID: 11400000, guid: e444533515f64594a8c45c8fa8bf3376, type: 2}
-  lensSize: 10
+  cameraState: 1
 --- !u!61 &2910648876255836140
 BoxCollider2D:
   m_ObjectHideFlags: 0
