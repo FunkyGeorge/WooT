@@ -677,6 +677,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -28306,9 +28326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   destinationVector: {x: 7, y: 0}
   moveSpeed: 3
-  timeOffset: 0
+  timeOffset: 3.5
 --- !u!66 &1210727943
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -28891,6 +28912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   destinationVector: {x: 0, y: 9}
   moveSpeed: 3.5
   timeOffset: 0
@@ -33404,6 +33426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   destinationVector: {x: 3, y: 0}
   moveSpeed: 3.5
   timeOffset: 0

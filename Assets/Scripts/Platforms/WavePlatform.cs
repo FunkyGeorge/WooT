@@ -12,7 +12,18 @@ public class WavePlatform : CarryingPlatform
     // Start is called before the first frame update
     void Start()
     {
-    
+        if (deathManager)
+        {
+            deathManager.deathEvent.AddListener(ResetPosition);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(ResetPosition);
+        }
     }
 
     // Update is called once per frame
@@ -27,13 +38,18 @@ public class WavePlatform : CarryingPlatform
         float newY = 0;
         if (destinationVector.x > 0)
         {
-            newX = Mathf.Sin((Time.time + timeOffset) * moveSpeed) * destinationVector.x/2 + destinationVector.x/2;
+            newX = Mathf.Sin((Time.timeSinceLevelLoad - timeKey + timeOffset) * moveSpeed) * destinationVector.x/2 + destinationVector.x/2;
         }
         if (destinationVector.y > 0)
         {
-            newY = Mathf.Sin((Time.time + timeOffset) * moveSpeed) * destinationVector.y/2 + destinationVector.y/2;
+            newY = Mathf.Sin((Time.timeSinceLevelLoad - timeKey + timeOffset) * moveSpeed) * destinationVector.y/2 + destinationVector.y/2;
         }
         Vector2 newPosition = new Vector2(newX, newY);
         rb.MovePosition(newPosition);
+    }
+
+    private void ResetPosition(int deathCount)
+    {
+        timeKey = Time.timeSinceLevelLoad;
     }
 }

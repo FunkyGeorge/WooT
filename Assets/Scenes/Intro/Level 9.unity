@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   destinationVector: {x: 0, y: 2}
   timeOffset: 0
   moveSpeed: 1

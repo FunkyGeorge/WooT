@@ -8,6 +8,8 @@ public class CirclingPlatform : MonoBehaviour
     [SerializeField] float speed = 1f;
     [SerializeField] float radius = 1f;
     [SerializeField] float offset = 0;
+    [SerializeField] protected DeathManagerScriptableObject deathManager;
+    private float timeKey = 0f;
 
     private Rigidbody2D rb;
 
@@ -15,6 +17,20 @@ public class CirclingPlatform : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+
+        if (deathManager)
+        {
+            timeKey = Time.timeSinceLevelLoad;
+            deathManager.deathEvent.AddListener(ResetPosition);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(ResetPosition);
+        }
     }
 
     // Update is called once per frame
@@ -28,11 +44,16 @@ public class CirclingPlatform : MonoBehaviour
         float newX = origin.x;
         float newY = origin.y;
         
-        newX -= Mathf.Cos((Time.timeSinceLevelLoad + offset) * speed) * radius;
-        newY += Mathf.Sin((Time.timeSinceLevelLoad + offset) * speed) * radius;
+        newX -= Mathf.Cos((Time.timeSinceLevelLoad - timeKey + offset) * speed) * radius;
+        newY += Mathf.Sin((Time.timeSinceLevelLoad - timeKey + offset) * speed) * radius;
 
 
         Vector2 newPosition = new Vector2(newX, newY);
         rb.MovePosition(newPosition);
+    }
+
+    private void ResetPosition(int deathCount)
+    {
+        timeKey = Time.timeSinceLevelLoad;
     }
 }

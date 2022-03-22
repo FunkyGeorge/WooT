@@ -25,7 +25,6 @@ public class InteractiveTilemap : CarryingPlatform
     [SerializeField] private float moveSpeed = 1;
     [SerializeField] private float timeOffset = 0;
 
-
     void Start()
     {
         tilemapRenderer = gameObject.GetComponent<TilemapRenderer>();
@@ -35,6 +34,19 @@ public class InteractiveTilemap : CarryingPlatform
             //gameObject.SetActive(false);
             rb.simulated = false;
             tilemapRenderer.enabled = false;
+        }
+
+        if (deathManager)
+        {
+            deathManager.deathEvent.AddListener(OnDeath);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(OnDeath);
         }
     }
 
@@ -72,13 +84,18 @@ public class InteractiveTilemap : CarryingPlatform
         float newY = 0;
         if (destinationVector.x > 0)
         {
-            newX = Mathf.PingPong((Time.time + timeOffset) * moveSpeed, destinationVector.x);
+            newX = Mathf.PingPong((Time.time - timeKey + timeOffset) * moveSpeed, destinationVector.x);
         }
         if (destinationVector.y > 0)
         {
-            newY = Mathf.PingPong((Time.time + timeOffset) * moveSpeed, destinationVector.y);
+            newY = Mathf.PingPong((Time.time - timeKey + timeOffset) * moveSpeed, destinationVector.y);
         }
         
         rb.MovePosition(new Vector2(newX, newY));
+    }
+
+    private void OnDeath(int deathCount)
+    {
+        timeKey = Time.time;
     }
 }

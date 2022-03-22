@@ -11,7 +11,18 @@ public class PingPongPlatform : CarryingPlatform
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (deathManager)
+        {
+            deathManager.deathEvent.AddListener(ResetPosition);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(ResetPosition);
+        }
     }
 
     // Update is called once per frame
@@ -21,13 +32,18 @@ public class PingPongPlatform : CarryingPlatform
         float newY = 0;
         if (destinationVector.x > 0)
         {
-            newX = Mathf.PingPong((Time.time + timeOffset) * moveSpeed, destinationVector.x);
+            newX = Mathf.PingPong((Time.time - timeKey + timeOffset) * moveSpeed, destinationVector.x);
         }
         if (destinationVector.y > 0)
         {
-            newY = Mathf.PingPong((Time.time + timeOffset) * moveSpeed, destinationVector.y);
+            newY = Mathf.PingPong((Time.time - timeKey + timeOffset) * moveSpeed, destinationVector.y);
         }
         
         rb.MovePosition(new Vector2(newX, newY));
+    }
+
+    private void ResetPosition(int deathCount)
+    {
+        timeKey = Time.time;
     }
 }

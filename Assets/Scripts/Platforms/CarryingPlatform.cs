@@ -8,11 +8,14 @@ public class CarryingPlatform : MonoBehaviour
     private Vector3 lastPosition;
     private Transform _transform;
     [SerializeField] protected float carryDistanceCheck = 0.1f;
+    [SerializeField] protected DeathManagerScriptableObject deathManager;
     private bool isCarryingPlayer = false;
+    protected float timeKey = 0f;
 
     void OnEnable()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        timeKey = Time.time;
         _transform = transform;
         lastPosition = _transform.position;
     }

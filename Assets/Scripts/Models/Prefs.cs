@@ -6,6 +6,7 @@ public class Prefs
 {
     private const string CURRENT_LEVEL = "CURRENT_LEVEL";
     private const string MASTER_VOLUME = "MASTER_VOLUME";
+    private const string DEATH_COUNT = "DEATH_COUNT";
 
     public static void SetCurrentLevel(string nextLevel)
     {
@@ -36,5 +37,15 @@ public class Prefs
     public static void SetMasterVolume(int newVolume)
     {
         PlayerPrefs.SetInt(MASTER_VOLUME, newVolume);
+    }
+
+    public static int GetDeathCount()
+    {
+        return PlayerPrefs.GetInt(DEATH_COUNT, 0);
+    }
+
+    public static void SetDeathCount(int newDeathCount)
+    {
+        PlayerPrefs.SetInt(DEATH_COUNT, newDeathCount);
     }
 }

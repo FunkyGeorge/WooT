@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject shootPrefab;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject deathTransitionPrefab;
+    [SerializeField] private DeathManagerScriptableObject deathManager;
     private Rigidbody2D rb2d;
     private Rigidbody2D groundRigidbody;
     private bool hasSuspendedItem = false;
@@ -572,6 +573,7 @@ public class Player : MonoBehaviour
         Respawn();
         rb2d.simulated = true;
         slideAnimator.SetTrigger("end");
+        deathManager.Death();
         yield return new WaitForSeconds(0.6f);
         Destroy(deathTransition);
         isDying = false;

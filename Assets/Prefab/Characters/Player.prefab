@@ -175,7 +175,7 @@ MonoBehaviour:
   shootPrefab: {fileID: 2087509881900418052, guid: f34fbee965b28d04792b26450e85cbb9, type: 3}
   spriteRenderer: {fileID: 4367306324953526336}
   deathTransitionPrefab: {fileID: 53813300573753185, guid: f887886c09599314ea3947d2c05f8daa, type: 3}
-  suspendedKeycardPrefab: {fileID: 444132853969256855, guid: 5ba1778b1aa0d2245af75f1fa2fc3766, type: 3}
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   jumpAudioClip: {fileID: 8300000, guid: 4a0eb0144c63dfd44a57b761086b6f5c, type: 3}
   jumpAudioVolume: 30
   crunchAudioClip: {fileID: 8300000, guid: b0fa0ee61f438e54ba174628d59623d4, type: 3}

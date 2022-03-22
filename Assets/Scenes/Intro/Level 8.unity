@@ -23887,6 +23887,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -24779,10 +24799,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
   actionType: 2
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   triggerState: 0
   destinationVector: {x: 14, y: 0}
   moveSpeed: 1.8
-  timeOffset: 5
+  timeOffset: 8
 --- !u!66 &1554520867
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -25196,11 +25217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.884544
+      value: -1.7299299
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4367433
+      value: 4.547178
       objectReference: {fileID: 0}
     - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
