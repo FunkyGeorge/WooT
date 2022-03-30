@@ -415,7 +415,7 @@ public class Player : MonoBehaviour
             // Dump momemntum
             momentum = Vector2.zero;
         }
-        else if (momentum2 != Vector2.zero)
+        else if (grounded && momentum2 != Vector2.zero)
         {
             velocity += momentum2;
             momentum2 = Vector2.zero;
