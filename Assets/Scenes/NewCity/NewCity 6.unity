@@ -20949,8 +20949,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 0}
   destinationVector: {x: 13, y: 2}
-  startingVector: {x: 0, y: 0}
+  startingVector: {x: 13, y: 2}
   moveSpeed: 7
   reverseDirection: 1
   invertPosition: 1
@@ -21352,6 +21353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 0}
   destinationVector: {x: 13, y: 2}
   startingVector: {x: 0, y: 0}
   moveSpeed: 7
@@ -21610,6 +21612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 0}
   destinationVector: {x: 0, y: 2}
   moveSpeed: 2.5
   timeOffset: 0
@@ -23080,6 +23083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 0}
   destinationVector: {x: 3, y: 4}
   startingVector: {x: 0, y: 0}
   moveSpeed: 3.5
@@ -23714,6 +23718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 0}
   destinationVector: {x: 0, y: 4}
   moveSpeed: 5
   timeOffset: 0
@@ -26522,6 +26527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryDistanceCheck: 0.1
+  deathManager: {fileID: 0}
   destinationVector: {x: 3, y: 4}
   startingVector: {x: 4, y: 0}
   moveSpeed: 3.5

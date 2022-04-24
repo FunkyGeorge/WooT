@@ -6,4 +6,5 @@ using UnityEngine;
 public class ConfigScriptableObject : ScriptableObject
 {
     public bool isDebug;
+    public bool isDemo;
 }

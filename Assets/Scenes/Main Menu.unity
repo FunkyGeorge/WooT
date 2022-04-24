@@ -1472,4 +1472,4 @@ MonoBehaviour:
   selectAudioVolume: 100
   continueButton: {fileID: 1773176005}
   config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
-  debugEntryLevel: Climb 8
+  debugEntryLevel: Fight

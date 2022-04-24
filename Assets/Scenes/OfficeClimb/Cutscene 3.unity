@@ -592,7 +592,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0080d486f3ce72144b71c92c9ccb74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  configScriptable: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
   nextScene: Climb 1
+  demoNextScene: End Scene
   hectorAnimator: {fileID: 122697238}
   initialDelay: 0
   playerIntro: {fileID: 11400000, guid: 840959c9d2ba1bb4ab7b12e9eba7dc02, type: 2}
@@ -21950,6 +21952,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1088039531046712653, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088039531046712653, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333684355761032391, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333684355761032391, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333684355761032391, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4183715115733568298, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
       propertyPath: m_Pivot.x
       value: 0

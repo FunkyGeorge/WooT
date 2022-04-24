@@ -4,7 +4,9 @@ using UnityEngine.Playables;
 
 public class SceneController3 : MonoBehaviour
 {
+    [SerializeField] private ConfigScriptableObject configScriptable;
     [SerializeField] private string nextScene;
+    [SerializeField] private string demoNextScene;
     [SerializeField] private Animator hectorAnimator;
 
     [Header("Timing Config")]
@@ -114,7 +116,13 @@ public class SceneController3 : MonoBehaviour
         }
         else if (dialogBox.IsEmpty() && hasGoneThroughDialogue)
         {
-            GameManager.Instance.FadeLoadLevel(nextScene);
+            if (configScriptable.isDemo)
+            {
+                GameManager.Instance.FadeLoadLevel(demoNextScene);
+            }
+            else {
+                GameManager.Instance.FadeLoadLevel(nextScene);
+            }
             Player.Instance.canShoot = true;
         }
     }

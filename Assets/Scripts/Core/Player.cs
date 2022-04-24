@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
     [SerializeField] private float cameraYTweakDelta = 0.2f;
     [SerializeField] private float cameraTweakDelay = 0.5f;
+    private const string camera_name = "Basic Camera";
     private float cameraTweakHoldTime = 0;
     private float defaultCameraY = 0;
 
@@ -98,7 +99,7 @@ public class Player : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         GameManager.Instance.UpdateUI();
-        virtualCamera = GameObject.Find("Basic Camera").GetComponent<CinemachineVirtualCamera>();
+        virtualCamera = GameObject.Find(camera_name).GetComponent<CinemachineVirtualCamera>();
         defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
 
         Respawn();
@@ -135,7 +136,7 @@ public class Player : MonoBehaviour
             groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
         }
 
-        GameObject vcGameObject = GameObject.Find("Virtual Camera");
+        GameObject vcGameObject = GameObject.Find(camera_name);
 
         if (vcGameObject)
         {
