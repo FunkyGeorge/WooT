@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossStateManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class BossStateManager : MonoBehaviour
     }
 
     public Rigidbody2D rb;
+    public SpriteRenderer spriteRenderer;
+    [SerializeField] private DeathManagerScriptableObject deathManager;
 
     // State Machine Setup
     BossBaseState currentState;
@@ -22,6 +25,7 @@ public class BossStateManager : MonoBehaviour
     public BossDeathState deathState = new BossDeathState();
 
     [Header("Config")]
+    public string nextScene;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
     public List<Pool> pools;
     public int health = 100;
@@ -32,12 +36,18 @@ public class BossStateManager : MonoBehaviour
     public float lastDroneSpawnTime = 0f;
     public float lastDroneDeath = 0f;
 
+    // Hit Control
+    public float lastHitTime = 0f;
+    public float hitCooldown = 0.6f;
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentState = awakeningState;
         currentState.EnterState(this);
+
+        deathManager.deathEvent.AddListener(OnPlayerDeath);
 
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
         foreach (Pool pool in pools)
@@ -55,6 +65,14 @@ public class BossStateManager : MonoBehaviour
         }
     }
 
+    void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(OnPlayerDeath);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -63,7 +81,16 @@ public class BossStateManager : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        currentState.OnCollisionEnter(this, collision);
+        if (Time.time - lastHitTime > hitCooldown)
+        {
+            lastHitTime = Time.time;
+            currentState.OnCollisionEnter(this, collision);
+        }
+    }
+
+    void OnPlayerDeath(int deathCount)
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void SwitchState(BossBaseState state)

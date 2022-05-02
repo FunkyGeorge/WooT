@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BossStage2State : BossBaseState
 {
@@ -14,7 +15,10 @@ public class BossStage2State : BossBaseState
     private float respawnCooldown = 7f;
     public override void EnterState(BossStateManager stateManager)
     {
-        Debug.Log("Entering Stage 2");
+        Color redColor = new Color(0.8784314f, 0.2156863f, 0.1921569f, 1f);
+        stateManager.spriteRenderer.DOColor(redColor, 0.2f).SetLoops(6, LoopType.Yoyo);
+
+
         SpawnDrones(stateManager);
         lastShotTime = Time.time;
     }
@@ -23,6 +27,7 @@ public class BossStage2State : BossBaseState
     {
         if (stateManager.health <= 0)
         {
+            DespawnAllDrones(stateManager);
             stateManager.SwitchState(stateManager.deathState);
         }
 
@@ -38,6 +43,8 @@ public class BossStage2State : BossBaseState
     public override void OnCollisionEnter(BossStateManager stateManager, Collision2D collision)
     {
         stateManager.health -= 10;
+
+        stateManager.spriteRenderer.DOColor(Color.HSVToRGB(0, 0, 0.5f), 0.1f).SetLoops(6, LoopType.Yoyo);
     }
 
     private void Move(BossStateManager stateManager)
@@ -103,6 +110,15 @@ public class BossStage2State : BossBaseState
             }
 
             droneScript.bossObject = stateManager.gameObject;
+        }
+    }
+
+    void DespawnAllDrones(BossStateManager stateManager)
+    {
+        for (int i = 0; i < droneAmount; i++)
+        {
+            GameObject newDrone = stateManager.SpawnFromPool("drones", stateManager.rb.transform.position);
+            newDrone.SetActive(false);
         }
     }
 }

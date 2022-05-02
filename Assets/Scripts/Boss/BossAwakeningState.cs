@@ -11,7 +11,6 @@ public class BossAwakeningState : BossBaseState
     private int currentRotationPointIndex = 0;
     public override void EnterState(BossStateManager stateManager)
     {
-        Debug.Log("Entered Awakening state");
         stateManager.health = 100;
     }
 
@@ -31,7 +30,7 @@ public class BossAwakeningState : BossBaseState
 
     public override void OnCollisionEnter(BossStateManager stateManager, Collision2D collision)
     {
-        Debug.Log("do nothing");
+        
     }
 
     private void Shake(BossStateManager stateManager)

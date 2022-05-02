@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class AttackDrone : MonoBehaviour
 {
@@ -21,7 +22,15 @@ public class AttackDrone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
 
+    void OnEnable()
+    {
+        if (spriteRenderer.color.a == 0)
+        {
+            spriteRenderer.DOFade(1, 0.5f);
+        }
     }
 
     // Update is called once per frame
@@ -39,6 +48,7 @@ public class AttackDrone : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         bossStateManager.lastDroneDeath = Time.time;
+        spriteRenderer.color = new Color(1, 1, 1, 0);
         gameObject.SetActive(false);
     }
 

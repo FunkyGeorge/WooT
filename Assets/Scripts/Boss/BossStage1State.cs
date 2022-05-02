@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BossStage1State : BossBaseState
 {
@@ -12,7 +13,6 @@ public class BossStage1State : BossBaseState
 
     public override void EnterState(BossStateManager stateManager)
     {
-        Debug.Log("Enter Stage 1");
         stateManager.stageStartTime = Time.time;
         lastShotTime = Time.time;
     }
@@ -33,6 +33,8 @@ public class BossStage1State : BossBaseState
         {
             stateManager.health -= 10;
         }
+
+        stateManager.spriteRenderer.DOColor(Color.HSVToRGB(0, 0, 0.5f), 0.1f).SetLoops(6, LoopType.Yoyo);
     }
 
     private void Move(BossStateManager stateManager)

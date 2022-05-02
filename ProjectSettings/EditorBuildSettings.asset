@@ -120,6 +120,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Fight.unity
     guid: 0f1622b7f8d4d264084968accdd3bde0
   - enabled: 1
+    path: Assets/Scenes/Final/Cutscene 5.unity
+    guid: e3029f4a642aad54faed1de994795840
+  - enabled: 1
     path: Assets/Scenes/Final/Choice.unity
     guid: 35b0568ed2f0e2145b5c0bad10074549
   - enabled: 1
