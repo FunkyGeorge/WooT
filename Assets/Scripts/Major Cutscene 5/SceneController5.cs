@@ -14,6 +14,7 @@ public class SceneController5 : MonoBehaviour
     private Vector2 dropLocation = new Vector2(-2, 3);
     private bool playedFirstDialogue = false;
     private bool playedSecondDialogue = false;
+    private bool isComplete = false;
 
     // Start is called before the first frame update
     void Start()
@@ -56,11 +57,12 @@ public class SceneController5 : MonoBehaviour
                 yield return new WaitForSeconds(2f);
                 playedSecondDialogue = true;
                 dialogBox.InitializeDialogue(dialoguePart2[0]);
-            } else if (dialogBox.IsEmpty() && playedSecondDialogue)
+            } else if (dialogBox.IsEmpty() && playedSecondDialogue && !isComplete)
             {
                 yield return new WaitForSeconds(1f);
                 bossSprite.transform.DOMove(dropLocation, 0.2f);
                 GameManager.Instance.FadeLoadLevel(nextScene);
+                isComplete = true;
             }
             yield return new WaitForSeconds(3f);
         }

@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class PauseHandler : MonoBehaviour
 {
@@ -12,11 +13,25 @@ public class PauseHandler : MonoBehaviour
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
     [SerializeField] private GameObject defaultMenuItem;
     [SerializeField] private Slider volumeSlider;
+    [SerializeField] private DeathManagerScriptableObject deathManager;
+    [SerializeField] private TMP_Text deathCountText;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (deathManager)
+        {
+            deathManager.deathEvent.AddListener(AdjustDeathCount);
+            deathCountText.text = deathManager.deathCount.ToString();
+        }
+    }
 
+    void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(AdjustDeathCount);
+        }
     }
 
     // Update is called once per frame
@@ -44,6 +59,11 @@ public class PauseHandler : MonoBehaviour
         SceneManager.MoveGameObjectToScene(Player.Instance.gameObject, SceneManager.GetActiveScene());
         AudioPlayer.Instance.StopMusic();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    private void AdjustDeathCount(int deathCount)
+    {
+        deathCountText.text = deathCount.ToString();
     }
 
     public void OnVolumeSliderChanged(Slider slider)

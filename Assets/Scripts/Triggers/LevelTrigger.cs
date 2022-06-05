@@ -13,6 +13,10 @@ public class LevelTrigger : MonoBehaviour
 
     [SerializeField] private string sceneName;
     [SerializeField] private TransitionType transition = TransitionType.Slide;
+
+    [Header("Debug")]
+    [SerializeField] private ConfigScriptableObject config;
+    [SerializeField] private string debugEntryLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,15 +31,17 @@ public class LevelTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        string nextScene = (bool)config && config.isDemo && debugEntryLevel != "" ? debugEntryLevel : sceneName;
+
         if (collision.gameObject.tag == "Player")
         {
             if (transition == TransitionType.Slide)
             {
-                GameManager.Instance.SlideLoadLevel(sceneName);
+                GameManager.Instance.SlideLoadLevel(nextScene);
             }
             else if (transition == TransitionType.Fade)
             {
-                GameManager.Instance.FadeLoadLevel(sceneName);
+                GameManager.Instance.FadeLoadLevel(nextScene);
             }
         }
     }

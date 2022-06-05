@@ -18,6 +18,7 @@ public class SceneController2 : MonoBehaviour
 
     private DialogBox dialogBox;
     private bool hasGoneThroughDialogue = false;
+    private bool isComplete = false;
 
     // Start is called before the first frame update
     void Start()
@@ -68,10 +69,11 @@ public class SceneController2 : MonoBehaviour
             hasGoneThroughDialogue = true;
             dialogBox.InitializeDialogue(dialoguePart[0]);
         }
-        else if (dialogBox.IsEmpty() && hasGoneThroughDialogue)
+        else if (dialogBox.IsEmpty() && hasGoneThroughDialogue && !isComplete)
         {
             GameManager.Instance.FadeLoadLevel(nextScene);
             Player.Instance.canShoot = true;
+            isComplete = true;
         }
     }
 }

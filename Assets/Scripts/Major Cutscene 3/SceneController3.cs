@@ -26,6 +26,7 @@ public class SceneController3 : MonoBehaviour
     private bool hasPlayedHectorTurnCutscene = false;
     private bool hasGoneThroughDialogue = false;
     private bool cutsceneIsPlaying = false;
+    private bool isComplete = false;
 
     // Start is called before the first frame update
     void Start()
@@ -114,7 +115,7 @@ public class SceneController3 : MonoBehaviour
             hasGoneThroughDialogue = true;
             dialogBox.InitializeDialogue(dialoguePart[0]);
         }
-        else if (dialogBox.IsEmpty() && hasGoneThroughDialogue)
+        else if (dialogBox.IsEmpty() && hasGoneThroughDialogue && !isComplete)
         {
             if (configScriptable.isDemo)
             {
@@ -124,6 +125,7 @@ public class SceneController3 : MonoBehaviour
                 GameManager.Instance.FadeLoadLevel(nextScene);
             }
             Player.Instance.canShoot = true;
+            isComplete = true;
         }
     }
 

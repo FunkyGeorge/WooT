@@ -70,5 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99da63131e270634bb24a10c0ca29877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Level 2
-  animator: {fileID: 0}
+  sceneName: 
+  transition: 0
+  config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
+  debugEntryLevel: 
