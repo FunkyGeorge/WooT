@@ -247,6 +247,7 @@ MonoBehaviour:
   director: {fileID: 2301738367239687549}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!320 &2301738367239687549

@@ -21194,6 +21194,7 @@ MonoBehaviour:
   director: {fileID: 320834474}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &320834476
@@ -23129,6 +23130,7 @@ MonoBehaviour:
   director: {fileID: 669752955}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &669752957
@@ -26753,6 +26755,7 @@ MonoBehaviour:
   director: {fileID: 1325411107}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &1325411109
@@ -46035,6 +46038,7 @@ MonoBehaviour:
   director: {fileID: 1387423451}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &1387423453
@@ -46535,6 +46539,7 @@ MonoBehaviour:
   director: {fileID: 1416180066}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &1416180068
@@ -49333,6 +49338,7 @@ MonoBehaviour:
   director: {fileID: 1889766382}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &1889766384
@@ -50238,6 +50244,7 @@ MonoBehaviour:
   director: {fileID: 2023184631}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!66 &2023184633
@@ -51042,6 +51049,7 @@ MonoBehaviour:
   director: {fileID: 2042207496156587687}
   dropDelay: 0.5
   returnDelay: 1
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   soundClip: {fileID: 8300000, guid: 7fafb2a87dfbaa24285e9e5b6368feac, type: 3}
   soundVolume: 65
 --- !u!1839735485 &2042207496156587690
