@@ -203,7 +203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189408521
 GameObject:
@@ -285,7 +285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &380120629
 PrefabInstance:
@@ -294,6 +294,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -304,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -462,7 +482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367306324953526339, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4367306324953526339, guid: 838d2c859f36a874aa8dc737d67d02c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -592,84 +612,117 @@ Transform:
   m_Father: {fileID: 1949341989}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &638946061
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.730118
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.959
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11.898332
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916325, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916344, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_Name
-      value: Level Trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916346, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_Size.y
-      value: 3.069779
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916346, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.5906718
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: SceneName
-      value: Level 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259100685916347, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
-      propertyPath: sceneName
-      value: Level 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dece7ce727eb4b244bb5997485654c7c, type: 3}
 --- !u!95 &738903766 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3008833793026121619, guid: a6373f1c33719a34e971686f1dfb8578, type: 3}
   m_PrefabInstance: {fileID: 3008833792288332101}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &800262118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800262121}
+  - component: {fileID: 800262120}
+  - component: {fileID: 800262119}
+  m_Layer: 0
+  m_Name: Automatic Level Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &800262119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800262118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b1957e58b21904c8709a771b48930b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainDialogue:
+    name: Josephine
+    sentences:
+    - Jesse, you made it! Welcome to Twilight Inc. I'm Josephine and it looks like
+      we are going to be partner dreamweavers.
+    - Twilight Inc. is one of the few companies that offer clients the ability to
+      live in a perfect world.
+    - 'It is all an illusion of course. '
+    - Our clients consider life very boring now ever since almost every job got automated
+      away with smart tech.
+    - Our priority is to create a fantastic dream world so that our clients can experience
+      a life full of meaning again.
+    - But of course you knew this already, you applied for the place after all.
+    - Corporate just requires me to go through all this before we start.
+  secondDialogue:
+    name: Jesse
+    sentences:
+    - Thank you very much. I am very excited to be here. I never would have imagined
+      that I could work here because you know...
+    - It isn't very common for people to land a job here if they don't already have
+      family or friends on the inside.
+  thirdDialogue:
+    name: Josephine
+    sentences:
+    - You're right, and I know that Twilight has been criticized for that.
+    - That is why we have this new program to bring in some talented diversity.
+    - I glad, personally. We should tap into the creative power of as many people
+      as we can.
+    - I can't wait to see what you can do. Let's get started.
+  fourthDialogue:
+    name: 
+    sentences: []
+  isChainDialogueTrigger: 0
+  hasChainDialogueTrigger: 0
+  chainDialogueTrigger: {fileID: 0}
+  nextScene: Level 4
+--- !u!61 &800262120
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800262118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3}
+  m_EdgeRadius: 0
+--- !u!4 &800262121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800262118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.52, y: 6.5, z: -50.713642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1025310252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -679,7 +732,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1341360142064103114, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1341360142064103114, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10390,7 +10443,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749204255
 GameObject:
@@ -10472,7 +10525,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754480095
 GameObject:
@@ -10573,7 +10626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2931303742923732838, guid: 38ec5fe3c314a1a4a83ece3b034439c1, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2931303742923732838, guid: 38ec5fe3c314a1a4a83ece3b034439c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23438,7 +23491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3627874665570795380, guid: 31f7a6796e7896a4b8756adc555afa99, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3627874665570795380, guid: 31f7a6796e7896a4b8756adc555afa99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23482,151 +23535,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31f7a6796e7896a4b8756adc555afa99, type: 3}
---- !u!1001 &691314452596354862
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -50.713642
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971824, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971826, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 691314451137971827, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.name
-      value: Josephine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: thirdDialogue.name
-      value: Josephine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: secondDialogue.name
-      value: Jesse
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: thirdDialogue.sentences.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: secondDialogue.sentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[0]
-      value: Jesse, you made it! Welcome to Twilight Inc. I'm Josephine and it looks
-        like we are going to be partner dreamweavers.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[1]
-      value: Twilight Inc. is one of the few companies that offer clients the ability
-        to live in a perfect world.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[2]
-      value: 'It is all an illusion of course. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[3]
-      value: Our clients consider life very boring now ever since almost every job
-        got automated away with smart tech.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[4]
-      value: Our priority is to create a fantastic dream world so that our clients
-        can experience a life full of meaning again.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[5]
-      value: But of course you knew this already, you applied for the place after
-        all.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: mainDialogue.sentences.Array.data[6]
-      value: Corporate just requires me to go through all this before we start.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: thirdDialogue.sentences.Array.data[0]
-      value: You're right, and I know that Twilight has been criticized for that.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: thirdDialogue.sentences.Array.data[1]
-      value: That is why we have this new program to bring in some talented diversity.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: thirdDialogue.sentences.Array.data[2]
-      value: I glad, personally. We should tap into the creative power of as many
-        people as we can.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: thirdDialogue.sentences.Array.data[3]
-      value: I can't wait to see what you can do. Let's get started.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: secondDialogue.sentences.Array.data[0]
-      value: Thank you very much. I am very excited to be here. I never would have
-        imagined that I could work here because you know...
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: secondDialogue.sentences.Array.data[1]
-      value: It isn't very common for people to land a job here if they don't already
-        have family or friends on the inside.
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
 --- !u!1001 &699199718256833332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23640,7 +23548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 699199717261181035, guid: b9f2456a180583045b8913b53061b07b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 699199717261181035, guid: b9f2456a180583045b8913b53061b07b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23713,7 +23621,7 @@ PrefabInstance:
       objectReference: {fileID: -7500930400330893973, guid: b4ec90ca48703584fb340765ce35a824, type: 2}
     - target: {fileID: 3008833793026121629, guid: a6373f1c33719a34e971686f1dfb8578, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3008833793026121629, guid: a6373f1c33719a34e971686f1dfb8578, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,9 +5,9 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] public Dialogue mainDialogue;
-    [SerializeField] private Dialogue secondDialogue;
-    [SerializeField] private Dialogue thirdDialogue;
-    [SerializeField] private Dialogue fourthDialogue;
+    [SerializeField] protected Dialogue secondDialogue;
+    [SerializeField] protected Dialogue thirdDialogue;
+    [SerializeField] protected Dialogue fourthDialogue;
 
     [SerializeField] protected bool isChainDialogueTrigger = false;
     [SerializeField] private bool hasChainDialogueTrigger = false;
