@@ -19,6 +19,8 @@ public class PauseHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        volumeSlider.value = Prefs.GetMasterVolume();
+
         if (deathManager)
         {
             deathManager.deathEvent.AddListener(AdjustDeathCount);
