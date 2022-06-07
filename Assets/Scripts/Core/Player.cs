@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject shootPrefab;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject deathTransitionPrefab;
+    private GameObject deathTransition;
     [SerializeField] private DeathManagerScriptableObject deathManager;
     private Rigidbody2D rb2d;
     private Rigidbody2D groundRigidbody;
@@ -101,6 +102,9 @@ public class Player : MonoBehaviour
         GameManager.Instance.UpdateUI();
         virtualCamera = GameObject.Find(camera_name).GetComponent<CinemachineVirtualCamera>();
         defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
+
+        deathTransition = Instantiate(deathTransitionPrefab);
+        deathTransition.SetActive(false);
 
         Respawn();
         
@@ -564,20 +568,20 @@ public class Player : MonoBehaviour
         spriteRenderer.enabled = false;
         Player.Instance.hasControl = false;
         rb2d.simulated = false;
-        GameObject deathTransition = Instantiate(deathTransitionPrefab);
+        deathTransition.SetActive(true);
         GameObject slider = GameObject.Find("Ripple");
         Animator slideAnimator = slider.GetComponent<Animator>();
         slideAnimator.SetTrigger("start");
         yield return new WaitForSeconds(0.6f);
-        spriteRenderer.enabled = true;
-        Player.Instance.hasControl = true;
         Respawn();
         rb2d.simulated = true;
         slideAnimator.SetTrigger("end");
         deathManager.Death();
-        yield return new WaitForSeconds(0.6f);
-        Destroy(deathTransition);
         isDying = false;
+        spriteRenderer.enabled = true;
+        Player.Instance.hasControl = true;
+        yield return new WaitForSeconds(0.6f);
+        deathTransition.SetActive(false);
     }
 
     // Player Input System
