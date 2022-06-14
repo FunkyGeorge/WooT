@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Dogmu Games
   productName: Wake Out Of Twilight
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 2e71a8202d3b4a3448ec85ced5a40265, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -74,7 +74,7 @@ PlayerSettings:
   androidMinimumWindowWidth: 400
   androidMinimumWindowHeight: 300
   androidFullscreenMode: 1
-  defaultIsNativeResolution: 0
+  defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 0
   captureSingleScreen: 0
@@ -88,7 +88,7 @@ PlayerSettings:
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
   useFlipModelSwapchain: 1
-  resizableWindow: 0
+  resizableWindow: 1
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
   gpuSkinning: 0
@@ -99,7 +99,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 2
+  fullscreenMode: 3
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -129,13 +129,14 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   m_SupportedAspectRatios:
-    4:3: 1
-    5:4: 1
-    16:10: 1
+    4:3: 0
+    5:4: 0
+    16:10: 0
     16:9: 1
-    Others: 1
-  bundleVersion: 1.0
-  preloadedAssets: []
+    Others: 0
+  bundleVersion: 0.1
+  preloadedAssets:
+  - {fileID: 11400000, guid: a35f2a99231c9fe4fbdcaaa27a7858c1, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -270,7 +271,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 862f4ef0ad70be645839d47acf8fd9e6, type: 3}
+      m_Icon: {fileID: -5257414049921913865, guid: a7f260217d003e6448a2ccc4a763d4a2, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

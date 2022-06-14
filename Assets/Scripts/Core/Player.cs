@@ -105,9 +105,9 @@ public class Player : MonoBehaviour
 
         deathTransition = Instantiate(deathTransitionPrefab);
         deathTransition.SetActive(false);
+        deathTransition.transform.SetParent(gameObject.transform);
 
         Respawn();
-        
         SceneManager.sceneLoaded += OnLoadCallback;
     }
 
