@@ -938,17 +938,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8235267233580866082, guid: a61df2329cf30ff4bb15a99057422284, type: 3}
   m_PrefabInstance: {fileID: 85638141}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &117181871 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6841719227269102427, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
-  m_PrefabInstance: {fileID: 6841719227308160756}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &138839360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,17 +1135,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3262035280788071835, guid: 58c875e731c4e914f8b46d0f0dbbf054, type: 3}
   m_PrefabInstance: {fileID: 1625642422}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &269631343 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6841719227577764251, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
-  m_PrefabInstance: {fileID: 6841719227308160756}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &277054433
 GameObject:
   m_ObjectHideFlags: 0
@@ -35774,18 +35752,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 711705717687000181, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
-      propertyPath: isPaused
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 711705717687000181, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
-      propertyPath: coinsText
-      value: 
-      objectReference: {fileID: 269631343}
-    - target: {fileID: 711705717687000181, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
-      propertyPath: inventorySprite
-      value: 
-      objectReference: {fileID: 117181871}
     - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
       propertyPath: m_RootOrder
       value: 0

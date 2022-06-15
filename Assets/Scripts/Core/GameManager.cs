@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public bool shouldForceCursorVisibility = false;
 
     [Header("Music Config")]
+    public int currentMusicVolume = 100;
     [SerializeField] private AudioClip musicClip1;
     [Range(1, 100)][SerializeField] private int musicClip1Volume = 100;
     [SerializeField] private string[] music1Levels;
@@ -129,6 +130,7 @@ public class GameManager : MonoBehaviour
         {
             if (music1Levels[i] == currentLevel)
             {
+                currentMusicVolume = musicClip1Volume;
                 AudioPlayer.Instance.PlayMusic(musicClip1, musicClip1Volume);
                 break;
             }
@@ -138,6 +140,7 @@ public class GameManager : MonoBehaviour
         {
             if (music2Levels[i] == currentLevel)
             {
+                currentMusicVolume = musicClip2Volume;
                 AudioPlayer.Instance.PlayMusic(musicClip2, musicClip2Volume);
                 break;
             }
@@ -147,6 +150,7 @@ public class GameManager : MonoBehaviour
         {
             if (finalMusicLevels[i] == currentLevel)
             {
+                currentMusicVolume = finalMusicClipVolume;
                 AudioPlayer.Instance.PlayMusic(finalMusicClip, finalMusicClipVolume);
                 break;
             }

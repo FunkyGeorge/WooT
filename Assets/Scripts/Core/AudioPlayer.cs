@@ -80,7 +80,7 @@ public class AudioPlayer : MonoBehaviour
 
         if (musicAudioSource.clip == null)
         {
-            float playVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (musicVolume / 100f);
+            float playVolume = calculateNewVolume();
             musicAudioSource.volume = playVolume;
             musicAudioSource.clip = musicClip;
             musicAudioSource.Play();
@@ -104,16 +104,21 @@ public class AudioPlayer : MonoBehaviour
 
     public void SetMasterVolume(int newVolume)
     {
-        if (newVolume >= 0 && newVolume <= 100)
+        if (newVolume > 0 && newVolume <= 100)
         {
             Prefs.SetMasterVolume(newVolume);
             _masterVolume = newVolume;
 
             if (musicAudioSource.isPlaying)
             {
-                float adjustedVolume = (_masterVolume / 100f) * (_sfxVolume / 100f) * (newVolume / 100f);
+                float adjustedVolume = calculateNewVolume();
                 musicAudioSource.volume = adjustedVolume;
             }
         }
+    }
+
+    private float calculateNewVolume()
+    {
+        return (_masterVolume / 100f) * (_musicVolume / 100f) * (GameManager.Instance.currentMusicVolume / 100f);
     }
 }

@@ -453,6 +453,7 @@ public class Player : MonoBehaviour
 
     private void Shoot()
     {
+        if (GameManager.Instance.isPaused) return;
         Vector2 shotDirection = intentDirection;
         shotDirection.x = Mathf.Round(shotDirection.x);
         shotDirection.y = Mathf.Round(shotDirection.y);
