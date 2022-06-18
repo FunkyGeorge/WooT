@@ -459,6 +459,21 @@ public class Player : MonoBehaviour
         shotDirection.y = Mathf.Round(shotDirection.y);
         shotDirection = shotDirection.normalized;
 
+        Vector2 spawnLocation = transform.position;
+        spawnLocation = spawnLocation + shotDirection.normalized;
+        float shotAngle = Vector2.Angle(Vector2.right, shotDirection);
+        if (shotDirection.y < 0)
+        {
+            shotAngle *= -1;
+        }
+        GameObject shootObject = Instantiate(shootPrefab, spawnLocation, Quaternion.Euler(0, 0, shotAngle));
+        SpriteRenderer shotRenderer = shootObject.GetComponent<SpriteRenderer>();
+
+        if (shotAngle > 90 || shotAngle < -90)
+        {
+            shotRenderer.flipY = true;
+        }
+
         if (intentDirection.x == 0 && intentDirection.y == 0)
         {
             if (!spriteRenderer.flipX)
@@ -467,14 +482,11 @@ public class Player : MonoBehaviour
             }
             else
             {
+                shotRenderer.flipX = true;
                 shotDirection = Vector2.left.normalized;
             }
         }
 
-        Vector2 spawnLocation = transform.position;
-        spawnLocation = spawnLocation + shotDirection.normalized;
-
-        GameObject shootObject = Instantiate(shootPrefab, spawnLocation, Quaternion.identity);
         Rigidbody2D shotRb = shootObject.GetComponent<Rigidbody2D>();
         Physics2D.IgnoreCollision(shootObject.GetComponent<CapsuleCollider2D>(), GetComponent<BoxCollider2D>());
 
