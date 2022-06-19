@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     private const string coinTextName = "UI_CoinText";
     private const string inventorySpriteName = "UI_InventoryImage";
     private const string pauseMenuName = "Pause Menu";
+    private const string feedbackMenuName = "Feedback Menu";
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -121,6 +122,35 @@ public class GameManager : MonoBehaviour
         canvas.alpha = 0;
         canvas.blocksRaycasts = false;
         EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public void OpenFeedback()
+    {
+        if (config.isDemo)
+        {
+            isPaused = true;
+            Time.timeScale = 0f;
+            GameObject feedbackMenu = GameObject.Find(feedbackMenuName);
+            CanvasGroup canvas = feedbackMenu.GetComponent<CanvasGroup>();
+            // PauseHandler pauseHandler = feedbackMenu.GetComponent<PauseHandler>();
+            // pauseHandler.Init();
+            canvas.alpha = 1f;
+            canvas.blocksRaycasts = true;
+        }
+    }
+
+    public void CloseFeedback()
+    {
+        if (config.isDemo)
+        {
+            isPaused = false;
+            Time.timeScale = 1f;
+            GameObject feedbackMenu = GameObject.Find(feedbackMenuName);
+            CanvasGroup canvas = feedbackMenu.GetComponent<CanvasGroup>();
+            canvas.alpha = 0;
+            canvas.blocksRaycasts = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
     }
 
     private void PlayMusic()

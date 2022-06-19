@@ -305,6 +305,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 35d37326-2d96-4c24-9a4a-f67d0c622002
     m_ActionName: Gameplay/Pause[/Keyboard/escape,/XInputControllerWindows/start]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4367306324953526338}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: OnFeedback
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9d632134-5136-47ea-8645-d0274f69a5f5
+    m_ActionName: Gameplay/Feedback[/Keyboard/f1]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

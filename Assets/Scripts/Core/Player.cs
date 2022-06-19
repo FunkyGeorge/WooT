@@ -658,4 +658,19 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    public void OnFeedback(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (GameManager.Instance.isPaused)
+            {
+                GameManager.Instance.CloseFeedback();
+            }
+            else
+            {
+                GameManager.Instance.OpenFeedback();
+            }
+        }
+    }
 }

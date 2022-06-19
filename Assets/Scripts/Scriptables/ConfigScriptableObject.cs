@@ -7,4 +7,8 @@ public class ConfigScriptableObject : ScriptableObject
 {
     public bool isDebug;
     public bool isDemo;
+
+    [Header("Feedback")]
+    public string feedbackURL = "";
+    public string bugReportURL = "";
 }
