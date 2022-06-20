@@ -20,6 +20,11 @@ public class FeedbackHandler : MonoBehaviour
         OpenURLForm(config.bugReportURL);
     }
 
+    public void OpenWebsite()
+    {
+        OpenURLForm(config.websiteURL);
+    }
+
     public void Init()
     {
         EventSystem.current.SetSelectedGameObject(defaultMenuItem);

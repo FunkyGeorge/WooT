@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPaused || shouldForceCursorVisibility || config.isDebug)
+        if (isPaused || shouldForceCursorVisibility || config.isDebug || SceneManager.GetActiveScene().name == "End Scene")
         {
             Cursor.visible = true;
         }
