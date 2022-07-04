@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MenuHandler : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class MenuHandler : MonoBehaviour
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
 
     [SerializeField] private GameObject continueButton;
+
+    [Header("Settings")]
+    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private TMP_Dropdown resDropdown;
+    [SerializeField] private List<Vector2> resolutions = new List<Vector2>();
 
     [Header("Debugging")]
     [SerializeField] private ConfigScriptableObject config;
@@ -52,6 +58,17 @@ public class MenuHandler : MonoBehaviour
 
         string nextLevel = config.isDebug ? debugEntryLevel : Prefs.GetCurrentLevel();
         SceneManager.LoadScene(nextLevel);
+    }
+
+    public void OnVolumeSliderChanged(Slider slider)
+    {
+        AudioPlayer.Instance.SetMasterVolume((int)slider.value);
+    }
+
+    public void OnResolutionChange()
+    {
+        int index = resDropdown.value;
+        Screen.SetResolution(((int)resolutions[index].x), ((int)resolutions[index].y), FullScreenMode.Windowed);
     }
 
     public void QuitToDesktop()

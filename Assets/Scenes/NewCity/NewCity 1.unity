@@ -677,6 +677,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 229164246222016595, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.4787903
+      objectReference: {fileID: 0}
+    - target: {fileID: 229164246222016595, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 427884806582179182, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1311560013061599476, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -696,6 +708,10 @@ PrefabInstance:
     - target: {fileID: 1403556533766256127, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777648768595110634, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.36047363
       objectReference: {fileID: 0}
     - target: {fileID: 6841719227314389369, guid: 8e971e8fceb51504cb9d01b0cf875fd3, type: 3}
       propertyPath: m_Pivot.x
@@ -28735,11 +28751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.3475857
+      value: -7.347951
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0788121
+      value: 1.0803084
       objectReference: {fileID: 0}
     - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size

@@ -9,12 +9,20 @@ using TMPro;
 
 public class PauseHandler : MonoBehaviour
 {
+    [Header("Menus")]
+    [SerializeField] private GameObject mainPauseMenu;
+    [SerializeField] private GameObject settingsMenu;
+
     [SerializeField] private AudioClip selectSFX;
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
     [SerializeField] private GameObject defaultMenuItem;
-    [SerializeField] private Slider volumeSlider;
     [SerializeField] private DeathManagerScriptableObject deathManager;
     [SerializeField] private TMP_Text deathCountText;
+
+    [Header("Settings")]
+    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private TMP_Dropdown resDropdown;
+    [SerializeField] private List<Vector2> resolutions = new List<Vector2>();
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +52,15 @@ public class PauseHandler : MonoBehaviour
 
     public void Init()
     {
-        volumeSlider.value = Prefs.GetMasterVolume();
+        // volumeSlider.value = Prefs.GetMasterVolume();
         EventSystem.current.SetSelectedGameObject(defaultMenuItem);
+        mainPauseMenu.SetActive(true);
+    }
+
+    public void Unpause()
+    {
+        mainPauseMenu.SetActive(false);
+        settingsMenu.SetActive(false);
     }
 
     public void ResumeButtonHandler()
@@ -71,6 +86,12 @@ public class PauseHandler : MonoBehaviour
     public void OnVolumeSliderChanged(Slider slider)
     {
         AudioPlayer.Instance.SetMasterVolume((int)slider.value);
+    }
+
+    public void OnResolutionChange()
+    {
+        int index = resDropdown.value;
+        Screen.SetResolution(((int)resolutions[index].x), ((int)resolutions[index].y), FullScreenMode.Windowed);
     }
 
     public void QuitToDesktop()

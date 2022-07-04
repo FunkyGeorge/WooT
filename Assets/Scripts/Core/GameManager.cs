@@ -36,7 +36,8 @@ public class GameManager : MonoBehaviour
 
     private const string coinTextName = "UI_CoinText";
     private const string inventorySpriteName = "UI_InventoryImage";
-    private const string pauseMenuName = "Pause Menu";
+    private const string menuUIName = "UI";
+    private const string cutsceneUIName = "Cutscene UI";
     private const string feedbackMenuName = "Feedback Menu";
 
     private static GameManager _instance;
@@ -105,23 +106,27 @@ public class GameManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0f;
-        GameObject pauseMenu = GameObject.Find(pauseMenuName);
-        CanvasGroup canvas = pauseMenu.GetComponent<CanvasGroup>();
-        PauseHandler pauseHandler = pauseMenu.GetComponent<PauseHandler>();
+        GameObject ui = GameObject.Find(menuUIName);
+
+        if (!ui)
+        {
+            ui = GameObject.Find(cutsceneUIName);
+        }
+        PauseHandler pauseHandler = ui.GetComponent<PauseHandler>();
         pauseHandler.Init();
-        canvas.alpha = 1f;
-        canvas.blocksRaycasts = true;
     }
 
     public void UnpauseGame()
     {
         isPaused = false;
         Time.timeScale = 1f;
-        GameObject pauseMenu = GameObject.Find(pauseMenuName);
-        CanvasGroup canvas = pauseMenu.GetComponent<CanvasGroup>();
-        canvas.alpha = 0;
-        canvas.blocksRaycasts = false;
-        EventSystem.current.SetSelectedGameObject(null);
+        GameObject ui = GameObject.Find(menuUIName);
+        if (!ui)
+        {
+            ui = GameObject.Find(cutsceneUIName);
+        }
+        PauseHandler pauseHandler = ui.GetComponent<PauseHandler>();
+        pauseHandler.Unpause();
     }
 
     public void OpenFeedback()
