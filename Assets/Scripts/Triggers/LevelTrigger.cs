@@ -14,6 +14,10 @@ public class LevelTrigger : MonoBehaviour
     [SerializeField] private string sceneName;
     [SerializeField] private TransitionType transition = TransitionType.Slide;
 
+    [Header("Sound")]
+    [SerializeField] private AudioClip levelAudioClip;
+    [Range(1, 100)] [SerializeField] private int levelAudioVolume = 100;
+
     [Header("Debug")]
     [SerializeField] private ConfigScriptableObject config;
     [SerializeField] private string debugEntryLevel;
@@ -37,6 +41,7 @@ public class LevelTrigger : MonoBehaviour
         {
             if (transition == TransitionType.Slide)
             {
+                AudioPlayer.Instance.PlaySFX(levelAudioClip, levelAudioVolume);
                 GameManager.Instance.SlideLoadLevel(nextScene);
             }
             else if (transition == TransitionType.Fade)

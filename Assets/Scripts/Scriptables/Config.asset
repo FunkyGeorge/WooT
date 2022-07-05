@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Config
   m_EditorClassIdentifier: 
   isDebug: 0
-  isDemo: 1
+  isDemo: 0
+  isTrailer: 1
   websiteURL: https://dogma-games.com
   feedbackURL: https://airtable.com/shrHJiyVqbn0Y0mU0
   bugReportURL: https://airtable.com/shrM8eTK7TRjUmeo4

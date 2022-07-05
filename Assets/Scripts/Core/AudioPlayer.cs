@@ -25,6 +25,7 @@ public class AudioPlayer : MonoBehaviour
     private AudioClip queuedMusicClip;
     private float queuedMusicClipVolume = 0;
     [SerializeField] private float musicFadeSpeed = 0.1f;
+    [SerializeField] private ConfigScriptableObject config;
 
     private static AudioPlayer _instance;
     public static AudioPlayer Instance
@@ -119,6 +120,10 @@ public class AudioPlayer : MonoBehaviour
 
     private float calculateNewVolume()
     {
+        if (config.isTrailer)
+        {
+            _musicVolume = 0;
+        }
         return (_masterVolume / 100f) * (_musicVolume / 100f) * (GameManager.Instance.currentMusicVolume / 100f);
     }
 }

@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3457680048204408015}
+  levelAudioClip: {fileID: 8300000, guid: dcafa156a5a14984089c9ff66f27f9be, type: 3}
+  levelAudioVolume: 20
 --- !u!1 &3457680048204408014
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,5 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 
   transition: 0
+  levelAudioClip: {fileID: 8300000, guid: dcafa156a5a14984089c9ff66f27f9be, type: 3}
+  levelAudioVolume: 20
   config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
   debugEntryLevel: 

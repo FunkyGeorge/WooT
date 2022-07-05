@@ -7,6 +7,10 @@ public class MuralTrigger : MonoBehaviour
     private const string SPAWN_POINT = "Spawn Point";
 
     [SerializeField] private Animator animator;
+
+    [Header("Sound")]
+    [SerializeField] private AudioClip levelAudioClip;
+    [Range(1, 100)] [SerializeField] private int levelAudioVolume = 100;
     private bool cleared = false;
 
     // Start is called before the first frame update
@@ -28,6 +32,7 @@ public class MuralTrigger : MonoBehaviour
             cleared = true;
             animator.SetBool("cleared", true);
             GameObject.Find(SPAWN_POINT).transform.position = transform.position;
+            AudioPlayer.Instance.PlaySFX(levelAudioClip, levelAudioVolume);
         }
     }
 }

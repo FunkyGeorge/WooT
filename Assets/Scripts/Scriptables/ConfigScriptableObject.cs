@@ -7,6 +7,7 @@ public class ConfigScriptableObject : ScriptableObject
 {
     public bool isDebug;
     public bool isDemo;
+    public bool isTrailer;
 
     [Header("Links")]
     public string websiteURL = "";
