@@ -600,6 +600,8 @@ public class Player : MonoBehaviour
         spriteRenderer.enabled = false;
         Player.Instance.hasControl = false;
         rb2d.simulated = false;
+
+        yield return new WaitForSeconds(0.2f);
         deathTransition.SetActive(true);
         GameObject slider = GameObject.Find("Ripple");
         Animator slideAnimator = slider.GetComponent<Animator>();

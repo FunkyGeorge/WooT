@@ -18223,6 +18223,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1197326720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3929065689403403373, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
+  m_PrefabInstance: {fileID: 1913572122}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d3b6e0a4191b548aa8df372ebb707c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1313543380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18326,7 +18337,7 @@ MonoBehaviour:
   bossSprite: {fileID: 1772730165}
   hectorSpriteRenderer: {fileID: 1895119440}
   nextScene: Choice
-  dialogBox: {fileID: 1913572123}
+  dialogBox: {fileID: 1197326720}
   dialoguePart1:
   - name: Hector
     sentences:
@@ -20151,17 +20162,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
---- !u!114 &1913572123 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8212541634103474356, guid: 2ad790e5b02d7ee41afc6b50f2243b32, type: 3}
-  m_PrefabInstance: {fileID: 1913572122}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d3b6e0a4191b548aa8df372ebb707c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1981092298
 GameObject:
   m_ObjectHideFlags: 0
