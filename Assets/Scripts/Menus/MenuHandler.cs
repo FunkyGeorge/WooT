@@ -56,7 +56,7 @@ public class MenuHandler : MonoBehaviour
     {
         PlaySound();
 
-        string nextLevel = config.isDebug ? debugEntryLevel : Prefs.GetCurrentLevel();
+        string nextLevel = config.isDebug || config.isTrailer ? debugEntryLevel : Prefs.GetCurrentLevel();
         SceneManager.LoadScene(nextLevel);
     }
 

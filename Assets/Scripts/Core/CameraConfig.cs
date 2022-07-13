@@ -7,11 +7,15 @@ public class CameraConfig : MonoBehaviour
     [SerializeField] private DeathManagerScriptableObject deathManager;
     [SerializeField] private CinemachineStateDrivenCamera vCam;
     [SerializeField] private Animator animator;
+    [SerializeField] private bool overridePlayerFollow = false;
     // Look at player on startup
     void Start()
     {
-        vCam.Follow = Player.Instance.transform;
-        vCam.LookAt = Player.Instance.transform;
+        if (!overridePlayerFollow)
+        {
+            vCam.Follow = Player.Instance.transform;
+            vCam.LookAt = Player.Instance.transform;
+        }
 
         if (deathManager && cameraManager)
         {
