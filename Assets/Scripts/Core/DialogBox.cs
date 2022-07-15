@@ -14,18 +14,31 @@ public class DialogBox : MonoBehaviour
     [SerializeField] private Image rightImage;
     [SerializeField] private Image continueIcon;
 
-    [Header("Character Images")]
+    [Header("Characters")]
     [SerializeField] private Sprite anonymousImage;
-    [SerializeField] private Sprite jessePortrait;
-    [SerializeField] private Sprite josephinePortrait;
-    [SerializeField] private Sprite hectorPortrait;
+    [SerializeField] private AudioClip defaultVoice;
     [SerializeField] private Sprite adminPortrait;
+
+    [Header("Jesse")]
+    [SerializeField] private Sprite jessePortrait;
+    [SerializeField] private AudioClip jesseVoice;
+
+    [Header("Josephine")]
+    [SerializeField] private Sprite josephinePortrait;
+    [SerializeField] private AudioClip josephineVoice;
+
+    [Header("Hector")]
+    [SerializeField] private Sprite hectorPortrait;
+    [SerializeField] private AudioClip hectorVoice;
 
     public Queue<string> dialogueQueue;
     private Dialogue chainDialogue;
 
+    [Header("Type Config")]
     [SerializeField] private int typeInterval = 5;
     [SerializeField] private float typeDelay = 0.2f;
+    [SerializeField] private int voiceVolume = 100;
+    private AudioClip currentVoice;
     private string currentText;
     private bool isTyping = false;
     private int typeCursor = 0;
@@ -54,12 +67,14 @@ public class DialogBox : MonoBehaviour
         if (dialogue.name == "Jesse")
         {
             leftImage.sprite = jessePortrait;
+            currentVoice = jesseVoice;
             leftImage.enabled = true;
             rightImage.enabled = false;
         }
         else if (dialogue.name != "")
         {
             Sprite characterImage = FindCharacterImage(dialogue.name);
+            currentVoice = FindCharacterVoice(dialogue.name);
             rightImage.sprite = characterImage;
             rightImage.enabled = true;
             leftImage.enabled = false;
@@ -68,6 +83,7 @@ public class DialogBox : MonoBehaviour
         {
             leftImage.enabled = false;
             rightImage.enabled = false;
+            currentVoice = defaultVoice;
         }
         chainDialogue = dialogue.chainDialogue;
         NextDialogue();
@@ -114,6 +130,10 @@ public class DialogBox : MonoBehaviour
                 break;
             }
             dialogText.text = currentText.Substring(0, typeCursor);
+            if (Random.Range(0, 10) < 7)
+            {
+                AudioPlayer.Instance.PlaySFX(currentVoice, voiceVolume);
+            }
             yield return new WaitForSeconds(typeDelay);
         }
     }
@@ -137,6 +157,19 @@ public class DialogBox : MonoBehaviour
                 return hectorPortrait;
             default:
                 return anonymousImage;
+        }
+    }
+
+    private AudioClip FindCharacterVoice(string characterName)
+    {
+        switch (characterName)
+        {
+            case "Josephine":
+                return josephineVoice;
+            case "Hector":
+                return hectorVoice;
+            default:
+                return defaultVoice;
         }
     }
 
