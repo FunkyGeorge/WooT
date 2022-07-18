@@ -4577,7 +4577,7 @@ MonoBehaviour:
   - {x: 2560, y: 1440}
   - {x: 3840, y: 2160}
   config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
-  debugEntryLevel: Pan Scene
+  debugEntryLevel: End Scene
 --- !u!222 &2112400546
 CanvasRenderer:
   m_ObjectHideFlags: 0

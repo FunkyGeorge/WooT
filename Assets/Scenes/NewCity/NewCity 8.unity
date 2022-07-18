@@ -45949,7 +45949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.size
@@ -45966,7 +45966,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.sentences.Array.data[0]
-      value: Fine, suit yourself. Have fun in your imaginary world!
+      value: I guess I haven't thought about how the Twilight might help people in
+        situations like yours.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.sentences.Array.data[1]
+      value: Maybe in your situation, I might also want to stay inside. I have a
+        lot to think about.
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[0]
@@ -45980,12 +45986,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[2]
-      value: I have so many bills at home that I don't think I'll ever be able to
-        pay
+      value: My son was paralyzed in a car accident before dreamtech and self driving
+        cars were a thing
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[3]
-      value: I'd rather just be able to forget about all of those
+      value: With dreamtech now, he can live a full life and I can experience that
+        with him. Have you considered people like us?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}

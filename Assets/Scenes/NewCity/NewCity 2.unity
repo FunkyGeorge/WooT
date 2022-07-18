@@ -399,20 +399,43 @@ PrefabInstance:
       value: Jesse
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.name
+      value: Jesse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[0]
-      value: Hi will you please consider leaving the Twilight?
+      value: Everyone is about to be stuck inside the Twilight, including you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: mainDialogue.sentences.Array.data[1]
+      value: We can still stop it if you leave with me, what do you say? Can you
+        leave and help me save everyone?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.sentences.Array.data[0]
+      value: Yea, that was pretty much what I was expecting. I'll just have to find
+        someone else.
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[0]
-      value: No, I won't leave. The Twilight is great! Now leave me alone!
+      value: Is that why I haven't been able to log out? I thought that seemed strange.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.sentences.Array.data[1]
+      value: But to be honest, I'm no hero. I'm not like you. I would rather stay
+        comfortable in the twilight.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
@@ -486,12 +509,20 @@ PrefabInstance:
       value: Jesse
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.name
+      value: Jesse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
-      propertyPath: secondDialogue.sentences.Array.size
+      propertyPath: thirdDialogue.sentences.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.sentences.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[0]
@@ -499,8 +530,26 @@ PrefabInstance:
         with me right now
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.sentences.Array.data[0]
+      value: Well, I'm sorry to hear that. I hope that when this is all over you
+        can make up with the ones close to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.sentences.Array.data[0]
-      value: Stuck in the Twilight? Count me in! I love the Twilight
+      value: Stuck in the Twilight? What is so bad about that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.sentences.Array.data[1]
+      value: In the real world I've caused pain to the ones closest to me
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.sentences.Array.data[2]
+      value: The things I've done are unforgivable to them.  So I retreat to the
+        Twilight.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.sentences.Array.data[3]
+      value: I would rather stay here, sorry.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}

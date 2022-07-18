@@ -71,10 +71,12 @@ public class GameManager : MonoBehaviour
         if (isPaused || shouldForceCursorVisibility || config.isDebug || SceneManager.GetActiveScene().name == "End Scene")
         {
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Confined;
         }
     }
 
