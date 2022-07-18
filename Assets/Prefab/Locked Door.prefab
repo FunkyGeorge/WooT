@@ -151,7 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryDictKeyToCheck: Keycard
   doesConsumeItem: 1
+  hasStateRequirement: 0
   stateRequirement: 0
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
+  doesResetOnDeath: 0
   onDestroyAudioClip: {fileID: 8300000, guid: ba86d5d993c37454e9655d314cdfc717, type: 3}
   accessDeniedAudioClip: {fileID: 8300000, guid: 6f158957132d344eaaef9d19f81635eb, type: 3}
   onDestroyAudioVolume: 30

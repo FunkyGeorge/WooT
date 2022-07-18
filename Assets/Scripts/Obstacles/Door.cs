@@ -8,6 +8,8 @@ public class Door : MonoBehaviour
     [SerializeField] private bool doesConsumeItem = true;
     [SerializeField] private bool hasStateRequirement = false;
     [SerializeField] private LevelState.State stateRequirement;
+    [SerializeField] private DeathManagerScriptableObject deathManager;
+    [SerializeField] private bool doesResetOnDeath = false;
 
     [Header("Audio")]
     [SerializeField] private AudioClip onDestroyAudioClip;
@@ -21,12 +23,25 @@ public class Door : MonoBehaviour
     void Start()
     {
         levelState = FindObjectOfType<LevelState>();
+
+        if (deathManager)
+        {
+            deathManager.deathEvent.AddListener(ResetDoor);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void OnDisable()
+    {
+        if (deathManager)
+        {
+            deathManager.deathEvent.RemoveListener(ResetDoor);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,12 +59,30 @@ public class Door : MonoBehaviour
                 {
                     AudioPlayer.Instance.PlaySFX(onDestroyAudioClip, onDestroyAudioVolume);
                 }
-                Destroy(gameObject);
+
+                SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+                BoxCollider2D[] colliders = GetComponents<BoxCollider2D>();
+                renderer.enabled = false;
+                for (int i = 0; i < colliders.Length; i++)
+                {
+                    colliders[i].enabled = false;
+                }
+                // Destroy(gameObject);
             }
             else
             {
                 AudioPlayer.Instance.PlaySFX(accessDeniedAudioClip, accessDeniedAudioVolume);
             }
+        }
+    }
+
+    private void ResetDoor(int deathCount) {
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        BoxCollider2D[] colliders = GetComponents<BoxCollider2D>();
+        renderer.enabled = true;
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            colliders[i].enabled = true;
         }
     }
 }
