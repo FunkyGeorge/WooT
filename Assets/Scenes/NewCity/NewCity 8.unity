@@ -45944,6 +45944,10 @@ PrefabInstance:
       value: Jesse
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.name
+      value: Subject 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}

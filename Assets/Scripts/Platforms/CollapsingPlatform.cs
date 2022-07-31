@@ -12,7 +12,7 @@ public class CollapsingPlatform : MonoBehaviour
     [SerializeField] private float returnDelay = 3f;
     [SerializeField] private DeathManagerScriptableObject deathManager;
     private Tilemap tilemap;
-    private TilemapCollider2D collider;
+    private TilemapCollider2D tileCollider;
 
     [Header("Sound Config")]
     [SerializeField] private AudioClip soundClip;
@@ -30,7 +30,7 @@ public class CollapsingPlatform : MonoBehaviour
         {
             deathManager.deathEvent.AddListener(ResetPosition);
             tilemap = GetComponent<Tilemap>();
-            collider = GetComponent<TilemapCollider2D>();
+            tileCollider = GetComponent<TilemapCollider2D>();
         }
     }
 
@@ -74,7 +74,7 @@ public class CollapsingPlatform : MonoBehaviour
 
     private void ResetPosition(int deathCount) {
         director.Stop();
-        collider.enabled = true;
+        tileCollider.enabled = true;
         tilemap.color = new Color(1, 1, 1, 1);
         rb.position = Vector2.zero;
         isFalling = false;

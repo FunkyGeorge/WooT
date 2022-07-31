@@ -4985,7 +4985,7 @@ MonoBehaviour:
   jumpAudioVolume: 30
   crunchAudioClip: {fileID: 8300000, guid: b0fa0ee61f438e54ba174628d59623d4, type: 3}
   crunchAudioVolume: 30
-  particleSystem: {fileID: 2776506405924311204}
+  deathParticles: {fileID: 2776506405924311204}
   contactFilter:
     useTriggers: 0
     useLayerMask: 1

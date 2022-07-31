@@ -31,6 +31,11 @@ public class DialogBox : MonoBehaviour
     [SerializeField] private Sprite hectorPortrait;
     [SerializeField] private AudioClip hectorVoice;
 
+    [Header("Subjects")]
+    [SerializeField] private Sprite subject1Portrait;
+    [SerializeField] private Sprite subject2Portrait;
+    [SerializeField] private Sprite subject3Portrait;
+
     public Queue<string> dialogueQueue;
     private Dialogue chainDialogue;
 
@@ -155,6 +160,12 @@ public class DialogBox : MonoBehaviour
                 return josephinePortrait;
             case "Hector":
                 return hectorPortrait;
+            case "Subject 1":
+                return subject1Portrait;
+            case "Subject 2":
+                return subject2Portrait;
+            case "Subject 3":
+                return subject3Portrait;
             default:
                 return anonymousImage;
         }

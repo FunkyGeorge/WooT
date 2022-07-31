@@ -13,6 +13,8 @@ public class PauseHandler : MonoBehaviour
     [SerializeField] private GameObject mainPauseMenu;
     [SerializeField] private GameObject settingsMenu;
 
+    [SerializeField] private ConfigScriptableObject config;
+    [SerializeField] private GameObject debugBar;
     [SerializeField] private AudioClip selectSFX;
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
     [SerializeField] private GameObject defaultMenuItem;
@@ -33,6 +35,11 @@ public class PauseHandler : MonoBehaviour
         {
             deathManager.deathEvent.AddListener(AdjustDeathCount);
             deathCountText.text = deathManager.deathCount.ToString();
+        }
+
+        if (config.isDemo)
+        {
+            debugBar.SetActive(true);
         }
     }
 

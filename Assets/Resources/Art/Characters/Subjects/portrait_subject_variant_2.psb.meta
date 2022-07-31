@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2cdb3eb0c282e04482ee3f4665c02b7
+guid: 9bb49dc6ce4c3764c950497959b4a927
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,7 +11,7 @@ ScriptedImporter:
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
@@ -27,7 +27,7 @@ ScriptedImporter:
     vTOnly: 0
     nPOTScale: 1
     sRGBTexture: 1
-    spriteMode: 2
+    spriteMode: 1
     spriteExtrude: 1
     spriteMeshType: 1
     alignment: 0
@@ -67,18 +67,18 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   spriteImportData:
-  - name: 
+  - name: portrait_subject_variant_2_1
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 0
-      height: 0
-    spriteID: 
+      width: 700
+      height: 700
+    spriteID: 7cf914fde8d981a4698e83e6579a0750
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -91,7 +91,51 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 1
+  - name: Layer7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 712
+      y: 4
+      width: 657
+      height: 700
+    spriteID: c05dba9deef0ab240b76b187fd40ded1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 675, y: 4}
+  - name: Layer6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1377
+      y: 4
+      width: 620
+      height: 700
+    spriteID: 9ac7efd70e0eb4d49b9f1608f72b4b0e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1297, y: 4}
+  - name: BG
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -100,9 +144,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1280
-      height: 718
-    spriteID: f7f44bfffe891de439732694cc8e9aba
+      width: 700
+      height: 700
+    spriteID: 739381d5013609b45954c082bde827eb
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -116,9 +160,9 @@ ScriptedImporter:
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
-    maxTextureSize: 128
+    maxTextureSize: 256
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -127,9 +171,9 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Standalone
     overridden: 0
-    maxTextureSize: 128
+    maxTextureSize: 256
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -138,9 +182,9 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: WebGL
     overridden: 0
-    maxTextureSize: 128
+    maxTextureSize: 256
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -149,9 +193,9 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Windows Store Apps
     overridden: 0
-    maxTextureSize: 128
+    maxTextureSize: 256
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -162,26 +206,47 @@ ScriptedImporter:
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 128
-  importedTextureHeight: 64
-  documentSize: {x: 1280, y: 718}
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 700, y: 700}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 2048
-  textureActualHeight: 1024
+  textureActualWidth: 700
+  textureActualHeight: 700
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 1
-    spriteName: Layer 1
+  - name: CH
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 11
+    mosaicPosition: {x: 0, y: 0}
+  - name: Layer7
+    spriteName: Layer7
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c05dba9deef0ab240b76b187fd40ded1
+    layerID: 10
+    mosaicPosition: {x: 712, y: 4}
+  - name: Layer6
+    spriteName: Layer6
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9ac7efd70e0eb4d49b9f1608f72b4b0e
+    layerID: 9
+    mosaicPosition: {x: 1377, y: 4}
+  - name: BG
+    spriteName: BG
     isGroup: 0
     parentIndex: -1
-    spriteID: f7f44bfffe891de439732694cc8e9aba
-    layerID: 3
+    spriteID: 739381d5013609b45954c082bde827eb
+    layerID: 2
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
@@ -189,7 +254,7 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
   generateGOHierarchy: 0
-  textureAssetName: background_city Texture
-  prefabAssetName: background_city Prefab
-  spriteLibAssetName: background_city Sprite Lib
+  textureAssetName: portrait_subject_variant_2 Texture
+  prefabAssetName: portrait_subject_variant_2 Prefab
+  spriteLibAssetName: portrait_subject_variant_2 Sprite Lib
   secondarySpriteTextures: []

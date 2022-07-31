@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     [Range(1, 100)] [SerializeField] private int crunchAudioVolume = 100;
 
     [Header("Particles")]
-    [SerializeField] private ParticleSystem particleSystem;
+    [SerializeField] private ParticleSystem deathParticles;
 
 
     [Header("Movement")]
@@ -578,7 +578,7 @@ public class Player : MonoBehaviour
     public IEnumerator DeathSequence()
     {
         // Shoot particles
-        ParticleSystem.ShapeModule shapeMod = particleSystem.shape;
+        ParticleSystem.ShapeModule shapeMod = deathParticles.shape;
         float particleAngle = 45f;
         if (velocity.y < 0 && intentDirection.x == 0) {
             particleAngle = -135f;
@@ -593,7 +593,7 @@ public class Player : MonoBehaviour
         shapeMod.rotation = new Vector3(0, 0, particleAngle);
 
         // Reset all forces
-        particleSystem.Emit(15);
+        deathParticles.Emit(15);
         velocity.y = 0;
         targetVelocity = Vector2.zero;
 

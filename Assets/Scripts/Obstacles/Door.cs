@@ -67,7 +67,6 @@ public class Door : MonoBehaviour
                 {
                     colliders[i].enabled = false;
                 }
-                // Destroy(gameObject);
             }
             else
             {
@@ -77,12 +76,15 @@ public class Door : MonoBehaviour
     }
 
     private void ResetDoor(int deathCount) {
-        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
-        BoxCollider2D[] colliders = GetComponents<BoxCollider2D>();
-        renderer.enabled = true;
-        for (int i = 0; i < colliders.Length; i++)
+        if (doesResetOnDeath)
         {
-            colliders[i].enabled = true;
+            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+            BoxCollider2D[] colliders = GetComponents<BoxCollider2D>();
+            renderer.enabled = true;
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                colliders[i].enabled = true;
+            }
         }
     }
 }
