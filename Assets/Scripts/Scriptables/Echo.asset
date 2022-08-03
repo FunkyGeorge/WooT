@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e22bca882385c3b4a991a489cef92147, type: 3}
-  m_Name: Config
+  m_Script: {fileID: 11500000, guid: fafcf8f7181f8944b9294b8b134ed6ed, type: 3}
+  m_Name: Echo
   m_EditorClassIdentifier: 
-  isDebug: 1
-  isDemo: 1
-  isTrailer: 0
-  websiteURL: https://dogma-games.com
-  feedbackURL: https://airtable.com/shrHJiyVqbn0Y0mU0
-  bugReportURL: https://airtable.com/shrM8eTK7TRjUmeo4
+  echosaves:
+  - index: 0
+    author: Hulk
+    statement: Hulk Smash
