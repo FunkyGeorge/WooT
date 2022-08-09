@@ -7,5 +7,5 @@ public class EchoSave
 {
     public int index;
     public string author;
-    public string statement;
+    [TextArea(3, 5)] public string statement;
 }
