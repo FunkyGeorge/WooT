@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject transitionsPrefab;
     [SerializeField] private GameObject fadeTransitionPrefab;
     [SerializeField] private ConfigScriptableObject config;
+    [SerializeField] private DeathManagerScriptableObject deathManager;
 
     [Header("State Flags")]
     public bool isDialogUp = false;
@@ -198,6 +199,10 @@ public class GameManager : MonoBehaviour
     // Level Transitions
     public void SlideLoadLevel(string nextScene)
     {
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            deathManager.ResetDeaths();
+        }
         StartCoroutine(SlideToNextLevel(nextScene));
     }
 

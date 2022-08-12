@@ -21,4 +21,11 @@ public class DeathManagerScriptableObject : ScriptableObject
         Prefs.SetDeathCount(deathCount);
         deathEvent.Invoke(deathCount);
     }
+
+    public void ResetDeaths()
+    {
+        deathCount = 0;
+        Prefs.SetDeathCount(deathCount);
+        deathEvent.Invoke(deathCount);
+    }
 }

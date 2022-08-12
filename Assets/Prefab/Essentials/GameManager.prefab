@@ -49,7 +49,7 @@ MonoBehaviour:
   transitionsPrefab: {fileID: 4947388891294143473, guid: ac480efe1a6fdb74085fd0d77c694e09, type: 3}
   fadeTransitionPrefab: {fileID: 3687068845999906608, guid: 7aa8e051028c16a42aaaee7be8075bee, type: 3}
   config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
-  feedbackMenuPrefab: {fileID: 6583811143139392430, guid: 83cfbb9860c6e7d41a1e0c2b3e4fbbcb, type: 3}
+  deathManager: {fileID: 11400000, guid: 1957df1f408319f4294bb403e14b6db7, type: 2}
   isDialogUp: 0
   isPaused: 0
   shouldForceCursorVisibility: 0

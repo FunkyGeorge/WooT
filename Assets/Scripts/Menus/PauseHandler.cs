@@ -34,7 +34,7 @@ public class PauseHandler : MonoBehaviour
         if (deathManager)
         {
             deathManager.deathEvent.AddListener(AdjustDeathCount);
-            deathCountText.text = deathManager.deathCount.ToString();
+            deathCountText.text = SceneManager.GetActiveScene().name == "Level 1" ? "0" : deathManager.deathCount.ToString();
         }
 
         if (config.isDemo)
