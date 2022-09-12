@@ -633,8 +633,6 @@ MonoBehaviour:
   echoPopup: {fileID: 5786752365097272709}
   statementText: {fileID: 5786752364011581815}
   authorText: {fileID: 5786752364913766220}
-  statement: 
-  author: 
   echoID: 0
   echoList: {fileID: 11400000, guid: 162b96b54fa649e43a958784151805a5, type: 2}
 --- !u!1 &5786752365097272709
@@ -695,7 +693,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_TargetDisplay: 0
 --- !u!114 &5786752365097272704
 MonoBehaviour:

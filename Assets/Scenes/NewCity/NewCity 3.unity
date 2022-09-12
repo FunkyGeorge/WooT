@@ -17213,7 +17213,6 @@ GameObject:
   - component: {fileID: 1521662714}
   - component: {fileID: 1521662713}
   - component: {fileID: 1521662712}
-  - component: {fileID: 1521662717}
   - component: {fileID: 1521662716}
   m_Layer: 0
   m_Name: Squaring Platform
@@ -17422,18 +17421,6 @@ MonoBehaviour:
   moveSpeed: 3
   reverseDirection: 0
   invertPosition: 0
---- !u!114 &1521662717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521662710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edcedd1ce157a6448a22a8d41668dcbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1538846599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574110869608908755, guid: b658a7dc4654d1c4f982a170e0f6296d, type: 3}

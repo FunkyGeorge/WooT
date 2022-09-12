@@ -84,8 +84,19 @@ MonoBehaviour:
   - NewCity 6
   - NewCity 7
   - NewCity 8
-  - Cutscene 4
-  finalMusicClip: {fileID: 8300000, guid: 60446621dc4bca54682d8bba76da8cc5, type: 3}
-  finalMusicClipVolume: 10
+  - Climb 1
+  - Climb 2
+  - Climb 3
+  - Climb 4
+  - Climb 5
+  - Climb 6
+  - Climb 7
+  - Climb 8
+  - Climb 9
+  - Climb 10
+  - Cutscene 5
+  - Cutscene 5
+  finalMusicClip: {fileID: 8300000, guid: 2dd54c0f612ab8e448ecbff3b61ee466, type: 3}
+  finalMusicClipVolume: 38
   finalMusicLevels:
   - Choice

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ObjectsSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 128
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -6172858302681322938, guid: 74a33593c34dd1446af5c0c8c1481357, type: 3}
+    - {fileID: 556588006352909363, guid: 9068e306269533d4ea548bdc109f1645, type: 3}
+    - {fileID: -3413686943475796473, guid: eec2ed9207993884d8828dabbacb1302, type: 3}
+    - {fileID: 8905436258197210616, guid: b70844ede336541429715031362ff740, type: 3}
+    - {fileID: -5257414049921913865, guid: a7f260217d003e6448a2ccc4a763d4a2, type: 3}
+    - {fileID: -8637472413938801328, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
+    - {fileID: 8813668417246726338, guid: 176b1144976bef54085232bdaca8907f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2318528794982034269, guid: a7f260217d003e6448a2ccc4a763d4a2, type: 3}
+  - {fileID: -5987655671160638713, guid: eec2ed9207993884d8828dabbacb1302, type: 3}
+  - {fileID: -6936130374915683914, guid: 74a33593c34dd1446af5c0c8c1481357, type: 3}
+  - {fileID: -5866106181470600533, guid: 176b1144976bef54085232bdaca8907f, type: 3}
+  - {fileID: 2233079293315929481, guid: 176b1144976bef54085232bdaca8907f, type: 3}
+  - {fileID: 2695785133608619618, guid: 176b1144976bef54085232bdaca8907f, type: 3}
+  - {fileID: -3089086730614617172, guid: 9068e306269533d4ea548bdc109f1645, type: 3}
+  - {fileID: -9125269195369141440, guid: b70844ede336541429715031362ff740, type: 3}
+  - {fileID: 3795931466849560248, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
+  - {fileID: 7185133951160710167, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
+  - {fileID: -7539399706755012580, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
+  - {fileID: -3263980816029685816, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Drone_1
+  - Energy_Seed_1
+  - keycard_1
+  - Spring_1
+  - Spring_0
+  - Spring_2
+  - Locker_Open_1
+  - Energy_Seed_Red_1
+  - dream_shard_0
+  - dream_shard_1
+  - dream_shard_2
+  - dream_shard_3
+  m_RenderDataMap: {}
+  m_Tag: ObjectsSpriteAtlas
+  m_IsVariant: 0

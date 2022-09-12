@@ -1,0 +1,2175 @@
+fileFormatVersion: 2
+guid: bd2960a0138123e4ab625c8aea51a021
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: 5482067882766135349
+    second: office_tileset_16
+  - first:
+      213: -1345822567017228569
+    second: office_tileset_17
+  - first:
+      213: -1804930667563207789
+    second: office_tileset_18
+  - first:
+      213: 7226815602652133937
+    second: office_tileset_19
+  - first:
+      213: -5219572675575292339
+    second: office_tileset_20
+  - first:
+      213: 1359437734754720252
+    second: office_tileset_21
+  - first:
+      213: 1609116951862143887
+    second: office_tileset_22
+  - first:
+      213: 5446395739715542776
+    second: office_tileset_23
+  - first:
+      213: -6041610659012654941
+    second: office_tileset_24
+  - first:
+      213: -8554974730198523131
+    second: office_tileset_25
+  - first:
+      213: 5194478166625107036
+    second: office_tileset_26
+  - first:
+      213: -3636614482998852358
+    second: office_tileset_27
+  - first:
+      213: 6249934677221346916
+    second: office_tileset_28
+  - first:
+      213: -2953073199813119755
+    second: office_tileset_29
+  - first:
+      213: -682145661564071206
+    second: office_tileset_30
+  - first:
+      213: -877369747439773049
+    second: office_tileset_31
+  - first:
+      213: 6526644062553604673
+    second: office_tileset_32
+  - first:
+      213: 8221076318913909075
+    second: office_tileset_33
+  - first:
+      213: 4866632364043209213
+    second: office_tileset_34
+  - first:
+      213: -7760208425224904516
+    second: office_tileset_35
+  - first:
+      213: -5809111271378525412
+    second: office_tileset_36
+  - first:
+      213: -2851711318244513713
+    second: office_tileset_37
+  - first:
+      213: -8411726222966616201
+    second: office_tileset_38
+  - first:
+      213: 6210280135100239517
+    second: office_tileset_39
+  - first:
+      213: -3069546116819406076
+    second: office_tileset_40
+  - first:
+      213: 389289349913209809
+    second: office_tileset_41
+  - first:
+      213: 2239266735389688774
+    second: office_tileset_42
+  - first:
+      213: -375984654071262933
+    second: office_tileset_43
+  - first:
+      213: 4295316176630733614
+    second: office_tileset_44
+  - first:
+      213: 6849506843220453905
+    second: office_tileset_45
+  - first:
+      213: 7037914314812830661
+    second: office_tileset_46
+  - first:
+      213: 8094029260903902636
+    second: office_tileset_47
+  - first:
+      213: -939867125545899641
+    second: office_tileset_48
+  - first:
+      213: -3124027882178865602
+    second: office_tileset_49
+  - first:
+      213: -6000962758384632642
+    second: office_tileset_50
+  - first:
+      213: 556032471431772182
+    second: office_tileset_51
+  - first:
+      213: 6856383741289691342
+    second: office_tileset_52
+  - first:
+      213: -7710162710246372654
+    second: office_tileset_53
+  - first:
+      213: -8876313550713280117
+    second: office_tileset_54
+  - first:
+      213: -2663135949107726766
+    second: office_tileset_55
+  - first:
+      213: 8609254267991910143
+    second: office_tileset_56
+  - first:
+      213: -5580350624963837040
+    second: office_tileset_57
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: 5482067882766135349
+    second: office_tileset_16
+  - first:
+      213: -1345822567017228569
+    second: office_tileset_17
+  - first:
+      213: -1804930667563207789
+    second: office_tileset_18
+  - first:
+      213: 7226815602652133937
+    second: office_tileset_19
+  - first:
+      213: -5219572675575292339
+    second: office_tileset_20
+  - first:
+      213: 1359437734754720252
+    second: office_tileset_21
+  - first:
+      213: 1609116951862143887
+    second: office_tileset_22
+  - first:
+      213: 5446395739715542776
+    second: office_tileset_23
+  - first:
+      213: -6041610659012654941
+    second: office_tileset_24
+  - first:
+      213: -8554974730198523131
+    second: office_tileset_25
+  - first:
+      213: 5194478166625107036
+    second: office_tileset_26
+  - first:
+      213: -3636614482998852358
+    second: office_tileset_27
+  - first:
+      213: 6249934677221346916
+    second: office_tileset_28
+  - first:
+      213: -2953073199813119755
+    second: office_tileset_29
+  - first:
+      213: -682145661564071206
+    second: office_tileset_30
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: 5482067882766135349
+    second: office_tileset_16
+  - first:
+      213: -1345822567017228569
+    second: office_tileset_17
+  - first:
+      213: -1804930667563207789
+    second: office_tileset_18
+  - first:
+      213: 7226815602652133937
+    second: office_tileset_19
+  - first:
+      213: -5219572675575292339
+    second: office_tileset_20
+  - first:
+      213: 1359437734754720252
+    second: office_tileset_21
+  - first:
+      213: 1609116951862143887
+    second: office_tileset_22
+  - first:
+      213: 5446395739715542776
+    second: office_tileset_23
+  - first:
+      213: -6041610659012654941
+    second: office_tileset_24
+  - first:
+      213: -8554974730198523131
+    second: office_tileset_25
+  - first:
+      213: 5194478166625107036
+    second: office_tileset_26
+  - first:
+      213: -3636614482998852358
+    second: office_tileset_27
+  - first:
+      213: 6249934677221346916
+    second: office_tileset_28
+  - first:
+      213: -2953073199813119755
+    second: office_tileset_29
+  - first:
+      213: -682145661564071206
+    second: office_tileset_30
+  - first:
+      213: -877369747439773049
+    second: office_tileset_31
+  - first:
+      213: 6526644062553604673
+    second: office_tileset_32
+  - first:
+      213: 8221076318913909075
+    second: office_tileset_33
+  - first:
+      213: 4866632364043209213
+    second: office_tileset_34
+  - first:
+      213: -7760208425224904516
+    second: office_tileset_35
+  - first:
+      213: -5809111271378525412
+    second: office_tileset_36
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: 5482067882766135349
+    second: office_tileset_16
+  - first:
+      213: -1345822567017228569
+    second: office_tileset_17
+  - first:
+      213: -1804930667563207789
+    second: office_tileset_18
+  - first:
+      213: 7226815602652133937
+    second: office_tileset_19
+  - first:
+      213: -5219572675575292339
+    second: office_tileset_20
+  - first:
+      213: 1359437734754720252
+    second: office_tileset_21
+  - first:
+      213: 1609116951862143887
+    second: office_tileset_22
+  - first:
+      213: 5446395739715542776
+    second: office_tileset_23
+  - first:
+      213: -6041610659012654941
+    second: office_tileset_24
+  - first:
+      213: -8554974730198523131
+    second: office_tileset_25
+  - first:
+      213: 5194478166625107036
+    second: office_tileset_26
+  - first:
+      213: -3636614482998852358
+    second: office_tileset_27
+  - first:
+      213: 6249934677221346916
+    second: office_tileset_28
+  - first:
+      213: -2953073199813119755
+    second: office_tileset_29
+  - first:
+      213: -682145661564071206
+    second: office_tileset_30
+  - first:
+      213: -877369747439773049
+    second: office_tileset_31
+  - first:
+      213: 6526644062553604673
+    second: office_tileset_32
+  - first:
+      213: 8221076318913909075
+    second: office_tileset_33
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: 5482067882766135349
+    second: office_tileset_16
+  - first:
+      213: -1345822567017228569
+    second: office_tileset_17
+  - first:
+      213: -1804930667563207789
+    second: office_tileset_18
+  - first:
+      213: 7226815602652133937
+    second: office_tileset_19
+  - first:
+      213: -5219572675575292339
+    second: office_tileset_20
+  - first:
+      213: 1359437734754720252
+    second: office_tileset_21
+  - first:
+      213: 1609116951862143887
+    second: office_tileset_22
+  - first:
+      213: 5446395739715542776
+    second: office_tileset_23
+  - first:
+      213: -6041610659012654941
+    second: office_tileset_24
+  - first:
+      213: -8554974730198523131
+    second: office_tileset_25
+  - first:
+      213: 5194478166625107036
+    second: office_tileset_26
+  - first:
+      213: -3636614482998852358
+    second: office_tileset_27
+  - first:
+      213: 6249934677221346916
+    second: office_tileset_28
+  - first:
+      213: -2953073199813119755
+    second: office_tileset_29
+  - first:
+      213: -682145661564071206
+    second: office_tileset_30
+  - first:
+      213: -877369747439773049
+    second: office_tileset_31
+  - first:
+      213: 6526644062553604673
+    second: office_tileset_32
+  - first:
+      213: 8221076318913909075
+    second: office_tileset_33
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  - first:
+      213: 8922090497739755815
+    second: office_tileset_15
+  - first:
+      213: 5482067882766135349
+    second: office_tileset_16
+  - first:
+      213: -1345822567017228569
+    second: office_tileset_17
+  - first:
+      213: -1804930667563207789
+    second: office_tileset_18
+  - first:
+      213: 7226815602652133937
+    second: office_tileset_19
+  - first:
+      213: -5219572675575292339
+    second: office_tileset_20
+  - first:
+      213: 1359437734754720252
+    second: office_tileset_21
+  - first:
+      213: 1609116951862143887
+    second: office_tileset_22
+  - first:
+      213: 5446395739715542776
+    second: office_tileset_23
+  - first:
+      213: -6041610659012654941
+    second: office_tileset_24
+  - first:
+      213: -8554974730198523131
+    second: office_tileset_25
+  - first:
+      213: 5194478166625107036
+    second: office_tileset_26
+  - first:
+      213: -3636614482998852358
+    second: office_tileset_27
+  - first:
+      213: 6249934677221346916
+    second: office_tileset_28
+  - first:
+      213: -2953073199813119755
+    second: office_tileset_29
+  - first:
+      213: -682145661564071206
+    second: office_tileset_30
+  - first:
+      213: -877369747439773049
+    second: office_tileset_31
+  - first:
+      213: 6526644062553604673
+    second: office_tileset_32
+  - first:
+      213: 8221076318913909075
+    second: office_tileset_33
+  - first:
+      213: -6762204690539767566
+    second: office_tileset_0
+  - first:
+      213: 5376118065380052805
+    second: office_tileset_1
+  - first:
+      213: 8602173789506671373
+    second: office_tileset_2
+  - first:
+      213: -7594541794784576418
+    second: office_tileset_3
+  - first:
+      213: -860939334015341474
+    second: office_tileset_4
+  - first:
+      213: -6897675763870542894
+    second: office_tileset_5
+  - first:
+      213: 8277600655854167525
+    second: office_tileset_6
+  - first:
+      213: -564870372488664893
+    second: office_tileset_7
+  - first:
+      213: -8140384559725094218
+    second: office_tileset_8
+  - first:
+      213: 1195696065750962503
+    second: office_tileset_9
+  - first:
+      213: 93536562350350723
+    second: office_tileset_10
+  - first:
+      213: -1591130511487333623
+    second: office_tileset_11
+  - first:
+      213: -8739161894607405671
+    second: office_tileset_12
+  - first:
+      213: -2719749135385228540
+    second: office_tileset_13
+  - first:
+      213: -107509493266545612
+    second: office_tileset_14
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: office_tileset_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 100
+      height: 100
+    spriteID: 683f221a38ec2e0418f83cee5c610551
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_0
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 84
+      width: 16
+      height: 16
+    spriteID: 2f895e169a2d722a0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_1
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 84
+      width: 16
+      height: 16
+    spriteID: 54fc98585eecb9a40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_2
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 84
+      width: 16
+      height: 16
+    spriteID: d0398bb3c7f016770800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_3
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 84
+      width: 16
+      height: 16
+    spriteID: e5cf10aa974ca9690800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_4
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 84
+      width: 16
+      height: 16
+    spriteID: e5caad6bc345d04f0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_5
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 2d3dcae20788640a0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_6
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 5e56abc90f1ffd270800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_7
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 3c8aba7936d2928f0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_8
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 6bad28e5f5b870f80800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_9
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 7411b6a9c37f79010800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_10
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 3816764020f4c4100800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_11
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 90b038fda3b2be9e0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_12
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 36
+      width: 16
+      height: 16
+    spriteID: 99dbb451f8248b680800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_13
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 36
+      width: 16
+      height: 16
+    spriteID: 40b003b3292814ad0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: office_tileset_14
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 36
+      width: 16
+      height: 16
+    spriteID: 4348ddb7fac028ef0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: office_tileset_0
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 16
+      height: 16
+    spriteID: 2f895e169a2d722a0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 84}
+  - name: office_tileset_1
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 84
+      width: 16
+      height: 16
+    spriteID: 54fc98585eecb9a40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: 84}
+  - name: office_tileset_2
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 84
+      width: 16
+      height: 16
+    spriteID: d0398bb3c7f016770800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: 84}
+  - name: office_tileset_3
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 84
+      width: 16
+      height: 16
+    spriteID: e5cf10aa974ca9690800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 84}
+  - name: office_tileset_4
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 84
+      width: 16
+      height: 16
+    spriteID: e5caad6bc345d04f0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: 84}
+  - name: office_tileset_5
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 84
+      width: 16
+      height: 16
+    spriteID: 2d3dcae20788640a0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 84}
+  - name: office_tileset_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 82
+      width: 16
+      height: 16
+    spriteID: 5e56abc90f1ffd270800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 100, y: 82}
+  - name: office_tileset_7
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 3c8aba7936d2928f0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 68}
+  - name: office_tileset_8
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 6bad28e5f5b870f80800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: 68}
+  - name: office_tileset_9
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 7411b6a9c37f79010800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: 68}
+  - name: office_tileset_10
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 3816764020f4c4100800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 68}
+  - name: office_tileset_11
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 90b038fda3b2be9e0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: 68}
+  - name: office_tileset_12
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 68
+      width: 16
+      height: 16
+    spriteID: 99dbb451f8248b680800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 68}
+  - name: office_tileset_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 66
+      width: 16
+      height: 16
+    spriteID: 40b003b3292814ad0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 100, y: 66}
+  - name: office_tileset_14
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 4348ddb7fac028ef0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 52}
+  - name: office_tileset_15
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 7219aa35902a1db70800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: 52}
+  - name: office_tileset_16
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 5307ad2b1b7341c40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: 52}
+  - name: office_tileset_17
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 7e6db3a718da25de0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 52}
+  - name: office_tileset_18
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 393bfabee1993f6e0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: 0, y: -3}
+      - {x: -8, y: -8}
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 2}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: 0, y: -3}
+      - {x: -8, y: -8}
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 2}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: 52}
+  - name: office_tileset_19
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 13ab455508eca4460800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 52}
+  - name: office_tileset_20
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 36
+      width: 16
+      height: 16
+    spriteID: d4edff85e4a5097b0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: 36}
+  - name: office_tileset_21
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 36
+      width: 16
+      height: 16
+    spriteID: cf9115aca61bdd210800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: 36}
+  - name: office_tileset_22
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 36
+      width: 16
+      height: 16
+    spriteID: f8b6dcd975bb45610800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 36}
+  - name: office_tileset_23
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 36
+      width: 16
+      height: 16
+    spriteID: 8fe12fba11c759b40800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: 36}
+  - name: office_tileset_24
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 36
+      width: 16
+      height: 16
+    spriteID: 3a8465e8d13e72ca0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 36}
+  - name: office_tileset_25
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 20
+      width: 16
+      height: 16
+    spriteID: 503e2102fcf964980800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 20}
+  - name: office_tileset_26
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 20
+      width: 16
+      height: 16
+    spriteID: c5c363bfe5e761840800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: 20}
+  - name: office_tileset_27
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 20
+      width: 16
+      height: 16
+    spriteID: af400d33566288dc0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: 20}
+  - name: office_tileset_28
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 20
+      width: 16
+      height: 16
+    spriteID: 46e8c21b97a3cb650800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 20}
+  - name: office_tileset_29
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 20
+      width: 16
+      height: 16
+    spriteID: 5f0b96122939407d0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: 20}
+  - name: office_tileset_30
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 20
+      width: 16
+      height: 16
+    spriteID: ad2566d82288886f0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 20}
+  - name: office_tileset_31
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 78a9d2bfcd4f2d3f0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 4}
+  - name: office_tileset_32
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 1428bebf13c439a50800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: 4}
+  - name: office_tileset_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 38
+      width: 16
+      height: 16
+    spriteID: 3515d3cda51271270800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 38}
+  - name: office_tileset_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 16
+      height: 16
+    spriteID: df9073fb950c98340800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  - name: office_tileset_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 4
+      width: 16
+      height: 16
+    spriteID: cb0e9777d833e4490800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: 4}
+  - name: office_tileset_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 4
+      width: 16
+      height: 16
+    spriteID: c13e3c0a314e16fa0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: 4}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 90
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 90
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 90
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 90
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 0
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 128
+  importedTextureHeight: 128
+  documentSize: {x: 100, y: 100}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 100
+  textureActualHeight: 100
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Basic Tiles
+    spriteName: Basic Tiles
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9f2e555c045f88d4bb5cc870e94ffb9c
+    layerID: 26
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: office_tileset Texture
+  prefabAssetName: office_tileset Prefab
+  spriteLibAssetName: office_tileset Sprite Lib
+  secondarySpriteTextures: []
