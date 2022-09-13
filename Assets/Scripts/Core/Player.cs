@@ -103,8 +103,12 @@ public class Player : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         GameManager.Instance.UpdateUI();
-        virtualCamera = GameObject.Find(camera_name).GetComponent<CinemachineVirtualCamera>();
-        defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
+        GameObject basicCam = GameObject.Find(camera_name);
+        if (basicCam != null)
+        {
+            virtualCamera = basicCam.GetComponent<CinemachineVirtualCamera>();
+            defaultCameraY = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY;
+        }
 
         deathTransition = Instantiate(deathTransitionPrefab);
         deathTransition.SetActive(false);
@@ -140,7 +144,11 @@ public class Player : MonoBehaviour
         if (spawn)
         {
             transform.position = GameObject.Find(SPAWN_POINT).transform.position;
-            groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
+            GameObject groundTilemap = GameObject.Find("Ground");
+            if (groundTilemap != null)
+            {
+                groundRigidbody = groundTilemap.GetComponent<Rigidbody2D>();
+            }
         }
 
         GameObject vcGameObject = GameObject.Find(camera_name);
@@ -187,7 +195,11 @@ public class Player : MonoBehaviour
     {
         // Place at set spawn
         transform.position = GameObject.Find(SPAWN_POINT).transform.position;
-        groundRigidbody = GameObject.Find("Ground").GetComponent<Rigidbody2D>();
+        GameObject groundTilemap = GameObject.Find("Ground");
+        if (groundTilemap != null)
+        {
+            groundRigidbody = groundTilemap.GetComponent<Rigidbody2D>();
+        }
     }
 
     private void CheckSurroundings()

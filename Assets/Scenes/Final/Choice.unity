@@ -21470,7 +21470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfa2d0450d0dc44ab873cc4f4dcd618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: end scene
+  nextScene: Credits
   didStopProjectGentleGoodnight: 0
   selectSFX: {fileID: 8300000, guid: 0669a04c6e48bc64eb312b667dc0593d, type: 3}
   selectAudioVolume: 100

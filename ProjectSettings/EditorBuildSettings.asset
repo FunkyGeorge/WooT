@@ -126,6 +126,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Choice.unity
     guid: 35b0568ed2f0e2145b5c0bad10074549
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 720abee738550e241bd4e6ad41d2a711
+  - enabled: 1
     path: Assets/Scenes/End Scene.unity
     guid: bb6669763fbc89e409a179baa7bc929f
   - enabled: 0

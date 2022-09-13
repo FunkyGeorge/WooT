@@ -97,6 +97,7 @@ MonoBehaviour:
   - Cutscene 5
   - Cutscene 5
   finalMusicClip: {fileID: 8300000, guid: 2dd54c0f612ab8e448ecbff3b61ee466, type: 3}
-  finalMusicClipVolume: 38
+  finalMusicClipVolume: 50
   finalMusicLevels:
   - Choice
+  - Credits
