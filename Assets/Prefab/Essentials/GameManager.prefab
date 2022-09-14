@@ -94,7 +94,11 @@ MonoBehaviour:
   - Climb 8
   - Climb 9
   - Climb 10
-  - Cutscene 5
+  musicClip3: {fileID: 8300000, guid: 69c1c66302a9018498a6a9a9db367b1b, type: 3}
+  musicClip3Volume: 40
+  music3Levels:
+  - Fight
+  - Cutscene 4
   - Cutscene 5
   finalMusicClip: {fileID: 8300000, guid: 2dd54c0f612ab8e448ecbff3b61ee466, type: 3}
   finalMusicClipVolume: 50

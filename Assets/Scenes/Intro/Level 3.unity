@@ -10277,10 +10277,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6871713112868834916, guid: 0857cb5473cc5b649ae60a23185e87d9, type: 3}
-      propertyPath: musicFadeSpeed
-      value: 0.005
-      objectReference: {fileID: 0}
     - target: {fileID: 6871713113097166161, guid: 0857cb5473cc5b649ae60a23185e87d9, type: 3}
       propertyPath: m_RootOrder
       value: 1

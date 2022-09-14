@@ -52,7 +52,7 @@ public class AudioPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (queuedMusicClip != null)
+        if (queuedMusicClip != null || queuedMusicClipVolume != 0)
         {
             musicAudioSource.volume = Mathf.Max(musicAudioSource.volume - musicFadeSpeed, 0);
         }
@@ -96,6 +96,11 @@ public class AudioPlayer : MonoBehaviour
         {
             musicAudioSource.Play();
         }
+    }
+
+    public void FadeMusicVolume(int musicVolume)
+    {
+        queuedMusicClipVolume = musicVolume;
     }
 
     public void StopMusic()

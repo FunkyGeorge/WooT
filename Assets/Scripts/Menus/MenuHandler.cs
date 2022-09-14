@@ -10,6 +10,10 @@ using TMPro;
 public class MenuHandler : MonoBehaviour
 {
     [SerializeField] private string entryLevel;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip musicClip;
+    [Range(1, 100)][SerializeField] private int musicClipVolume = 100;
     [SerializeField] private AudioClip selectSFX;
     [Range(1, 100)] [SerializeField] private int selectAudioVolume = 100;
 
@@ -33,11 +37,11 @@ public class MenuHandler : MonoBehaviour
             Color continueButtonColor = continueButtonImage.color;
             Button continueButtonInput = continueButton.GetComponent<Button>();
             continueButtonInput.interactable = false;
-            Debug.Log(continueButtonImage.color);
             continueButtonColor.a = 0.5f;
             continueButtonImage.color = continueButtonColor;
-            Debug.Log(continueButtonImage.color);
         }
+
+        AudioPlayer.Instance.PlayMusic(musicClip, musicClipVolume);
     }
 
     // Update is called once per frame
@@ -49,7 +53,7 @@ public class MenuHandler : MonoBehaviour
     public void PlayButtonHandler()
     {
         PlaySound();
-        SceneManager.LoadScene(entryLevel);
+        StartCoroutine(FadeToGame(entryLevel));
     }
 
     public void ContinueButtonHandler()
@@ -57,7 +61,7 @@ public class MenuHandler : MonoBehaviour
         PlaySound();
 
         string nextLevel = config.isDebug || config.isTrailer ? debugEntryLevel : Prefs.GetCurrentLevel();
-        SceneManager.LoadScene(nextLevel);
+        StartCoroutine(FadeToGame(nextLevel));
     }
 
     public void OnVolumeSliderChanged(Slider slider)
@@ -86,5 +90,14 @@ public class MenuHandler : MonoBehaviour
     public void PlaySound()
     {
         AudioPlayer.Instance.PlaySFX(selectSFX, selectAudioVolume);
+    }
+
+    private IEnumerator FadeToGame(string level)
+    {
+        AudioPlayer.Instance.FadeMusicVolume(1);
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(level);
+        yield return null;
     }
 }

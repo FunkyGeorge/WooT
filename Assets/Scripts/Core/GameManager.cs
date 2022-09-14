@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
     [Range(1, 100)][SerializeField] private int musicClip2Volume = 100;
     [SerializeField] private string[] music2Levels;
 
+    [SerializeField] private AudioClip musicClip3;
+    [Range(1, 100)][SerializeField] private int musicClip3Volume = 100;
+    [SerializeField] private string[] music3Levels;
+
     [SerializeField] private AudioClip finalMusicClip;
     [Range(1, 100)][SerializeField] private int finalMusicClipVolume = 100;
     [SerializeField] private string[] finalMusicLevels;
@@ -180,6 +184,16 @@ public class GameManager : MonoBehaviour
             {
                 currentMusicVolume = musicClip2Volume;
                 AudioPlayer.Instance.PlayMusic(musicClip2, musicClip2Volume);
+                break;
+            }
+        }
+
+        for (int i = 0; i < music3Levels.Length; i++)
+        {
+            if (music3Levels[i] == currentLevel)
+            {
+                currentMusicVolume = musicClip3Volume;
+                AudioPlayer.Instance.PlayMusic(musicClip3, musicClip3Volume);
                 break;
             }
         }

@@ -1732,7 +1732,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865248613
 GameObject:
@@ -2084,7 +2084,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6871713113097166161, guid: 0857cb5473cc5b649ae60a23185e87d9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6871713113097166161, guid: 0857cb5473cc5b649ae60a23185e87d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2968,6 +2968,71 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &1362962342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 711705717687000181, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: musicClip3Volume
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 711705717687000181, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: music3Levels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 727.91144
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 306.12332
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -106.80246
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957388252341558330, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623333312692833995, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c58dcfb01f24ed4295ba1e5d51d8a76, type: 3}
 --- !u!1 &1430888374
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,7 +4611,7 @@ RectTransform:
   - {fileID: 1763630162}
   - {fileID: 745055023}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4566,6 +4631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entryLevel: Level 1
+  musicClip: {fileID: 8300000, guid: 69c1c66302a9018498a6a9a9db367b1b, type: 3}
+  musicClipVolume: 20
   selectSFX: {fileID: 8300000, guid: 0669a04c6e48bc64eb312b667dc0593d, type: 3}
   selectAudioVolume: 100
   continueButton: {fileID: 1773176005}

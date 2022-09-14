@@ -50,7 +50,7 @@ MonoBehaviour:
   _sfxVolume: 100
   _musicVolume: 100
   _ambientVolume: 100
-  musicFadeSpeed: 0.005
+  musicFadeSpeed: 0.003
   config: {fileID: 11400000, guid: d0902b6e9cc36bc4cb4d2cd384596744, type: 2}
 --- !u!1 &6871713112885165608
 GameObject:
