@@ -356,23 +356,28 @@ MonoBehaviour:
   initialDelay: 1
   dialoguePart:
   - name: Jesse
+    mood: upset
     sentences:
     - What did we just walk into? What is our company doing?
   - name: Josephine
+    mood: upset
     sentences:
     - "I fear that our company is trying to control our clients. No\u2026. they want
       to control everyone!"
     - How could this have gone on for this long and nobody found out?
   - name: Jesse
+    mood: angry
     sentences:
     - "No, we aren\u2019t to blame here. It is these power-hungry people at the top
       that are calling the shots."
     - They are to blame. We have to stop them!
   - name: Josephine
+    mood: upset
     sentences:
     - Jesse, how do you expect to stop a giant company like Twilight. Companies like
       this have so much more influence than individuals like us.
   - name: Jesse
+    mood: angry
     sentences:
     - Listen, I know you and everyone else seem to have given up on fighting for
       yourselves. Or fighting against these giant companies.
@@ -381,10 +386,12 @@ MonoBehaviour:
     - Then I might as well do whatever I can to save the whole city, maybe even the
       world.
   - name: Josephine
+    mood: upset
     sentences:
     - "I haven\u2019t given up, I just..."
     - Nevermind. So what is your plan then?
   - name: Jesse
+    mood: upset
     sentences:
     - I have to reach our clients one on one. As futile as it may seem. The best
       I can do is to try.
@@ -393,6 +400,7 @@ MonoBehaviour:
     - "Jeez, this is so frustrating. If everybody would just have more courage to
       live in their own lives, we wouldn\u2019t be in this giant mess!"
   - name: Josephine
+    mood: upset
     sentences:
     - Please try to calm down. If you want to go through with this plan then you
       have my support.

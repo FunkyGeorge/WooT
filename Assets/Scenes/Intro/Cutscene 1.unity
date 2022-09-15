@@ -308,6 +308,7 @@ MonoBehaviour:
   initialDelay: 2.5
   initialDialoguePart:
   - name: Josephine
+    mood: 
     sentences:
     - A job well done once again, Jesse. You have quickly become one of our best
       dreamweavers
@@ -315,12 +316,14 @@ MonoBehaviour:
       Twilight. I'll see you again tomorrow
   dialoguePart:
   - name: Jesse
+    mood: upset
     sentences:
     - "Josephine, I get why people go into the Twilight, but don\u2019t they spend
       at least a little time outside?"
     - Life may suck for them, but staying inside the illusion all the time does nothing
       to improve their real lives.
   - name: Josephine
+    mood: 
     sentences:
     - Unfortunately, many folk have determined that it is no use living in the real
       world anymore.
@@ -328,6 +331,7 @@ MonoBehaviour:
     - And when you are in the lower class, all the opportunities to pull yourself
       out are really just an illusion anyway.
   - name: Jesse
+    mood: upset
     sentences:
     - True, I remember that. But I wanted to be a dreamweaver so bad.
     - I thought if I worked hard enough then I would be able to actually do something
@@ -336,15 +340,18 @@ MonoBehaviour:
     - So it isn't impossible. I believe people should work harder to be in control
       of their real lives.
   - name: Josephine
+    mood: upset
     sentences:
     - There are other reasons why our clients go into the Twilight as well...
     - The Twilight turns out to be a convenient way to escape from mental or emotional
       pain.
   - name: Jesse
+    mood: upset
     sentences:
     - ...
     - Are there a lot of people that actually do that?
   - name: Josephine
+    mood: upset
     sentences:
     - Well since we have been partners for a while now I think I can tell you now.
     - A year ago, I had a very young daughter lose her life to an unexpected illness.
@@ -352,35 +359,43 @@ MonoBehaviour:
     - So even I, a dreamweaver, will enter the Twilight. It really helps me to imagine
       that she is still around.
   - name: Jesse
+    mood: upset
     sentences:
     - 'I.... I''m very sorry.                                                                   '
   - name: Josephine
+    mood: 
     sentences:
     - Don't worry about it. Now I just try to focus on making the Twilight as good
       as possible.
     - If I can save other people from pain, then it is all worth it for me.
   - name: Jesse
+    mood: 
     sentences:
     - I think that is a very admirable way to look at it.
     - Say, have you ever thought about how many people you help in the Twilight?
   - name: Josephine
+    mood: 
     sentences:
     - Oh I guess I never stopped to think about it. If I had to guess...
     - I would say that 50 percent of the city uses the Twilight
   - name: Jesse
+    mood: 
     sentences:
     - 50 percent? That seems small. I bet the number is closer to 65 percent.
     - (Especially since everyone is all too content with giving up control of their
       lives)
   - name: Josephine
+    mood: 
     sentences:
     - Wow, that sounds like a lot. That is a bold guess. It would be interesting
       if we could ever know.
   - name: Jesse
+    mood: 
     sentences:
     - "What if we could? The executive offices are probably closely monitoring its
       users, right?\r"
   - name: Josephine
+    mood: 
     sentences:
     - Are you considering sneaking into executive? There goes that rebel attitude
       of yours that I like.

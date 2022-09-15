@@ -18340,15 +18340,18 @@ MonoBehaviour:
   dialogBox: {fileID: 1197326720}
   dialoguePart1:
   - name: Hector
+    mood: angry
     sentences:
     - Stop! What are you doing?
     - Can't you see that it's over aleady? You can't stop anything now. This is all
       useless.
   - name: 
+    mood: 
     sentences:
     - 'Override: Deploy halted.... Project Gentle Goodnight....... Delayed'
   dialoguePart2:
   - name: Hector
+    mood: angry
     sentences:
     - What?..... Josephine! How could you?!?!?
 --- !u!1001 &1517635118

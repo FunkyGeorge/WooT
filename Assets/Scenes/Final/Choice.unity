@@ -21488,6 +21488,7 @@ MonoBehaviour:
     live in a new and perfect reality. Hector was right.
   confirmationDialogue:
     name: Josephine
+    mood: 
     sentences:
     - It's an impossible decision to make, but I respect your choice.
     - The people will know what you did here. You should let them know why.
@@ -24094,11 +24095,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainDialogue:
     name: Jesse
+    mood: upset
     sentences:
     - "I\u2019m surprised. What made you delay the illusion?"
     - "I thought you wanted to be put inside of Hector\u2019s illusion too."
   secondDialogue:
     name: Josephine
+    mood: upset
     sentences:
     - I did. I do, but I guess your effort was pretty inspiring.
     - I thought that if you went through all this trouble, you might as well get
@@ -24111,6 +24114,7 @@ MonoBehaviour:
     - But since you have the key that can stop it now, I suppose it is your choice.
   thirdDialogue:
     name: Jesse
+    mood: upset
     sentences:
     - "I didn\u2019t believe that I would actually make it this far."
     - "So I have the choice to stop everything right now with Hector\u2019s access
@@ -24118,6 +24122,7 @@ MonoBehaviour:
     - But if I did nothing, could I still allow it to activate?
   fourthDialogue:
     name: Josephine
+    mood: upset
     sentences:
     - Indeed, it could still go both ways.
     - So what will you choose?

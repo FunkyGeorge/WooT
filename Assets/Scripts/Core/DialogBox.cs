@@ -21,14 +21,18 @@ public class DialogBox : MonoBehaviour
 
     [Header("Jesse")]
     [SerializeField] private Sprite jessePortrait;
+    [SerializeField] private Sprite jessePortraitUpset;
+    [SerializeField] private Sprite jessePortraitAngry;
     [SerializeField] private AudioClip jesseVoice;
 
     [Header("Josephine")]
     [SerializeField] private Sprite josephinePortrait;
+    [SerializeField] private Sprite josephinePortraitUpset;
     [SerializeField] private AudioClip josephineVoice;
 
     [Header("Hector")]
     [SerializeField] private Sprite hectorPortrait;
+    [SerializeField] private Sprite hectorPortraitAngry;
     [SerializeField] private AudioClip hectorVoice;
 
     [Header("Subjects")]
@@ -71,14 +75,15 @@ public class DialogBox : MonoBehaviour
 
         if (dialogue.name == "Jesse")
         {
-            leftImage.sprite = jessePortrait;
+            Sprite characterImage = FindCharacterImage(dialogue.name, dialogue.mood);
+            leftImage.sprite = characterImage;
             currentVoice = jesseVoice;
             leftImage.enabled = true;
             rightImage.enabled = false;
         }
         else if (dialogue.name != "")
         {
-            Sprite characterImage = FindCharacterImage(dialogue.name);
+            Sprite characterImage = FindCharacterImage(dialogue.name, dialogue.mood);
             currentVoice = FindCharacterVoice(dialogue.name);
             rightImage.sprite = characterImage;
             rightImage.enabled = true;
@@ -150,15 +155,33 @@ public class DialogBox : MonoBehaviour
         continueIcon.enabled = true;
     }
 
-    private Sprite FindCharacterImage(string characterName)
+    private Sprite FindCharacterImage(string characterName, string mood)
     {
         switch (characterName)
         {
+            case "Jesse":
+                if (mood == "upset")
+                {
+                    return jessePortraitUpset;
+                }
+                if (mood == "angry") 
+                {
+                    return jessePortraitAngry;
+                }
+                return jessePortrait;
             case "Admin":
                 return adminPortrait;
             case "Josephine":
+                if (mood == "upset")
+                {
+                    return josephinePortraitUpset;
+                }
                 return josephinePortrait;
             case "Hector":
+                if (mood == "angry")
+                {
+                    return hectorPortraitAngry;
+                }
                 return hectorPortrait;
             case "Subject 1":
                 return subject1Portrait;

@@ -683,25 +683,31 @@ MonoBehaviour:
   hectorTurn: {fileID: 11400000, guid: 06fb86ca21975b14baaa32311a2373ff, type: 2}
   dialoguePart:
   - name: Jesse
+    mood: 
     sentences:
     - Hey, I tried talking to a few clients and none of them had the guts to escape.
     - Who is that with you?
   - name: Hector
+    mood: 
     sentences:
     - "Hi Jesse, I\u2019m Hector. It is nice to finally meet you. I\u2019m glad to
       see you thriving as an experimental employee here."
   - name: Jesse
+    mood: upset
     sentences:
     - Am I supposed to know you?
   - name: Hector
+    mood: 
     sentences:
     - "You don\u2019t know your own boss? I own this company. The Twilight was my
       creation."
   - name: Jesse
+    mood: 
     sentences:
     - "Oh, well it is very nice to meet you. What brings you to our work chamber?
       Heh heh\u2026."
   - name: Hector
+    mood: 
     sentences:
     - Josephine personally came to me because she was concerned about something that
       you two found out.
@@ -711,15 +717,18 @@ MonoBehaviour:
       you on board.
     - "It\u2019s not like you can stop the plan anyway."
   - name: Jesse
+    mood: angry
     sentences:
     - Josephine, how could you do this?
   - name: Josephine
+    mood: upset
     sentences:
     - "I couldn\u2019t believe that the company that I worked so long for could really
       do something so terrible."
     - "I had to see for myself. There is an explanation for this. Just please, hear
       him out\u2026"
   - name: Hector
+    mood: 
     sentences:
     - You see Jesse, this world is just a shell of what it once was. Even with all
       attempts to have machines that do everything for people. There is still much
@@ -731,11 +740,13 @@ MonoBehaviour:
     - Well if they leave, then they have to return to their crappy lives all over
       again.
   - name: Jesse
+    mood: angry
     sentences:
     - "I don\u2019t buy this crap for one second."
     - "If you are so concerned with that, then why won\u2019t you just help improve
       the real world then?"
   - name: Hector
+    mood: 
     sentences:
     - "That is what I am trying to do, Jesse. I am trying to improve every single
       person\u2019s life."
@@ -744,10 +755,12 @@ MonoBehaviour:
     - My plan is to remove this crappy version of life from their reality. Their
       new reality will be our illusion.
   - name: Jesse
+    mood: angry
     sentences:
     - "Our illusion? I did not sign up for this. I\u2019m not on board with this
       at all. People should be able to choose!"
   - name: Hector
+    mood: angry
     sentences:
     - Choice? There is no choice left in the world. We are all just drifting along
       as we try to make it through our boring lives.
@@ -755,18 +768,22 @@ MonoBehaviour:
     - You getting hired here was completely random. We just needed to hire outsiders
       to keep the public off our backs for a little bit while we finished our plan.
   - name: Jesse
+    mood: upset
     sentences:
     - "\u2026"
     - Josephine, did you know about this?
   - name: Josephine
+    mood: upset
     sentences:
     - About the nature of your employment? Yes I did.
     - "I didn\u2019t want to take away from your excitement when you first got here."
   - name: Jesse
+    mood: angry
     sentences:
     - Ok, but how can you stand there and do nothing while this maniac is trying
       to put the whole world inside an illusion?
   - name: Josephine
+    mood: upset
     sentences:
     - "I\u2019m tired Jesse. I\u2019m tired and I want to see my daughter again."
     - The worst part of my week is every time I need to exit the Twilight. When I
@@ -775,6 +792,7 @@ MonoBehaviour:
     - "I want to go back permanently. Even if you don\u2019t think it is \u201Creal\u201D.
       It can become real to me."
   - name: Hector
+    mood: 
     sentences:
     - "So what do you say? Can I trust you to stay put and not go trying to be a
       \u201Chero\u201D on me?"

@@ -12266,12 +12266,24 @@ PrefabInstance:
       value: Dialogue Trigger (1) Chain
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: mainDialogue.mood
+      value: angry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.name
       value: Jesse
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.mood
+      value: upset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.name
       value: Jesse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: fourthDialogue.mood
+      value: upset
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: fourthDialogue.name
@@ -26414,12 +26426,20 @@ PrefabInstance:
       value: Jesse
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.mood
+      value: upset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.name
       value: Jesse
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: fourthDialogue.name
       value: Josephine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: secondDialogue.mood
+      value: upset
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: secondDialogue.name

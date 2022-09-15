@@ -45813,8 +45813,16 @@ PrefabInstance:
       value: Dialogue Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: mainDialogue.mood
+      value: upset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.name
       value: Jesse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: thirdDialogue.mood
+      value: upset
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: thirdDialogue.name

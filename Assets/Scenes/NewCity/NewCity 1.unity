@@ -28751,11 +28751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.347951
+      value: -7.3475857
       objectReference: {fileID: 0}
     - target: {fileID: 7611606072768238894, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0803084
+      value: 1.0788121
       objectReference: {fileID: 0}
     - target: {fileID: 7611606073580728498, guid: 3dec81b0256af8549881e6a8c2d89015, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -29596,6 +29596,10 @@ PrefabInstance:
     - target: {fileID: 691314451137971826, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: m_Name
       value: Dialogue Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
+      propertyPath: mainDialogue.mood
+      value: upset
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.name

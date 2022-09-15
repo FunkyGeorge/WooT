@@ -6,6 +6,7 @@ using UnityEngine;
 public class Dialogue
 {
     public string name;
+    public string mood = "";
     [TextArea(3, 5)] public string[] sentences;
     public Dialogue chainDialogue;
 }

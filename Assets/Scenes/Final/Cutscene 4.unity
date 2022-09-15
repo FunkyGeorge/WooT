@@ -182,19 +182,23 @@ MonoBehaviour:
   doorClose: {fileID: 11400000, guid: 06670ca3fc44eed4f853208cd71b488a, type: 2}
   dialoguePart:
   - name: Hector
+    mood: 
     sentences:
     - "Oh, so you decided to show up. Are you here to watch everybody\u2019s dreams
       come true?"
   - name: Jesse
+    mood: angry
     sentences:
     - "I\u2019ve come to stop you. I really don\u2019t know if I\u2019m robbing everyone
       of true happiness."
     - "I just know that it shouldn\u2019t be solely up to you to decide it!"
   - name: Hector
+    mood: angry
     sentences:
     - Well you are already too late. Everything is already in motion and only I can
       stop it now.
   - name: Jesse
+    mood: angry
     sentences:
     - Then as my last act with my free will, I will kick your ass!
 --- !u!4 &3602979
