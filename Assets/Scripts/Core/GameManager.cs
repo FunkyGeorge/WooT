@@ -138,7 +138,9 @@ public class GameManager : MonoBehaviour
 
     public void OpenFeedback()
     {
-        if (config.isDemo)
+        Debug.Log("Open feedback");
+        Debug.Log(config.isReview);
+        if (config.isDemo || config.isReview)
         {
             isPaused = true;
             Time.timeScale = 0f;
@@ -146,6 +148,7 @@ public class GameManager : MonoBehaviour
             CanvasGroup canvas = feedbackMenu.GetComponent<CanvasGroup>();
             // PauseHandler pauseHandler = feedbackMenu.GetComponent<PauseHandler>();
             // pauseHandler.Init();
+            Debug.Log(canvas);
             canvas.alpha = 1f;
             canvas.blocksRaycasts = true;
         }
@@ -153,7 +156,7 @@ public class GameManager : MonoBehaviour
 
     public void CloseFeedback()
     {
-        if (config.isDemo)
+        if (config.isDemo || config.isReview)
         {
             isPaused = false;
             Time.timeScale = 1f;

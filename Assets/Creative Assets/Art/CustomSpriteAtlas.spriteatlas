@@ -57,6 +57,7 @@ SpriteAtlas:
     - {fileID: -1110554639684392801, guid: c2546c67bfbe42341bd0678b03beb463, type: 3}
     - {fileID: 2769310631571674535, guid: e59dbdb3bce52dc439934f6362e4812d, type: 3}
     - {fileID: -7378472786860287552, guid: 0834edf7cfa95ff4d83e83972ff15bc1, type: 3}
+    - {fileID: 3467901622726508018, guid: e1b3bc0ac48c36e409bc78913b60c1e2, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -85,6 +86,7 @@ SpriteAtlas:
   - {fileID: 4256332243635672019, guid: c2546c67bfbe42341bd0678b03beb463, type: 3}
   - {fileID: 6688168998500121313, guid: 0834edf7cfa95ff4d83e83972ff15bc1, type: 3}
   - {fileID: 5120150197276488258, guid: 90bcc4d94ec81ef4c9401ae4e279a6b9, type: 3}
+  - {fileID: 8816323671617543467, guid: e1b3bc0ac48c36e409bc78913b60c1e2, type: 3}
   - {fileID: 6463134143078956631, guid: 500d1a5b873b3e34892bf745ca4c489f, type: 3}
   - {fileID: -7382830944770109452, guid: 500d1a5b873b3e34892bf745ca4c489f, type: 3}
   - {fileID: 8648989971391298874, guid: 500d1a5b873b3e34892bf745ca4c489f, type: 3}
@@ -120,6 +122,7 @@ SpriteAtlas:
   - vent_1
   - lamp_ceiling_1
   - Chair_twilight_1
+  - billboard_1
   - servers_4
   - servers_0
   - servers_1
