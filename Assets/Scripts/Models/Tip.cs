@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ public class Tip : MonoBehaviour
     private Image imageComponent;
     protected bool used = false;
     protected bool isActive = false;
+    protected bool canDismiss = false;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +53,7 @@ public class Tip : MonoBehaviour
         }
         CanvasGroup group = tipBox.GetComponent<CanvasGroup>();
         group.alpha = 1;
+        StartCoroutine(SetCanDismiss());
     }
 
     protected void DismissTipBox()
@@ -64,15 +67,21 @@ public class Tip : MonoBehaviour
         group.alpha = 0;
     }
 
+    private IEnumerator SetCanDismiss()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        canDismiss = true;
+    }
+
     private Sprite GetPlatformImage()
     {
         return keyboardSprite;
     }
 
     // Player Input System
-    private void OnContinue(InputValue value)
+    private void OnAnyInput(InputValue value)
     {
-        if (isActive)
+        if (isActive && canDismiss)
         {
             DismissTipBox();
         }

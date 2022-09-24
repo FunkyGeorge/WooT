@@ -227,6 +227,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Any Input"",
+                    ""type"": ""Button"",
+                    ""id"": ""9a73711e-5ef4-4f90-af12-5bcad7bddad9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -249,6 +257,83 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Continue"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0014d10d-bb97-43f4-bc76-26e699f2cd8b"",
+                    ""path"": ""<Keyboard>/anyKey"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""49c1dfeb-a2d6-4dd8-9b35-53b89c6f274e"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4e01122c-59bc-4d89-a1ae-02a4d00c5933"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7e721667-69de-49a5-8db5-d3887ec685f3"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0f1047d2-e385-4125-a939-c16d899850b2"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a05fc07-737a-4a2f-a60e-f5e68d3ccbb4"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ccf76ea8-a3ef-4139-b598-0bc4f6c24f87"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any Input"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -305,6 +390,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // Dialog
         m_Dialog = asset.FindActionMap("Dialog", throwIfNotFound: true);
         m_Dialog_Continue = m_Dialog.FindAction("Continue", throwIfNotFound: true);
+        m_Dialog_AnyInput = m_Dialog.FindAction("Any Input", throwIfNotFound: true);
         // Cutscene
         m_Cutscene = asset.FindActionMap("Cutscene", throwIfNotFound: true);
         m_Cutscene_Continue = m_Cutscene.FindAction("Continue", throwIfNotFound: true);
@@ -423,11 +509,13 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Dialog;
     private IDialogActions m_DialogActionsCallbackInterface;
     private readonly InputAction m_Dialog_Continue;
+    private readonly InputAction m_Dialog_AnyInput;
     public struct DialogActions
     {
         private @PlayerControls m_Wrapper;
         public DialogActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Continue => m_Wrapper.m_Dialog_Continue;
+        public InputAction @AnyInput => m_Wrapper.m_Dialog_AnyInput;
         public InputActionMap Get() { return m_Wrapper.m_Dialog; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -440,6 +528,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Continue.started -= m_Wrapper.m_DialogActionsCallbackInterface.OnContinue;
                 @Continue.performed -= m_Wrapper.m_DialogActionsCallbackInterface.OnContinue;
                 @Continue.canceled -= m_Wrapper.m_DialogActionsCallbackInterface.OnContinue;
+                @AnyInput.started -= m_Wrapper.m_DialogActionsCallbackInterface.OnAnyInput;
+                @AnyInput.performed -= m_Wrapper.m_DialogActionsCallbackInterface.OnAnyInput;
+                @AnyInput.canceled -= m_Wrapper.m_DialogActionsCallbackInterface.OnAnyInput;
             }
             m_Wrapper.m_DialogActionsCallbackInterface = instance;
             if (instance != null)
@@ -447,6 +538,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Continue.started += instance.OnContinue;
                 @Continue.performed += instance.OnContinue;
                 @Continue.canceled += instance.OnContinue;
+                @AnyInput.started += instance.OnAnyInput;
+                @AnyInput.performed += instance.OnAnyInput;
+                @AnyInput.canceled += instance.OnAnyInput;
             }
         }
     }
@@ -495,6 +589,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface IDialogActions
     {
         void OnContinue(InputAction.CallbackContext context);
+        void OnAnyInput(InputAction.CallbackContext context);
     }
     public interface ICutsceneActions
     {
