@@ -138,8 +138,6 @@ public class GameManager : MonoBehaviour
 
     public void OpenFeedback()
     {
-        Debug.Log("Open feedback");
-        Debug.Log(config.isReview);
         if (config.isDemo || config.isReview)
         {
             isPaused = true;
@@ -219,6 +217,7 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
             deathManager.ResetDeaths();
+            Prefs.SetShardCount(0);
         }
         StartCoroutine(SlideToNextLevel(nextScene));
     }

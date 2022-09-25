@@ -9,6 +9,7 @@ public class Prefs
     private const string MASTER_VOLUME = "MASTER_VOLUME";
     private const string DEATH_COUNT = "DEATH_COUNT";
     private const string SAVED_ECHOES = "SAVED_ECHOES";
+    private const string SHARD_COUNT = "SHARD_COUNT";
 
     private Dictionary<string, EchoSave> echoSaves = new Dictionary<string, EchoSave>();
 
@@ -51,6 +52,16 @@ public class Prefs
     public static void SetDeathCount(int newDeathCount)
     {
         PlayerPrefs.SetInt(DEATH_COUNT, newDeathCount);
+    }
+
+    public static int GetShards()
+    {
+        return PlayerPrefs.GetInt(SHARD_COUNT, 0);
+    }
+
+    public static void SetShardCount(int newShardCount)
+    {
+        PlayerPrefs.SetInt(SHARD_COUNT, newShardCount);
     }
 
     // Save echo collectibles

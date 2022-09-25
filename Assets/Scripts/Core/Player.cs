@@ -114,6 +114,9 @@ public class Player : MonoBehaviour
         deathTransition.SetActive(false);
         deathTransition.transform.SetParent(gameObject.transform);
 
+        shardsCollected = SceneManager.GetActiveScene().name != "Level 1" ? Prefs.GetShards() : 0;
+        GameManager.Instance.UpdateUI();
+
         Respawn();
         SceneManager.sceneLoaded += OnLoadCallback;
     }
@@ -182,6 +185,10 @@ public class Player : MonoBehaviour
             if (collectible.type == Collectible.ItemType.Shard)
             {
                 shardsCollected++;
+                if (shardsCollected > 1)
+                {
+                    Prefs.SetShardCount(shardsCollected);
+                }
                 GameManager.Instance.UpdateUI();
             }
             if (collectible.type == Collectible.ItemType.Inventory)
