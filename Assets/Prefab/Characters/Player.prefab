@@ -5009,7 +5009,7 @@ MonoBehaviour:
   gravityIncreaseRate: 3.5
   fastFallInitialSpeed: 2.1
   fastFallDownControlThreshold: 0.3
-  extraBounceTimeThreshold: 0.06
+  extraBounceTimeThreshold: 0.2
   extraBounceBonus: 4
   virtualCamera: {fileID: 0}
   cameraYTweakDelta: 0.2
@@ -5127,6 +5127,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9d632134-5136-47ea-8645-d0274f69a5f5
     m_ActionName: Gameplay/Feedback[/Keyboard/f1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9a73711e-5ef4-4f90-af12-5bcad7bddad9
+    m_ActionName: Dialog/Any Input[/Keyboard/anyKey]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

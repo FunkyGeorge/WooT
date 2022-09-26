@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
     private float lastJumpTime = 0;
     private float lastBounceTime = 0;
     [SerializeField] private float extraBounceTimeThreshold = 0.5f;
+    private float lastSuperJump = 0;
     [SerializeField] private float extraBounceBonus = 10f;
 
     [Header("Camera")]
@@ -528,6 +529,7 @@ public class Player : MonoBehaviour
         if (Time.time - lastJumpTime <= extraBounceTimeThreshold)
         {
             velocity.y += extraBounceBonus;
+            lastSuperJump = Time.time;
         }
 
         lastBounceTime = Time.time;
@@ -664,7 +666,7 @@ public class Player : MonoBehaviour
             }
             
             lastJumpTime = Time.time;
-            if (Time.time - lastBounceTime <= extraBounceTimeThreshold)
+            if (Time.time - lastBounceTime <= extraBounceTimeThreshold && Time.time - lastSuperJump >= extraBounceTimeThreshold)
             {
                 velocity.y += extraBounceBonus;
             }

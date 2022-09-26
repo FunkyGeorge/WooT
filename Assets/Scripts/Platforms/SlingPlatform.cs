@@ -18,6 +18,7 @@ public class SlingPlatform : MonoBehaviour
     private float currentDelay = 0;
     private float speedModifier = 3f;
     private float checkThreshold = 0.02f;
+    private Vector2 tweakVector = Vector2.zero;
 
 
     // Start is called before the first frame update
@@ -55,6 +56,7 @@ public class SlingPlatform : MonoBehaviour
     private void PlatformDelay()
     {
         currentDelay -= Time.deltaTime;
+        tweakVector = Vector2.zero;
     }
 
     private void MoveSling()
@@ -65,6 +67,11 @@ public class SlingPlatform : MonoBehaviour
 
         moveVector = destinationPosition - currentPosition;
         moveVector = moveVector.normalized * Time.deltaTime * shotSpeed * speedModifier;
+
+        if (moveVector.y > tweakVector.y)
+        {
+            tweakVector = moveVector;
+        }
         
         if (Mathf.Abs(rb.position.x - destinationPosition.x) < checkThreshold || rb.position.y >= destinationPosition.y)
         {
@@ -74,11 +81,13 @@ public class SlingPlatform : MonoBehaviour
 
         rb.MovePosition(currentPosition + moveVector);
         
-        MovePlayer(moveVector);
+        MovePlayer(tweakVector);
     }
 
     private void MoveReturn()
     {
+        tweakVector = Vector2.zero;
+
         // Find movement vector
         Vector2 moveVector;
         Vector2 currentPosition = rb.position;

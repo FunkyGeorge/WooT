@@ -9,7 +9,7 @@ public class Spring : MonoBehaviour
     [SerializeField] private float bouncePower = 20;
     private bool isLoaded = true;
     private float carryDistanceCheck = 0.1f;
-    private float springCooldown = 0.5f;
+    private float springCooldown = 0.3f;
     private Rigidbody2D rb;
     RaycastHit2D[] hits;
 
