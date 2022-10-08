@@ -122,6 +122,7 @@ public class Player : MonoBehaviour
 
         Respawn();
         SceneManager.sceneLoaded += OnLoadCallback;
+        InputSystem.onDeviceChange += OnDisconnect;
     }
 
     // Update is called once per frame
@@ -173,6 +174,7 @@ public class Player : MonoBehaviour
     public void PrepareForDestroy()
     {
         SceneManager.sceneLoaded -= OnLoadCallback;
+        InputSystem.onDeviceChange -= OnDisconnect;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -735,6 +737,14 @@ public class Player : MonoBehaviour
             {
                 GameManager.Instance.OpenFeedback();
             }
+        }
+    }
+
+    public void OnDisconnect(InputDevice device, InputDeviceChange change)
+    {
+        if (change == InputDeviceChange.Removed && !GameManager.Instance.isPaused)
+        {
+            GameManager.Instance.PauseGame();
         }
     }
 }
