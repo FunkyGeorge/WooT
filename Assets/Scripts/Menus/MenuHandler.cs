@@ -10,6 +10,9 @@ using TMPro;
 public class MenuHandler : MonoBehaviour
 {
     [SerializeField] private string entryLevel;
+    [SerializeField] private GameObject settingsMenu;
+    [SerializeField] private GameObject mainMenuDefaultElement;
+    [SerializeField] private GameObject settingsDefaultElement;
 
     [Header("Audio")]
     [SerializeField] private AudioClip musicClip;
@@ -92,6 +95,18 @@ public class MenuHandler : MonoBehaviour
         AudioPlayer.Instance.PlaySFX(selectSFX, selectAudioVolume);
     }
 
+    public void ToggleMenu()
+    {
+        if (mainMenuDefaultElement.activeInHierarchy)
+        {
+            EventSystem.current.SetSelectedGameObject(mainMenuDefaultElement);
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(settingsDefaultElement);
+        }
+    }
+
     private IEnumerator FadeToGame(string level)
     {
         AudioPlayer.Instance.FadeMusicVolume(1);
@@ -99,5 +114,21 @@ public class MenuHandler : MonoBehaviour
 
         SceneManager.LoadScene(level);
         yield return null;
+    }
+
+    // Input
+    private void OnLeftStick(InputValue value)
+    {
+        if (!EventSystem.current.currentSelectedGameObject)
+        {
+            if (mainMenuDefaultElement.activeInHierarchy)
+            {
+                EventSystem.current.SetSelectedGameObject(mainMenuDefaultElement);
+            }
+            else
+            {
+                EventSystem.current.SetSelectedGameObject(settingsDefaultElement);
+            }
+        }
     }
 }

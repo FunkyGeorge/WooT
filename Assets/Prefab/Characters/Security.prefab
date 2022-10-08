@@ -151,6 +151,7 @@ MonoBehaviour:
     m_Bits: 51
   animator: {fileID: 7443905039439950459}
   enemyCollider: {fileID: 6147763765368494329}
+  spriteRenderer: {fileID: 7443905039439950458}
 --- !u!61 &6147763765368494329
 BoxCollider2D:
   m_ObjectHideFlags: 0

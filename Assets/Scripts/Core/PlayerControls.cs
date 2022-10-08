@@ -376,6 +376,219 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""MK Input"",
+            ""id"": ""b3626367-d975-4854-8cae-fb0cbdcd8bef"",
+            ""actions"": [
+                {
+                    ""name"": ""Key"",
+                    ""type"": ""Button"",
+                    ""id"": ""cfc97e3a-caa1-4262-8159-0f3a897eddaf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Mouse"",
+                    ""type"": ""Button"",
+                    ""id"": ""079e4706-ffd1-4984-8199-5d6c616c9b03"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ae1f949a-3920-411d-85c0-c453152af195"",
+                    ""path"": ""<Keyboard>/anyKey"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Key"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3f64582f-9e6a-4a8c-8e1b-1c6cdeafb38f"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ffb6a8c7-842d-4733-9d59-9c35165349f8"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Gamepad Input"",
+            ""id"": ""44fe2b58-8a5c-430d-b690-400bde36f1d6"",
+            ""actions"": [
+                {
+                    ""name"": ""Left Stick"",
+                    ""type"": ""Button"",
+                    ""id"": ""77656eab-58f4-4e60-96ac-207982825071"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Button"",
+                    ""type"": ""Button"",
+                    ""id"": ""969b9546-b58b-4f40-a5b5-15a5c8158ad0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""5eb16f3e-b453-4f62-b4d9-d0d966caf783"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Stick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""addfe9ad-3c95-484c-8537-702233cea804"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Stick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f5bc7c11-db19-4b40-ba9d-77aa0d5c0e48"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Stick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""447ba48b-34d4-4135-9c0a-cb1860760279"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Stick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6f8a958b-6844-4234-ba95-8db116139464"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce682788-eaca-4914-81af-9e50eec69d4e"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a5f680f6-be48-47d1-852c-b9949f7c9468"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5640c6c2-5949-467a-ab91-5bd36f9dbe5c"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""06d29f63-48ca-447a-a4cf-9cfb1f9626e4"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5d1ea16-92d7-49e2-993b-edcca8cc4ecf"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27d3cde6-1d1b-44b7-952c-cd98d6c7844a"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c47e0c56-e55c-4d75-88ee-2543aaeb5d78"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -394,6 +607,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // Cutscene
         m_Cutscene = asset.FindActionMap("Cutscene", throwIfNotFound: true);
         m_Cutscene_Continue = m_Cutscene.FindAction("Continue", throwIfNotFound: true);
+        // MK Input
+        m_MKInput = asset.FindActionMap("MK Input", throwIfNotFound: true);
+        m_MKInput_Key = m_MKInput.FindAction("Key", throwIfNotFound: true);
+        m_MKInput_Mouse = m_MKInput.FindAction("Mouse", throwIfNotFound: true);
+        // Gamepad Input
+        m_GamepadInput = asset.FindActionMap("Gamepad Input", throwIfNotFound: true);
+        m_GamepadInput_LeftStick = m_GamepadInput.FindAction("Left Stick", throwIfNotFound: true);
+        m_GamepadInput_Button = m_GamepadInput.FindAction("Button", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -578,6 +799,88 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         }
     }
     public CutsceneActions @Cutscene => new CutsceneActions(this);
+
+    // MK Input
+    private readonly InputActionMap m_MKInput;
+    private IMKInputActions m_MKInputActionsCallbackInterface;
+    private readonly InputAction m_MKInput_Key;
+    private readonly InputAction m_MKInput_Mouse;
+    public struct MKInputActions
+    {
+        private @PlayerControls m_Wrapper;
+        public MKInputActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Key => m_Wrapper.m_MKInput_Key;
+        public InputAction @Mouse => m_Wrapper.m_MKInput_Mouse;
+        public InputActionMap Get() { return m_Wrapper.m_MKInput; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MKInputActions set) { return set.Get(); }
+        public void SetCallbacks(IMKInputActions instance)
+        {
+            if (m_Wrapper.m_MKInputActionsCallbackInterface != null)
+            {
+                @Key.started -= m_Wrapper.m_MKInputActionsCallbackInterface.OnKey;
+                @Key.performed -= m_Wrapper.m_MKInputActionsCallbackInterface.OnKey;
+                @Key.canceled -= m_Wrapper.m_MKInputActionsCallbackInterface.OnKey;
+                @Mouse.started -= m_Wrapper.m_MKInputActionsCallbackInterface.OnMouse;
+                @Mouse.performed -= m_Wrapper.m_MKInputActionsCallbackInterface.OnMouse;
+                @Mouse.canceled -= m_Wrapper.m_MKInputActionsCallbackInterface.OnMouse;
+            }
+            m_Wrapper.m_MKInputActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Key.started += instance.OnKey;
+                @Key.performed += instance.OnKey;
+                @Key.canceled += instance.OnKey;
+                @Mouse.started += instance.OnMouse;
+                @Mouse.performed += instance.OnMouse;
+                @Mouse.canceled += instance.OnMouse;
+            }
+        }
+    }
+    public MKInputActions @MKInput => new MKInputActions(this);
+
+    // Gamepad Input
+    private readonly InputActionMap m_GamepadInput;
+    private IGamepadInputActions m_GamepadInputActionsCallbackInterface;
+    private readonly InputAction m_GamepadInput_LeftStick;
+    private readonly InputAction m_GamepadInput_Button;
+    public struct GamepadInputActions
+    {
+        private @PlayerControls m_Wrapper;
+        public GamepadInputActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @LeftStick => m_Wrapper.m_GamepadInput_LeftStick;
+        public InputAction @Button => m_Wrapper.m_GamepadInput_Button;
+        public InputActionMap Get() { return m_Wrapper.m_GamepadInput; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GamepadInputActions set) { return set.Get(); }
+        public void SetCallbacks(IGamepadInputActions instance)
+        {
+            if (m_Wrapper.m_GamepadInputActionsCallbackInterface != null)
+            {
+                @LeftStick.started -= m_Wrapper.m_GamepadInputActionsCallbackInterface.OnLeftStick;
+                @LeftStick.performed -= m_Wrapper.m_GamepadInputActionsCallbackInterface.OnLeftStick;
+                @LeftStick.canceled -= m_Wrapper.m_GamepadInputActionsCallbackInterface.OnLeftStick;
+                @Button.started -= m_Wrapper.m_GamepadInputActionsCallbackInterface.OnButton;
+                @Button.performed -= m_Wrapper.m_GamepadInputActionsCallbackInterface.OnButton;
+                @Button.canceled -= m_Wrapper.m_GamepadInputActionsCallbackInterface.OnButton;
+            }
+            m_Wrapper.m_GamepadInputActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @LeftStick.started += instance.OnLeftStick;
+                @LeftStick.performed += instance.OnLeftStick;
+                @LeftStick.canceled += instance.OnLeftStick;
+                @Button.started += instance.OnButton;
+                @Button.performed += instance.OnButton;
+                @Button.canceled += instance.OnButton;
+            }
+        }
+    }
+    public GamepadInputActions @GamepadInput => new GamepadInputActions(this);
     public interface IGameplayActions
     {
         void OnJump(InputAction.CallbackContext context);
@@ -594,5 +897,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface ICutsceneActions
     {
         void OnContinue(InputAction.CallbackContext context);
+    }
+    public interface IMKInputActions
+    {
+        void OnKey(InputAction.CallbackContext context);
+        void OnMouse(InputAction.CallbackContext context);
+    }
+    public interface IGamepadInputActions
+    {
+        void OnLeftStick(InputAction.CallbackContext context);
+        void OnButton(InputAction.CallbackContext context);
     }
 }

@@ -45,6 +45,8 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private ContactFilter2D contactFilter;
     [SerializeField] private float speed = 8f;
+    private float acceleration = 0.18f;
+    private float accelerateVelocity = 0;
     private Vector2 velocity = Vector2.zero;
     private Vector2 targetVelocity = Vector2.zero;
     [SerializeField] private float minMoveDeadzone = 0.2f;
@@ -288,7 +290,24 @@ public class Player : MonoBehaviour
     private void Move()
     {
         targetVelocity.y = Mathf.Min(targetVelocity.y, 0);
-        targetVelocity.x = Mathf.Abs(intentDirection.x) > minMoveDeadzone ? intentDirection.x * speed : 0;
+        if (Mathf.Abs(intentDirection.x) > minMoveDeadzone)
+        {            
+            // Speed easing
+            if (Mathf.Abs(intentDirection.x) <= Mathf.Abs(accelerateVelocity))
+            {
+                accelerateVelocity = intentDirection.x * speed;
+                targetVelocity.x = intentDirection.x * speed;
+            }
+            else
+            {
+                accelerateVelocity = Mathf.Clamp((intentDirection.x < 0 ? accelerateVelocity - acceleration : accelerateVelocity + acceleration), -Mathf.Abs(intentDirection.x), Mathf.Abs(intentDirection.x));
+                targetVelocity.x = accelerateVelocity * speed;
+            }
+        } else {
+            accelerateVelocity = 0;
+            targetVelocity.x = 0;
+        }
+
         animator.SetFloat("speed", Mathf.Abs(targetVelocity.x));
 
         if (intentDirection.x < -0.01)
@@ -379,8 +398,11 @@ public class Player : MonoBehaviour
             hitCount = rb2d.Cast(Vector2.up, contactFilter, hits, groundCheckDistance);
             for (int i = 0; i < hitCount; i++)
             {
-                isJumping = false;
-                velocity.y = 0;
+                if (hits[i].collider.gameObject.tag != "Spring")
+                {
+                    isJumping = false;
+                    velocity.y = 0;
+                }
             }
         }
         else if (velocity.y <= 0 && !isJumping)

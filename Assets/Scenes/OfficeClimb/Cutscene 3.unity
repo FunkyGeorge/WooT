@@ -764,9 +764,11 @@ MonoBehaviour:
     sentences:
     - Choice? There is no choice left in the world. We are all just drifting along
       as we try to make it through our boring lives.
-    - Do you think that you got employed here because you stood out to us?
+    - Do you think that you got employed here because you stood out to us? I never
+      even looked at your profile
     - You getting hired here was completely random. We just needed to hire outsiders
       to keep the public off our backs for a little bit while we finished our plan.
+    - So don't go thinking that you were anything special. It isn't very humble.
   - name: Jesse
     mood: upset
     sentences:
@@ -794,6 +796,8 @@ MonoBehaviour:
   - name: Hector
     mood: 
     sentences:
+    - You see? Even though you are trying to save everyone, it seems that you are
+      the person that really needs to wake up.
     - "So what do you say? Can I trust you to stay put and not go trying to be a
       \u201Chero\u201D on me?"
     - "Actually, it doesn\u2019t matter anymore. Do as you wish. It\u2019s not like

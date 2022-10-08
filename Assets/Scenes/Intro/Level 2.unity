@@ -1273,10 +1273,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jesseDialogue:
     name: Jesse
+    mood: 
     sentences:
     - Hi, I'm new here. The door said that you could fix my keycard for me?
   adminDialogue:
     name: Admin
+    mood: 
     sentences:
     - Oh that is strange, I'm sorry about that. These are supposed to be all configured
       already.
@@ -1826,11 +1828,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstDialogue:
     name: 
+    mood: 
     sentences:
     - Welcome Jesse, we are glad to have you as an employee at Twilight Inc.
     - To enter your workspace, please collect your keycard from the admin office.
   secondDialogue:
     name: 
+    mood: 
     sentences:
     - Jesse, this keycard has not yet been configured.
     - Please make your way to our tech department to configure this keycard.

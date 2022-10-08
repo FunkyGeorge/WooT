@@ -12,6 +12,8 @@ public class PauseHandler : MonoBehaviour
     [Header("Menus")]
     [SerializeField] private GameObject mainPauseMenu;
     [SerializeField] private GameObject settingsMenu;
+    [SerializeField] private GameObject pauseMenuDefaultElement;
+    [SerializeField] private GameObject settingsDefaultElement;
 
     [SerializeField] private ConfigScriptableObject config;
     [SerializeField] private GameObject debugBar;
@@ -116,5 +118,33 @@ public class PauseHandler : MonoBehaviour
     public void PlaySound()
     {
         AudioPlayer.Instance.PlaySFX(selectSFX, selectAudioVolume);
+    }
+
+    public void ToggleMenu()
+    {
+        if (pauseMenuDefaultElement.activeInHierarchy)
+        {
+            EventSystem.current.SetSelectedGameObject(pauseMenuDefaultElement);
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(settingsDefaultElement);
+        }
+    }
+
+    // Input
+    private void OnLeftStick(InputValue value)
+    {
+        if (GameManager.Instance.isPaused && !EventSystem.current.currentSelectedGameObject)
+        {
+            if (pauseMenuDefaultElement.activeInHierarchy)
+            {
+                EventSystem.current.SetSelectedGameObject(pauseMenuDefaultElement);
+            }
+            else
+            {
+                EventSystem.current.SetSelectedGameObject(settingsDefaultElement);
+            }
+        }
     }
 }

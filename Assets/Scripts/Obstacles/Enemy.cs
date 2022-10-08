@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Enemy : PhysicsObject
 {
@@ -19,6 +20,7 @@ public class Enemy : PhysicsObject
     [Header("References")]
     [SerializeField] private Animator animator;
     [SerializeField] private BoxCollider2D enemyCollider;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -92,6 +94,11 @@ public class Enemy : PhysicsObject
         enemyCollider.offset = Vector2.zero;
     }
 
+    private void WakeIndication()
+    {
+        spriteRenderer.DOColor(Color.HSVToRGB(0, 0, 0.5f), 0.1f).SetLoops(6, LoopType.Yoyo);
+    }
+
     private void GoToSleep()
     {
         isSleeping = true;
@@ -112,6 +119,7 @@ public class Enemy : PhysicsObject
         {
             if (isSleeping)
             {
+                WakeIndication();
                 Invoke("Awaken", 1f);
             }
             else

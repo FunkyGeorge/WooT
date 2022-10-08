@@ -3203,7 +3203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[0]
@@ -3224,13 +3224,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[4]
-      value: "I don\u2019t know if I should even stop him anymore, but I better still
-        go and see him face to face before he does this.\r"
+      value: "I don\u2019t know if I should even stop him anymore, but what I can't
+        accept is his disrespect"
       objectReference: {fileID: 0}
     - target: {fileID: 1848884442409773243, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}
       propertyPath: mainDialogue.sentences.Array.data[5]
-      value: She is helping Hector now. I hope she can forgive me. Does it even matter
-        anymore?
+      value: We area all just numbers to him. He has no right to judge me, or anyone.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5da854a3366754cb3ca4b5c8237953, type: 3}

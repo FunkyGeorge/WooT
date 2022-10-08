@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -73,7 +74,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPaused || shouldForceCursorVisibility || config.isDebug || SceneManager.GetActiveScene().name == "End Scene")
+        string[] cursorForceLevels = {"End Scene", "Main Menu"};
+        if (isPaused || shouldForceCursorVisibility || config.isDebug || 
+        Array.Exists(cursorForceLevels, element => element == SceneManager.GetActiveScene().name))
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
