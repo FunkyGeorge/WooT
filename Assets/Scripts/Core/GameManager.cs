@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public bool isDialogUp = false;
     public bool isPaused = false;
     public bool shouldForceCursorVisibility = false;
+    public bool isUsingController = false;
 
     [Header("Music Config")]
     public int currentMusicVolume = 100;

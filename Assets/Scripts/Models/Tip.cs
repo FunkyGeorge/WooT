@@ -10,8 +10,7 @@ public class Tip : MonoBehaviour
     [TextArea(3, 5)][SerializeField] private string tipMessage;
     [SerializeField] private bool hasImage;
     [SerializeField] private Sprite keyboardSprite;
-    [SerializeField] private Sprite playstationSprite;
-    [SerializeField] private Sprite xboxSprite;
+    [SerializeField] private Sprite gamepadSprite;
     private GameObject tipBox;
     private TMP_Text textComponent;
     private Image imageComponent;
@@ -75,7 +74,14 @@ public class Tip : MonoBehaviour
 
     private Sprite GetPlatformImage()
     {
-        return keyboardSprite;
+        if (GameManager.Instance.isUsingController && gamepadSprite)
+        {
+            return gamepadSprite;
+        }
+        else
+        {
+            return keyboardSprite;
+        }
     }
 
     // Player Input System

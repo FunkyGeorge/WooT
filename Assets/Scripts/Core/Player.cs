@@ -740,6 +740,30 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void OnKey(InputAction.CallbackContext context)
+    {
+        if (GameManager.Instance.isUsingController)
+        {
+            GameManager.Instance.isUsingController = false;
+        }
+    }
+
+    public void OnButton(InputAction.CallbackContext context)
+    {
+        if (!GameManager.Instance.isUsingController)
+        {
+            GameManager.Instance.isUsingController = true;
+        }
+    }
+
+    public void OnLeftStick(InputAction.CallbackContext context)
+    {
+        if (!GameManager.Instance.isUsingController)
+        {
+            GameManager.Instance.isUsingController = true;
+        }
+    }
+
     public void OnDisconnect(InputDevice device, InputDeviceChange change)
     {
         if (change == InputDeviceChange.Removed && !GameManager.Instance.isPaused)
