@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Steamworks;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -71,6 +72,11 @@ public class SceneController2 : MonoBehaviour
         }
         else if (dialogBox.IsEmpty() && hasGoneThroughDialogue && !isComplete)
         {
+            if (SteamManager.Initialized)
+            {
+                SteamUserStats.SetAchievement("ACT1");
+                SteamUserStats.StoreStats();
+            }
             GameManager.Instance.FadeLoadLevel(nextScene);
             Player.Instance.canShoot = true;
             isComplete = true;

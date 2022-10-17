@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
+using Steamworks;
 
 public class SceneController3 : MonoBehaviour
 {
@@ -117,6 +118,12 @@ public class SceneController3 : MonoBehaviour
         }
         else if (dialogBox.IsEmpty() && hasGoneThroughDialogue && !isComplete)
         {
+            if (SteamManager.Initialized)
+            {
+                SteamUserStats.SetAchievement("ACT2");
+                SteamUserStats.StoreStats();
+            }
+
             if (configScriptable.isDemo)
             {
                 GameManager.Instance.FadeLoadLevel(demoNextScene);

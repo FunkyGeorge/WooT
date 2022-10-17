@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Steamworks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -127,6 +128,13 @@ public class FinalChoiceHandler : MonoBehaviour
     public void SubmitButtonHandler()
     {
         Debug.Log("Stopped Gentle Goodnight:" + didStopProjectGentleGoodnight.ToString());
+        if (SteamManager.Initialized)
+        {
+            string achievementName = didStopProjectGentleGoodnight ? "CHOICE_JESSE" : "CHOICE_HECTOR";
+            SteamUserStats.SetAchievement(achievementName);
+            SteamUserStats.StoreStats();
+        }
+
         GameManager.Instance.FadeLoadLevel(nextScene);
     }
 

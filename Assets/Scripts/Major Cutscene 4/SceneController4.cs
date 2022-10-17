@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
+using Steamworks;
 
 public class SceneController4 : MonoBehaviour
 {
@@ -95,6 +96,12 @@ public class SceneController4 : MonoBehaviour
     {
         if (dialogBox.IsEmpty() && !hasPlayedWalkinCutscene)
         {
+            if (SteamManager.Initialized)
+            {
+                SteamUserStats.SetAchievement("ACT3");
+                SteamUserStats.StoreStats();
+            }
+
             hasPlayedWalkinCutscene = true;
             cutsceneIsPlaying = true;
             SetPlayableAsset(playerIntro);
