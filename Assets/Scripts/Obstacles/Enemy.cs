@@ -92,6 +92,7 @@ public class Enemy : PhysicsObject
         animator.SetBool("isSleeping", false);
         enemyCollider.size = new Vector2(0.85f, 1.5f);
         enemyCollider.offset = Vector2.zero;
+        spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
     private void WakeIndication()
