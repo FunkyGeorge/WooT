@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     private const string menuUIName = "UI";
     private const string cutsceneUIName = "Cutscene UI";
     private const string feedbackMenuName = "Feedback Menu";
+    private const int FPS_CAP = 55;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -64,6 +65,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Force FPS cap at FPS_CAP frames
+        Application.targetFrameRate = FPS_CAP;
+
         DontDestroyOnLoad(gameObject);
         SetUIReferences();    
 
@@ -100,6 +104,9 @@ public class GameManager : MonoBehaviour
 
     void OnLoadCallback(Scene scene, LoadSceneMode sceneMode)
     {
+        // Force FPS cap at FPS_CAP frames
+        Application.targetFrameRate = FPS_CAP;
+
         SetUIReferences();
         UpdateUI();
         PlayMusic();
@@ -150,7 +157,6 @@ public class GameManager : MonoBehaviour
             CanvasGroup canvas = feedbackMenu.GetComponent<CanvasGroup>();
             // PauseHandler pauseHandler = feedbackMenu.GetComponent<PauseHandler>();
             // pauseHandler.Init();
-            Debug.Log(canvas);
             canvas.alpha = 1f;
             canvas.blocksRaycasts = true;
         }

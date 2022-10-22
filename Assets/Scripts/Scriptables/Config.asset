@@ -15,7 +15,7 @@ MonoBehaviour:
   isDebug: 0
   isDemo: 0
   isTrailer: 0
-  isReview: 1
+  isReview: 0
   websiteURL: https://dogma-games.com
   feedbackURL: https://airtable.com/shrHJiyVqbn0Y0mU0
   bugReportURL: https://airtable.com/shrM8eTK7TRjUmeo4
