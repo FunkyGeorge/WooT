@@ -68,6 +68,9 @@ TextureImporter:
   - first:
       213: -4666988586679773244
     second: Jesse_sprites_21
+  - first:
+      213: 4623509023502870724
+    second: Jesse_sprites_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -638,6 +641,27 @@ TextureImporter:
       bones: []
       spriteID: 4c756207b968b3fb0800000000000000
       internalID: -4666988586679773244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jesse_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8a3b1e5f00a2040800000000000000
+      internalID: 4623509023502870724
       vertices: []
       indices: 
       edges: []

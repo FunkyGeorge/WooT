@@ -481,6 +481,7 @@ public class Player : MonoBehaviour
     {
         inventory.Add(inventoryName, image);
         GameManager.Instance.inventorySprite.sprite = image;
+        GameManager.Instance.inventorySprite.color = new Color(1, 1, 1, 1);
     }
 
     public void SuspendKeycard(GameObject inventoryItem)
@@ -495,6 +496,7 @@ public class Player : MonoBehaviour
         {
             inventory.Remove(inventoryName);
             GameManager.Instance.inventorySprite.sprite = GameManager.Instance.inventoryEmptySprite;
+            GameManager.Instance.inventorySprite.color = new Color(1, 1, 1, 0);
         }
     }
 

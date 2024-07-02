@@ -135,4 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zapAudioClip: {fileID: 8300000, guid: ab54180ac11cbc746a39925c92e808a7, type: 3}
-  zapAudioVolume: 100
+  zapAudioVolume: 20

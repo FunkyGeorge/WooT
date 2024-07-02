@@ -538,8 +538,8 @@ MonoBehaviour:
   jessePortraitUpset: {fileID: -2883064327455458975, guid: d1e6cafc7e9fb624fb9b58aaa2762691, type: 3}
   jessePortraitAngry: {fileID: -3118827739192110535, guid: f6bfb1822b2b62d479044caf95285d96, type: 3}
   jesseVoice: {fileID: 8300000, guid: e178fe2419a80400c9beaf68cb4348ec, type: 3}
-  josephinePortrait: {fileID: -8992301027107397486, guid: 5061e1381c8b76d4ea47d61288541f45, type: 3}
-  josephinePortraitUpset: {fileID: -2653165760947820576, guid: 3a9f2193efde96e47b76dab24f31f2d2, type: 3}
+  josephinePortrait: {fileID: 21300000, guid: b9ca4a97af0f1c946a266c2c919ccc83, type: 3}
+  josephinePortraitUpset: {fileID: 21300000, guid: 083b8db1a49e6734dbf0d6b6fa0b63bf, type: 3}
   josephineVoice: {fileID: 8300000, guid: 7788add394b514e818965a131a479982, type: 3}
   hectorPortrait: {fileID: 21300000, guid: 7b687bf5b778c3a4785281e0a9f30a47, type: 3}
   hectorPortraitAngry: {fileID: 8884895610902925014, guid: c740bfb23831212429cf0607803086ba, type: 3}
@@ -5915,14 +5915,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8821012411062895258, guid: 728d46ebdf4620e4eaf18346f77eee43, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
