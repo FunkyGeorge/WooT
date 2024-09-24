@@ -76,6 +76,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9d2a2d27ad20bd440bd3c07360c6ec04, type: 3}
   - {fileID: -5418860344004943632, guid: 8fbe03b9c4cea5a42be921cde67548de, type: 3}
   - {fileID: 7917176840954673895, guid: 8fbe03b9c4cea5a42be921cde67548de, type: 3}
+  - {fileID: -6718501287133183528, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
+  - {fileID: -3319598503771387334, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
+  - {fileID: 8538921865532017963, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
+  - {fileID: -3784114945384191646, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
+  - {fileID: -2874236337365835596, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
+  - {fileID: 3128389555167330412, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
+  - {fileID: 89729203676584198, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
   - {fileID: 2449833562795843915, guid: 1ba7b96e9f96a3d4ea3eb8d5de88d9f8, type: 3}
   - {fileID: 7659616158637590750, guid: 1ba7b96e9f96a3d4ea3eb8d5de88d9f8, type: 3}
   - {fileID: -1827221509911364919, guid: 1ba7b96e9f96a3d4ea3eb8d5de88d9f8, type: 3}
@@ -99,13 +106,6 @@ SpriteAtlas:
   - {fileID: -4666988586679773244, guid: 1ba7b96e9f96a3d4ea3eb8d5de88d9f8, type: 3}
   - {fileID: 5566811468203384566, guid: 1ba7b96e9f96a3d4ea3eb8d5de88d9f8, type: 3}
   - {fileID: 4623509023502870724, guid: 1ba7b96e9f96a3d4ea3eb8d5de88d9f8, type: 3}
-  - {fileID: -6718501287133183528, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
-  - {fileID: -3319598503771387334, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
-  - {fileID: 8538921865532017963, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
-  - {fileID: -3784114945384191646, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
-  - {fileID: -2874236337365835596, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
-  - {fileID: 3128389555167330412, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
-  - {fileID: 89729203676584198, guid: b6c45c8ee31f2644bbb3108912a55eb4, type: 3}
   m_PackedSpriteNamesToIndex:
   - Hector_sprites_0
   - Hector_sprites_1
@@ -126,6 +126,13 @@ SpriteAtlas:
   - Hector_flat
   - Player Idle 2
   - Player Idle 1
+  - Security_Male_Spritesheet_3
+  - Security_Male_Spritesheet_2
+  - Security_Male_Spritesheet_1
+  - Security_Male_Spritesheet_0
+  - Security_Male_Spritesheet_6
+  - Security_Male_Spritesheet_5
+  - Security_Male_Spritesheet_4
   - Jesse_sprites_9
   - Jesse_sprites_8
   - Jesse_sprites_5
@@ -149,13 +156,6 @@ SpriteAtlas:
   - Jesse_sprites_21
   - Jesse_sprites_20
   - Jesse_sprites_22
-  - Security_Male_Spritesheet_3
-  - Security_Male_Spritesheet_2
-  - Security_Male_Spritesheet_1
-  - Security_Male_Spritesheet_0
-  - Security_Male_Spritesheet_6
-  - Security_Male_Spritesheet_5
-  - Security_Male_Spritesheet_4
   m_RenderDataMap: {}
   m_Tag: CharacterSpriteAtlas
   m_IsVariant: 0
