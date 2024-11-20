@@ -46,3 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 816249461
+    locked: 0
+  - name: Ignore Lighting
+    uniqueID: 2366940341
+    locked: 0

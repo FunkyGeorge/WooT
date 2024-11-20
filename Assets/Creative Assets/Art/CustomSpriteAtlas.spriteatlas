@@ -65,7 +65,6 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: -72865765388398341, guid: 712bd24268f690b46b8e5072f2ed3625, type: 3}
   - {fileID: -4530449143309844469, guid: 712bd24268f690b46b8e5072f2ed3625, type: 3}
-  - {fileID: -3609535168618846593, guid: e59dbdb3bce52dc439934f6362e4812d, type: 3}
   - {fileID: 8563989590348874900, guid: 744c632485a940645858c88aa241cbdf, type: 3}
   - {fileID: 4256332243635672019, guid: c2546c67bfbe42341bd0678b03beb463, type: 3}
   - {fileID: 6688168998500121313, guid: 0834edf7cfa95ff4d83e83972ff15bc1, type: 3}
@@ -80,7 +79,6 @@ SpriteAtlas:
   - {fileID: -9026682534505799902, guid: d176842cceef1d4419b7e93bc5bb37d4, type: 3}
   - {fileID: -273195525019253064, guid: 4156904c1f05717478524a5977e90bc1, type: 3}
   - {fileID: 7920523335296175977, guid: 4156904c1f05717478524a5977e90bc1, type: 3}
-  - {fileID: 2540883643032114530, guid: 2e3273ecdd0c9e149bc9bb0592c70ccf, type: 3}
   - {fileID: -1804930667563207789, guid: 81234bbe3fa81a54091bf9a0f30ba1f1, type: 3}
   - {fileID: 7226815602652133937, guid: 81234bbe3fa81a54091bf9a0f30ba1f1, type: 3}
   - {fileID: 5482067882766135349, guid: 81234bbe3fa81a54091bf9a0f30ba1f1, type: 3}
@@ -103,11 +101,12 @@ SpriteAtlas:
   - {fileID: -6897675763870542894, guid: 81234bbe3fa81a54091bf9a0f30ba1f1, type: 3}
   - {fileID: -860939334015341474, guid: 81234bbe3fa81a54091bf9a0f30ba1f1, type: 3}
   - {fileID: 21300000, guid: 7656a21f5ac268a4e888c57037e1c3f9, type: 3}
+  - {fileID: -3609535168618846593, guid: e59dbdb3bce52dc439934f6362e4812d, type: 3}
   - {fileID: -2439260628093604021, guid: 1328ad5fd0dcd6546bd28ec5fe8991d4, type: 3}
+  - {fileID: 2540883643032114530, guid: 2e3273ecdd0c9e149bc9bb0592c70ccf, type: 3}
   m_PackedSpriteNamesToIndex:
   - Office_Desk_Admin_0
   - Office_Desk_Admin_1
-  - vent_deep_1
   - Billboard_twilight_1
   - vent_1
   - lamp_ceiling_1
@@ -122,7 +121,6 @@ SpriteAtlas:
   - Locked Door_1
   - Whiteboard-clean
   - Whiteboard-written
-  - bench_1
   - office_tileset_18
   - office_tileset_19
   - office_tileset_16
@@ -145,7 +143,9 @@ SpriteAtlas:
   - office_tileset_5
   - office_tileset_4
   - billboard
+  - vent_deep_1
   - trashcan_1
+  - bench_1
   m_RenderDataMap: {}
   m_Tag: CustomSpriteAtlas
   m_IsVariant: 0

@@ -325,4 +325,6 @@ ScriptedImporter:
   textureAssetName: Spring Texture
   prefabAssetName: Spring Prefab
   spriteLibAssetName: Spring Sprite Lib
-  secondarySpriteTextures: []
+  secondarySpriteTextures:
+  - name: _NormalMap
+    texture: {fileID: 2800000, guid: c77583a1f53e84046a72e544bbf9138b, type: 3}
