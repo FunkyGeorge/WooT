@@ -8,6 +8,7 @@ public class EnergySwitch : MonoBehaviour
     [SerializeField] private GameObject energy;
     [SerializeField] private Sprite brokenSprite;
     [SerializeField] private AudioClip sfxClip;
+    [SerializeField] private GameObject lightSource;
     [Range(1, 100)][SerializeField] private int sfxVolume = 100;
     private Sprite defaultSprite;
     private bool isGoingToReset = false;
@@ -35,6 +36,7 @@ public class EnergySwitch : MonoBehaviour
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
         spriteRenderer.sprite = brokenSprite;
         collider.enabled = false;
+        lightSource.SetActive(false);
         AudioPlayer.Instance.PlaySFX(sfxClip, sfxVolume);
     }
 
