@@ -58,28 +58,28 @@ SpriteAtlas:
   - {fileID: 2318528794982034269, guid: a7f260217d003e6448a2ccc4a763d4a2, type: 3}
   - {fileID: -5987655671160638713, guid: eec2ed9207993884d8828dabbacb1302, type: 3}
   - {fileID: -6936130374915683914, guid: 74a33593c34dd1446af5c0c8c1481357, type: 3}
-  - {fileID: -5866106181470600533, guid: 176b1144976bef54085232bdaca8907f, type: 3}
-  - {fileID: 2233079293315929481, guid: 176b1144976bef54085232bdaca8907f, type: 3}
-  - {fileID: 2695785133608619618, guid: 176b1144976bef54085232bdaca8907f, type: 3}
   - {fileID: -3089086730614617172, guid: 9068e306269533d4ea548bdc109f1645, type: 3}
   - {fileID: -9125269195369141440, guid: b70844ede336541429715031362ff740, type: 3}
   - {fileID: 3795931466849560248, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
   - {fileID: 7185133951160710167, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
   - {fileID: -7539399706755012580, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
   - {fileID: -3263980816029685816, guid: 7a017f0f1d1848249b66f946fd636766, type: 3}
+  - {fileID: -5866106181470600533, guid: 176b1144976bef54085232bdaca8907f, type: 3}
+  - {fileID: 2233079293315929481, guid: 176b1144976bef54085232bdaca8907f, type: 3}
+  - {fileID: 2695785133608619618, guid: 176b1144976bef54085232bdaca8907f, type: 3}
   m_PackedSpriteNamesToIndex:
   - Drone_1
   - Energy_Seed_1
   - keycard_1
-  - Spring_1
-  - Spring_0
-  - Spring_2
   - Locker_Open_1
   - Energy_Seed_Red_1
   - dream_shard_0
   - dream_shard_1
   - dream_shard_2
   - dream_shard_3
+  - Spring_1
+  - Spring_0
+  - Spring_2
   m_RenderDataMap: {}
   m_Tag: ObjectsSpriteAtlas
   m_IsVariant: 0
