@@ -40,14 +40,12 @@ public class Drone : MonoBehaviour
         }
         Vector2 newPosition = new Vector2(homeVector.x + newX, homeVector.y + newY);
 
-        if (newPosition.x < transform.position.x)
+        Vector3 orientation = new Vector3(1, 1, 1);
+        if (newPosition.x > transform.position.x)
         {
-            spriteRenderer.flipX = false;
+            orientation.x = -1;
         }
-        else if (newPosition.x > transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-        }
+        transform.localScale = orientation;
 
         rb.MovePosition(newPosition);
     }
